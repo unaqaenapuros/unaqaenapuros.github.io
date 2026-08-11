@@ -8,7 +8,7 @@ title = "Una QA en apuros"
   isoCode = "es"
   rtl = false
   dateFormat = "2 January 2006"
-  logo = "img/logo.svg"
+  logo = "img/blog_logo-fondoblanco.png"
   description = "Blog sobre QA, testing y el día a día del oficio."
 
 [params.author]
