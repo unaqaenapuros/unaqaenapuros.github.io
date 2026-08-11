@@ -1,0 +1,56 @@
+# -- Configuración del sitio --
+# Ver la doc del tema para más detalle de cada parámetro:
+# https://blowfish.page/docs/getting-started/
+
+theme = "blowfish"
+baseURL = "https://unaqaenapuros.github.io/"
+defaultContentLanguage = "es"
+
+enableRobotsTXT = true
+summaryLength = 30
+
+# Con buildFuture = false (el valor normal), Hugo simplemente omite los
+# posts con fecha futura hasta que llega su fecha. Combinado con el cron
+# del workflow de despliegue (que repite el build cada hora), esto es
+# toda la "programación de publicaciones": no hay que tocar nada más,
+# el post aparece solo en cuanto se cumple su `date` en el front matter.
+buildDrafts = false
+buildFuture = false
+
+enableEmoji = true
+
+[pagination]
+  pagerSize = 10
+
+[imaging]
+  anchor = "Center"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[related]
+  threshold = 0
+  toLower = false
+
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+
+    [[related.indices]]
+        name = "categories"
+        weight = 60
+
+    [[related.indices]]
+        name = "date"
+        weight = 10

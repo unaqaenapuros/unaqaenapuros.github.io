@@ -1,0 +1,82 @@
+# -- Opciones del tema Blowfish --
+# Doc completa: https://blowfish.page/docs/configuration/#theme-parameters
+
+colorScheme = "blowfish"
+defaultAppearance = "light"
+autoSwitchAppearance = true
+
+enableSearch = true
+enableCodeCopy = true
+
+mainSections = ["posts"]
+
+defaultBackgroundImage = "/img/background.svg"
+defaultFeaturedImage = "/img/featured.svg"
+
+highlightCurrentMenuArea = true
+smartTOC = true
+
+[header]
+  layout = "fixed"
+
+[footer]
+  showMenu = true
+  showCopyright = true
+  showThemeAttribution = false
+  showAppearanceSwitcher = true
+  showScrollToTop = true
+
+[homepage]
+  layout = "page"
+  showRecent = true
+  showRecentItems = 8
+  showMoreLink = true
+  showMoreLinkDest = "posts"
+  cardView = true
+
+[article]
+  showDate = true
+  showViews = false
+  showLikes = false
+  showAuthor = true
+  showHero = true
+  heroStyle = "background"
+  showBreadcrumbs = true
+  showEdit = false
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showTableOfContents = true
+  showRelatedContent = true
+  relatedContentLimit = 4
+  showTaxonomies = true
+  # Botón de "compartir" manual en cada post (además de la
+  # auto-publicación por RSS -> Buffer/IFTTT configurada aparte).
+  sharingLinks = ["linkedin", "twitter", "whatsapp", "email"]
+
+[list]
+  showHero = false
+  showBreadcrumbs = false
+  showSummary = true
+  showCards = true
+  groupByYear = true
+
+[sitemap]
+  excludedKinds = []
+
+[taxonomy]
+  showTermCount = true
+  cardView = false
+
+[term]
+  cardView = true
+
+# -- Estadísticas (Umami Cloud) --
+# Rellenar websiteid tras crear la cuenta gratuita en https://cloud.umami.is
+[umamiAnalytics]
+  # websiteid = "TU-WEBSITE-ID"
+  # enableTrackEvent = true
+
+[verification]
+  # google = ""
+  # bing = ""
