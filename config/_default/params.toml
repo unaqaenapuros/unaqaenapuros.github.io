@@ -72,10 +72,10 @@ smartTOC = true
   cardView = true
 
 # -- Estadísticas (Umami Cloud) --
-# Rellenar websiteid tras crear la cuenta gratuita en https://cloud.umami.is
 [umamiAnalytics]
-  # websiteid = "TU-WEBSITE-ID"
-  # enableTrackEvent = true
+  websiteid = "b7c31836-3907-42b0-aef0-eed57eadef78"
+  domain = "cloud.umami.is"
+  enableTrackEvent = true
 
 [verification]
   # google = ""
