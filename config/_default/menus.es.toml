@@ -1,0 +1,35 @@
+# -- Menú principal --
+# Aparece en la cabecera. name = texto mostrado, pageRef = sección/página.
+
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
+
+[[main]]
+  identifier = "linkedin"
+  pre = "linkedin"
+  url = "https://www.linkedin.com/"
+  weight = 100
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/"
+  weight = 110
+
+# -- Menú del footer --
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 10
+
+[[footer]]
+  name = "RSS"
+  url = "/index.xml"
+  weight = 20
