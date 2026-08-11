@@ -1,0 +1,16 @@
+<style>
+  .left-sidebar {
+    --sidebar-avatar-size: 180px;
+  }
+
+  /* fondo gris claro tras el logo transparente, para que haga contraste
+     (mismo tono que las tarjetas de posts) */
+  .site-avatar .site-logo {
+    background-color: var(--card-background);
+  }
+</style>
+
+{{/* Umami analytics — only loaded on the deployed site, not in local dev */}}
+{{ if hugo.IsProduction }}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="b7c31836-3907-42b0-aef0-eed57eadef78"></script>
+{{ end }}

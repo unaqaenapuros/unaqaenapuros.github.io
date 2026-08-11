@@ -1,59 +1,61 @@
-# Una QA en apuros — blog
+# Una QA en Apuros — blog
 
-Sitio estático generado con [Hugo](https://gohugo.io/) + tema [Blowfish](https://blowfish.page/), desplegado en GitHub Pages. Migrado desde [unaqaenapuros.wordpress.com](https://unaqaenapuros.wordpress.com/).
+Static site generated with [Hugo](https://gohugo.io/) + the [Stack](https://stack.jimmycai.com/) theme, deployed on GitHub Pages. Migrated from [unaqaenapuros.wordpress.com](https://unaqaenapuros.wordpress.com/).
 
-Ver el plan de migración completo en [MIGRATION_PLAN.md](MIGRATION_PLAN.md).
+See the full migration plan in [MIGRATION_PLAN.md](MIGRATION_PLAN.md).
 
-## Desarrollo local
+## Local development
 
 ```bash
-brew install hugo   # una sola vez
-git clone --recurse-submodules <url-de-este-repo>
+brew install hugo   # one time only
+git clone --recurse-submodules <this-repo-url>
 cd unaqaenapuros.github.io
 hugo server -D       # http://localhost:1313
 ```
 
-## Crear un post nuevo
+## Create a new post
 
 ```bash
-hugo new content posts/mi-post-nuevo/index.md
+hugo new content posts/my-new-post/index.md
 ```
 
-Para **programar** una publicación futura, basta con poner una fecha
-futura en `date:` del front matter y hacer commit/push como siempre — el
-workflow de GitHub Actions rebuilda el sitio cada hora (`schedule` cron
-en [.github/workflows/deploy.yml](.github/workflows/deploy.yml)) y el
-post aparecerá solo en cuanto llegue su fecha. No hace falta volver a
-tocar nada ese día.
+To **schedule** a future publication, just set a future date in the
+front matter's `date:` and commit/push as usual — the GitHub Actions
+workflow rebuilds the site every hour (`schedule` cron in
+[.github/workflows/deploy.yml](.github/workflows/deploy.yml)) and the
+post will show up on its own once its date arrives. No need to touch
+anything that day.
 
-## Despliegue
+Articles are written in Spanish; everything else in the site (menus,
+dates, widgets, footer) is in English, driven by
+`defaultContentLanguage = "en"` in [hugo.toml](hugo.toml).
 
-Automático vía [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
-en cada push a `main` (y cada hora, para las publicaciones programadas).
+## Deployment
 
-## Pasos manuales pendientes (solo tú puedes hacerlos)
+Automatic via [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+on every push to `main` (and every hour, for scheduled posts).
 
-- [ ] **Activar GitHub Pages**: en el repo de GitHub → *Settings → Pages →
+## Project layout
+
+- [hugo.toml](hugo.toml) — single-file site config (theme, menu, sidebar, analytics).
+- [layouts/_partials/head/custom.html](layouts/_partials/head/custom.html) — small CSS override (bigger avatar, background behind the logo) + the Umami analytics script (production builds only).
+- `assets/img/blog_logo.png` — source logo (transparent background).
+- `assets/img/avatar-square.png` — square version of the logo used as avatar/favicon.
+- `assets/icons/linkedin.svg` — LinkedIn icon (not bundled with the Stack theme).
+- `themes/stack` — [Stack theme](https://github.com/CaiJimmy/hugo-theme-stack), tracked as a git submodule.
+
+## Pending manual steps (only you can do these)
+
+- [ ] **Enable GitHub Pages**: in the GitHub repo → *Settings → Pages →
       Source: "GitHub Actions"*.
-- [ ] **Exportar el contenido de WordPress**: *Ajustes → Herramientas →
-      Exportar → Todo el contenido* (genera un XML). Guárdalo y avísame
-      para convertirlo a Markdown con `wp2hugo` y migrar los posts.
-- [ ] **Estadísticas (Umami)**: crear cuenta gratis en
-      [cloud.umami.is](https://cloud.umami.is), añadir el sitio, copiar el
-      `website id` y pegarlo en `[umamiAnalytics] websiteid = "..."`
-      dentro de [config/_default/params.toml](config/_default/params.toml).
-- [ ] **Auto-publicación en LinkedIn**: el sitio ya expone RSS en
-      `/index.xml`. Conectarlo en [Buffer](https://buffer.com) (gratis,
-      RSS → LinkedIn) o [IFTTT](https://ifttt.com) (applet "New RSS item"
-      → "Share a LinkedIn post") una vez el sitio esté desplegado y la
-      URL sea pública.
-- [ ] **Enlaces reales**: sustituir los placeholders de LinkedIn/GitHub en
-      [config/_default/languages.es.toml](config/_default/languages.es.toml)
-      y [config/_default/menus.es.toml](config/_default/menus.es.toml) por
-      tus URLs reales.
-- [ ] **Logo/avatar**: sustituir los SVG de marcador de posición en
-      `assets/img/logo.svg` y `assets/img/author.svg` por tus imágenes
-      reales.
-- [ ] **Dominio propio** (opcional): si quieres usar un dominio propio en
-      vez de `unaqaenapuros.github.io`, dímelo y configuramos el `CNAME`
-      y el `baseURL`.
+- [ ] **Export WordPress content**: *Settings → Tools → Export → All
+      content* (generates an XML file). Save it and let me know so I
+      can convert it to Markdown with `wp2hugo` and migrate the posts.
+- [ ] **Auto-publish to LinkedIn**: the site already exposes an RSS feed
+      at `/index.xml`. Connect it to [Buffer](https://buffer.com) (free
+      plan, RSS → LinkedIn) or [IFTTT](https://ifttt.com) ("New RSS
+      item" → "Share a LinkedIn post" applet) once the site is deployed
+      and the URL is public.
+- [ ] **Custom domain** (optional): if you want to use a custom domain
+      instead of `unaqaenapuros.github.io`, let me know and we'll set up
+      the `CNAME` and `baseURL`.

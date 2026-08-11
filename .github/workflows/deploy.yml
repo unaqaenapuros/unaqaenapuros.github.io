@@ -1,12 +1,12 @@
-name: Build y despliegue a GitHub Pages
+name: Build and deploy to GitHub Pages
 
 on:
   push:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Cada hora: hace que los posts con fecha futura (programados)
-    # se publiquen solos en cuanto llega su fecha, sin acción manual.
+    # Every hour: makes future-dated (scheduled) posts publish themselves
+    # once their date arrives, with no manual action needed.
     - cron: "0 * * * *"
 
 permissions:
@@ -30,22 +30,22 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Instalar Hugo (extended)
+      - name: Install Hugo (extended)
         run: |
           curl -sL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb" -o /tmp/hugo.deb
           sudo dpkg -i /tmp/hugo.deb
 
-      - name: Configurar GitHub Pages
+      - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build del sitio
+      - name: Build the site
         run: |
           hugo \
             --gc --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
-      - name: Subir artefacto de Pages
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
@@ -57,6 +57,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

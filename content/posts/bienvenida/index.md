@@ -3,7 +3,7 @@ title: "Bienvenida al nuevo blog"
 date: 2026-08-11T09:00:00+02:00
 description: "El blog se muda desde WordPress a un sitio estático propio."
 tags: ["meta"]
-categories: ["novedades"]
+categories: ["news"]
 ---
 
 Este blog se ha migrado desde [unaqaenapuros.wordpress.com](https://unaqaenapuros.wordpress.com/) a un sitio estático propio, alojado en GitHub Pages.
