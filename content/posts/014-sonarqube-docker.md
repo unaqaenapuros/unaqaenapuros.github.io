@@ -31,7 +31,10 @@ Play with docker es una web que nos permite crear contenedores virtuales que pod
 
 - Una vez que tenemos la instancia funcionando, podemos comenzar a instalar Sonar. Para ello ponemos los siguientes comandos:
 
-> docker pull sonarqubedocker run -d --name sonarqube -p 9000:9000 sonarqube
+```bash
+docker pull sonarqube
+docker run -d --name sonarqube -p 9000:9000 sonarqube
+```
 
 ![sonar.png](/img/blog-images/old-post/2017/06/sonar.png)
 
@@ -43,38 +46,46 @@ Play with docker es una web que nos permite crear contenedores virtuales que pod
 
 Tenemos que añadir las librerías de Sonar dentro de nuestro proyecto en forma de dependencias
 
-> <dependency>
-> <groupId>org.codehaus.sonar</groupId>
-> <artifactId>sonar-maven-plugin</artifactId>
-> <version>${sonar-maven-plugin.version}</version>
-> </dependency>
+```xml
+<dependency>
+  <groupId>org.codehaus.sonar</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>${sonar-maven-plugin.version}</version>
+</dependency>
+```
 
 En la sección de plugins añadimos un perfil para **sonar-maven**:
 
-> <plugin>
-> <groupId>org.sonarsource.scanner.maven</groupId>
-> <artifactId>sonar-maven-plugin</artifactId>
-> <version>3.2</version>
-> </plugin>
+```xml
+<plugin>
+  <groupId>org.sonarsource.scanner.maven</groupId>
+  <artifactId>sonar-maven-plugin</artifactId>
+  <version>3.2</version>
+</plugin>
+```
 
 Y finalmente creamos un perfil para Sonar:
 
-> <profiles>
-> <profile>
-> <id>sonar</id>
-> <activation>
-> <activeByDefault>true</activeByDefault>
-> </activation>
-> <properties>
-> <!\-\- Optional URL to server. Default value is http://localhost:9000 -->
-> <sonar.host.url> URL Sonar Docker </sonar.host.url>
-> </properties>
-> </profile>
-> </profiles>
+```xml
+<profiles>
+  <profile>
+    <id>sonar</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <properties>
+      <!-- Optional URL to server. Default value is http://localhost:9000 -->
+      <sonar.host.url>URL Sonar Docker</sonar.host.url>
+    </properties>
+  </profile>
+</profiles>
+```
 
 Cuando tengamos el POM actualizado con la URL en la que está Sonar, nos vamos a la carpeta del proyecto, abrimos un nuevo terminal y simplemente ejecutamos el siguiente comando:
 
-> mvn clean install sonar:sonar
+```bash
+mvn clean install sonar:sonar
+```
 
 ![sonar_ok.png](/img/blog-images/old-post/2017/06/sonar_ok.png)Una vez que tengamos el Build Success ya veremos los resultados del análisis del código del proyecto en la página de Sonar:![sonar_resultados.png](/img/blog-images/old-post/2017/06/sonar_resultados.png)
 

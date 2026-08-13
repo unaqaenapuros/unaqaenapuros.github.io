@@ -25,7 +25,9 @@ Para comprender mejor cómo trabajar con Selenium, vamos a hacer una lista de lo
 
 ### Crear una nueva instancia del driver:
 
-> WebDriver driver = new FirefoxDriver();
+```java
+WebDriver driver = new FirefoxDriver();
+```
 
 también podemos crear instancias de ChromeDriver, InternetExplorerDriver o SafariDriver.
 
@@ -33,61 +35,83 @@ también podemos crear instancias de ChromeDriver, InternetExplorerDriver o Safa
 
 Una vez que tenemos el driver podemos usarlo para navegar a una página concreta con la siguiente línea:
 
-> driver.navigate().to("www.google.com");
+```java
+driver.navigate().to("www.google.com");
+```
 
 ### Buscar elementos:
 
 Buscar elemento por ID:
 
-> driver.findElement(By.id("ID\_elemento"));
+```java
+driver.findElement(By.id("ID_elemento"));
+```
 
 Buscar elemento por clase:
 
-> driver.findElement(By.className("className\_elemento"));
+```java
+driver.findElement(By.className("className_elemento"));
+```
 
 Buscar elemento por tag:
 
-> driver.findElement(By.tagName("tag\_name"));
+```java
+driver.findElement(By.tagName("tag_name"));
+```
 
 Buscar elemento por nombre:
 
-> driver.findElement(By.name("name\_element"));
+```java
+driver.findElement(By.name("name_element"));
+```
 
 Buscar elemento por CSS selector:
 
-> driver.findElement(By.cssSelector("selector"));
+```java
+driver.findElement(By.cssSelector("selector"));
+```
 
 Buscar elemento por Xpath:
 
-> driver.findElement(By.xpath("xpathExpression"));
+```java
+driver.findElement(By.xpath("xpathExpression"));
+```
 
 Buscar el texto visible de un HyperLink:
 
-> driver.findElement(By.linkText("linkText"));
+```java
+driver.findElement(By.linkText("linkText"));
+```
 
 Buscar el texto visible parcial de un HyperLink:
 
-> driver.findElement(By.partialLinkText("linkText"));
+```java
+driver.findElement(By.partialLinkText("linkText"));
+```
 
 ### Hacer click.
 
 Para hacer click en un elemento primero tenemos que buscar el elemento al que queremos hacer click y después mandar la orden de click:
 
-> WebElement element = driver.findElement(By.id("ID\_elemento1"));
->
-> element.click();
+```java
+WebElement element = driver.findElement(By.id("ID_elemento1"));
+
+element.click();
+```
 
 ### Escribir un texto
 
 Para escribir un texto debemos primero hacer click en el cuadro de texto donde queramos escribir este texto y luego mandar la orden de escribir el texto que queramos. Es muy recomendable usar el comando clear(); antes de enviar el texto para limpiar así el cuadro de texto antes de escribirlo.
 
-> WebElement element = driver.findElement(By.id("ID\_elemento1"));
->
-> element.click(); //Hacemos click
->
-> element.clear(); //limpiamos el cuadro de texto
->
-> element.sendKeys("Mi Texto"); //enviamos el texto
+```java
+WebElement element = driver.findElement(By.id("ID_elemento1"));
+
+element.click(); //Hacemos click
+
+element.clear(); //limpiamos el cuadro de texto
+
+element.sendKeys("Mi Texto"); //enviamos el texto
+```
 
 Y hasta aquí esta entrada de Selenium. En la siguiente entrada hablaremos de los xpath y cómo seleccionarlos para conseguir xpath robustos y portables.
 

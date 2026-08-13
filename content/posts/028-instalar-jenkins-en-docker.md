@@ -34,15 +34,21 @@ Cuando veamos que Docker está corriendo, abrimos un terminal y escribimos los s
 
 Bajamos la última versión de Jenkins (lts significa latest):
 
-> docker pull jenkins/jenkins:lts
+```bash
+docker pull jenkins/jenkins:lts
+```
 
 Una vez que termine de descargar todos los archivos, hacemos un pull con las últimas actualizaciones:
 
-> docker pull jenkins/jenkins
+```bash
+docker pull jenkins/jenkins
+```
 
 Una vez descargado por completo, lo ejecutamos en segundo plano para poder seguir usando la consola usando el símbolo & detrás del comando:
 
-> docker run --name jenkins -p 9090:8080 jenkins/jenkins:latest &
+```bash
+docker run --name jenkins -p 9090:8080 jenkins/jenkins:latest &
+```
 
 Cuando lo ejecutamos debemos estar pendiente del log ya que la primera vez que usamos Jenkins nos pedirá una contraseña inicial de Administrador, esta contraseña la podemos encontrar en el log que se genera al lanzar el comando:
 

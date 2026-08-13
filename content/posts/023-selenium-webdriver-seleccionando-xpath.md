@@ -55,11 +55,15 @@ Cuando seleccionamos un elemento nos aparece dentro de la estructura DOM de la p
 
 Vemos dentro del DOM que el elemento que queremos seleccionar está incluido en un DIV con un ID, por lo tanto es lo que usaremos para encontrarlo. Un Xpath siempre comienza con // seguido de el elemento que queremos buscar, en este caso el DIV y dentro de ese DIV buscamos un ID (que ya sabemos) indicando el nombre siempre entre comillas simples. La expresión Xpath nos quedaría de la siguiente forma:
 
-> //div\[@id='sb\_ifc0'\]
+```
+//div[@id='sb_ifc0']
+```
 
 Si le damos click a evaluar vemos que el elemento se encuentra pero que dentro de él hay otro sub-nivel que podríamos usar para tener más precisión, para ello evaluaremos el elemento hijo dentro de ese DIV usando / para identificar que es el hijo dentro de ese DIV. Este hijo DIV también tiene un ID que podremos usar para identificarlo. Siguiendo los pasos previos que hemos comentado, la nueva expresión por tanto quedaría así:
 
-> //div\[@id='sb\_ifc0'\]/div\[@id='gs\_lc0'\]
+```
+//div[@id='sb_ifc0']/div[@id='gs_lc0']
+```
 
 Si hacemos click en evaluar, podemos comprobar que el elemento que estábamos buscando se ha seleccionado correctamente:
 
@@ -69,7 +73,9 @@ Este ha sido un elemento fácil de seleccionar, pero, ¿cómo hacemos por ejempl
 
 Vamos a buscar el link: Publicidad en el footer de la web de Google usando una expresión Xpath con contains. La expresión Xpath quedaría de la siguiente forma:
 
-> //a\[@class='\_Gs' and contains(., "Publicidad")\]
+```
+//a[@class='_Gs' and contains(., "Publicidad")]
+```
 
 Hemos visto que el elemento está dentro de un a (si el a no tuviera clase, cogeríamos la clase padre span para buscar ese elemento). Dentro de ese a podemos encontrar el texto "Publicidad" que es el que queremos encontrar. Para indicar el texto que queremos encontrar pondremos que, además de la clase de nuestro elemento a deba contener el texto "Publicidad". Cuando vamos a escribir un texto a buscar, éste siempre va entre comillas dobles.
 

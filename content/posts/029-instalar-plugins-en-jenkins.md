@@ -23,13 +23,17 @@ Primero tenemos que ver cómo recuperar el contenedor donde instalamos Jenkins e
 
 Una vez que tengamos Docker corriendo y el terminal abierto, escribimos el siguiente comando que nos dará un listado de los contenedores que tenemos en nuestro Docker:
 
-> docker ps -a
+```bash
+docker ps -a
+```
 
 ![contenedor.png](/img/blog-images/old-post/2017/08/contenedor.png)
 
 Ahí podemos ver que tenemos un contenedor con un ID, la imagen que tenemos montada en él y el nombre que le dimos, ¿qué hacemos para arrancar ese contenedor? Escribimos el siguiente comando:
 
-> docker start **nombreContenedor**
+```bash
+docker start <nombreContenedor>
+```
 
 en mi caso tendría que poner **docker start jenkins** y al abrir de nuevo [http://localhost:9090/](http://localhost:9090/) tendríamos Jenkins como lo dejamos.
 
@@ -74,6 +78,8 @@ En la siguiente entrada os hablaré de mi proyecto [Selenium-Cucumber](http://gi
 
 **PD:** No os olvidéis de parar vuestro contenedor en Docker utilizando el comando:
 
-> docker stop **nombreContenedor**
+```bash
+docker stop <nombreContenedor>
+```
 
 ¡Hasta la siguiente entrada!

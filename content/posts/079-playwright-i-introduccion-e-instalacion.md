@@ -67,11 +67,13 @@ Al ejecutar este comando, el asistente de instalación nos irá haciendo pregunt
 
 Después de la instalación, nuestro proyecto tendrá la siguiente estructura:
 
-> - playwright.config.ts # Configuración de los tests
-> - package.json
-> - package-lock.json # O yarn.lock / pnpm-lock.yaml
-> - tests/
-> - example.spec.ts # Un test de ejemplo mínimo
+```
+playwright.config.ts   # Configuración de los tests
+package.json
+package-lock.json      # O yarn.lock / pnpm-lock.yaml
+tests/
+  example.spec.ts      # Un test de ejemplo mínimo
+```
 
 Veamos qué es cada cosa:
 

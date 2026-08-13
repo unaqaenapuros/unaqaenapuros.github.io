@@ -48,7 +48,9 @@ Después de ver el código tenemos que comentar varias cosas:
 - Desde que Selenium 3 salió oficialmente, el driver de Firefox no está soportado por defecto, es por eso que debemos bajarnos Geckodriver para poder ejecutar test con Firefox. Es importante colocar el fichero dentro del proyecto en la carpeta resources y darle permisos de ejecución ( _chmod +x geckodriver_) sino, éste no funcionará.
 - Indicaremos la localización de Geckodriver y definiremos una propiedad del sistema de la forma:
 
-> _System.setProperty("webdriver.gecko.driver", resourceFolder+"/geckodriver");_
+```java
+System.setProperty("webdriver.gecko.driver", resourceFolder+"/geckodriver");
+```
 
 - Usaremos las anotaciones de JUnit para indicar:
   - @Before: métodos que serán invocados antes de cada test. Crearemos un método para inicializar una instancia del driver.

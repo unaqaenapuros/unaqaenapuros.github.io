@@ -67,7 +67,11 @@ Selenese es el lenguaje usado para escribir los test script en Selenium IDE.
 
 Siguiendo la siguiente sintaxis y dependiendo del navegador del que queramos crear una instancia, puede ser:
 
-> _WebDriver driver =_ **_new_** _FirefoxDriver(); -> para Firefox_ _WebDriver driver =_ **_new_** _ChromeDriver(); -> para Chrome_ _WebDriver driver =_ **_new_** _InternetExplorerDriver(); -> Para IE._
+```java
+WebDriver driver = new FirefoxDriver(); // para Firefox
+WebDriver driver = new ChromeDriver(); // para Chrome
+WebDriver driver = new InternetExplorerDriver(); // para IE
+```
 
 - **¿Cuáles son los diferentes tipos de drivers soportados actualmente por Selenium Webdriver?**
 
@@ -77,19 +81,33 @@ Los diferentes drivers soportados son: Geckodriver (nuevo desde Selenium 3 para 
 
 Para poder escribir en un cuadro de texto primero tenemos que encontrar el elemento y luego usar el comando sendKeys de la siguiente forma:
 
-> _WebElement element = driver_ _.findElement(By.class(_ _“textbox1”_ _));_ _element.sendKeys(_ _“This is a test”_ _);_
+```java
+WebElement element = driver.findElement(By.class("textbox1"));
+element.sendKeys("This is a test");
+```
 
 - **¿Cómo podemos comprobar que un elemento se muestra en la pantalla usando Selenium Webdriver?**
 
 Webdriver nos facilita varios métodos que podemos utilizar para comprobar la visibilidad de un elemento web en la pantalla. Podemos comprobar la visibilidad de elementos como botones, cajas de texto, checkbox, radio button, etiquetas... Para ello usamos los comandos:
 
-> **Comando isDisplayed():** **_boolean_** _buttonDisplayed = driver.findElement(By.id(_ _“button1”_ _)).isDisplayed();_ **Comando isSelected():** **_boolean_** _buttonSelected = driver.findElement(By.class(_ _“button2”_ _)).isSelected();_ **Comando isEnabled():** **_boolean_** _buttonEnabled = driver.findElement(By.id(_ _“button3”_ _)).isEnabled();_
+```java
+// isDisplayed()
+boolean buttonDisplayed = driver.findElement(By.id("button1")).isDisplayed();
+
+// isSelected()
+boolean buttonSelected = driver.findElement(By.class("button2")).isSelected();
+
+// isEnabled()
+boolean buttonEnabled = driver.findElement(By.id("button3")).isEnabled();
+```
 
 - **¿Cómo podemos guardar el texto de un WebElement?**
 
 Para poder guardar el texto de un elemento web primero tenemos que seleccionar el elemento que quedamos recoger el texto y usar el comando getText():
 
-> _String errorText = driver.findElement(By.class(“error\_label”)).getText();_
+```java
+String errorText = driver.findElement(By.class("error_label")).getText();
+```
 
 Este comando sólo puede ser usado para elementos webs que contentan texto como por ejemplo: etiquetas, mensajes de verificación, botones, mensajes de error...
 
@@ -99,7 +117,19 @@ Para poder seleccionar el valor de un dropdown usando Selenium Webdriver tenemos
 
 Lo podemos ver más claro en el siguiente ejemplo de cada uno de ellos:
 
-> **selectByValue:** _Select selectByValue =_ **_new_** _Select(_ _driver_ _.findElement(By.id(_ _“ID1”_ _)));_ _selectByValue.selectByValue(_ _“value1”_ _);_ **selectByVisibleText:** _Select selectByVisibleText =_ **_new_** _Select (_ _driver_ _.findElement(By.id(_ _“ID2”_ _)));_ _selectByVisibleText.selectByVisibleText(_ _“Text1”_ _);_ **selectByIndex:** _Select selectByIndex =_ **_new_** _Select(_ _driver_ _.findElement(By.id(_ _“ID3”_ _)));_ _selectByIndex.selectByIndex(2);_
+```java
+// selectByValue
+Select selectByValue = new Select(driver.findElement(By.id("ID1")));
+selectByValue.selectByValue("value1");
+
+// selectByVisibleText
+Select selectByVisibleText = new Select(driver.findElement(By.id("ID2")));
+selectByVisibleText.selectByVisibleText("Text1");
+
+// selectByIndex
+Select selectByIndex = new Select(driver.findElement(By.id("ID3")));
+selectByIndex.selectByIndex(2);
+```
 
 Y hasta aquí esta entrada. En la siguiente seguiremos con nuestra recopilación de Selenium Webdriver y posibles preguntas que se pueden hacer en una entrevista de trabajo.
 
