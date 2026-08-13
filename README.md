@@ -1,61 +1,31 @@
 # Una QA en Apuros — blog
 
-Static site generated with [Hugo](https://gohugo.io/) + the [Stack](https://stack.jimmycai.com/) theme, deployed on GitHub Pages. Migrated from [unaqaenapuros.wordpress.com](https://unaqaenapuros.wordpress.com/).
+Blog personal sobre QA, testing y automatización.
 
-See the full migration plan in [MIGRATION_PLAN.md](MIGRATION_PLAN.md).
+🔗 https://unaqaenapuros.github.io/
 
-## Local development
+Sitio estático generado con [Hugo](https://gohugo.io/) + tema
+[Stack](https://stack.jimmycai.com/), publicado en GitHub Pages.
 
-```bash
-brew install hugo   # one time only
-git clone --recurse-submodules <this-repo-url>
-cd unaqaenapuros.github.io
-hugo server -D       # http://localhost:1313
-```
-
-## Create a new post
+## Desarrollo local
 
 ```bash
-hugo new content posts/my-new-post/index.md
+brew install hugo   # solo la primera vez
+hugo server -D      # http://localhost:1313
 ```
 
-To **schedule** a future publication, just set a future date in the
-front matter's `date:` and commit/push as usual — the GitHub Actions
-workflow rebuilds the site every hour (`schedule` cron in
-[.github/workflows/deploy.yml](.github/workflows/deploy.yml)) and the
-post will show up on its own once its date arrives. No need to touch
-anything that day.
+## Nuevo post
 
-Articles are written in Spanish; everything else in the site (menus,
-dates, widgets, footer) is in English, driven by
-`defaultContentLanguage = "en"` in [hugo.toml](hugo.toml).
+```bash
+hugo new content posts/mi-post-nuevo.md
+```
 
-## Deployment
+Para **programar** una publicación futura, basta con poner una fecha
+futura en `date:` del front matter y hacer push como siempre — el
+workflow de GitHub Actions reconstruye el sitio cada hora y el post
+aparece solo en cuanto llega su fecha.
 
-Automatic via [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
-on every push to `main` (and every hour, for scheduled posts).
+## Despliegue
 
-## Project layout
-
-- [hugo.toml](hugo.toml) — single-file site config (theme, menu, sidebar, analytics).
-- [layouts/_partials/head/custom.html](layouts/_partials/head/custom.html) — small CSS override (bigger avatar, background behind the logo) + the Umami analytics script (production builds only).
-- `assets/img/blog_logo.png` — source logo (transparent background).
-- `assets/img/avatar-square.png` — square version of the logo used as avatar/favicon.
-- `assets/icons/linkedin.svg` — LinkedIn icon (not bundled with the Stack theme).
-- `themes/stack` — [Stack theme](https://github.com/CaiJimmy/hugo-theme-stack), tracked as a git submodule.
-
-## Pending manual steps (only you can do these)
-
-- [ ] **Enable GitHub Pages**: in the GitHub repo → *Settings → Pages →
-      Source: "GitHub Actions"*.
-- [ ] **Export WordPress content**: *Settings → Tools → Export → All
-      content* (generates an XML file). Save it and let me know so I
-      can convert it to Markdown with `wp2hugo` and migrate the posts.
-- [ ] **Auto-publish to LinkedIn**: the site already exposes an RSS feed
-      at `/index.xml`. Connect it to [Buffer](https://buffer.com) (free
-      plan, RSS → LinkedIn) or [IFTTT](https://ifttt.com) ("New RSS
-      item" → "Share a LinkedIn post" applet) once the site is deployed
-      and the URL is public.
-- [ ] **Custom domain** (optional): if you want to use a custom domain
-      instead of `unaqaenapuros.github.io`, let me know and we'll set up
-      the `CNAME` and `baseURL`.
+Automático vía [.github/workflows/deploy.yml](.github/workflows/deploy.yml)
+en cada push a `main` (y cada hora, para los posts programados).

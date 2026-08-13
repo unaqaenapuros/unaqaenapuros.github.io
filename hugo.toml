@@ -46,7 +46,7 @@ enableEmoji = true
 [params]
   mainSections = ["posts"]
   rssFullContent = true
-  favicon = "img/avatar-square.png"
+  favicon = "img/favicon-square.png"
 
   [params.footer]
     since = 2026
