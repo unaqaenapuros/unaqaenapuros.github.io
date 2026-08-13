@@ -5,7 +5,7 @@ url: /2026/06/01/085-playwright-vii-playwright-mcp-y-cli/
 image: /img/blog-images/old-post/2026/04/foto74.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - ci
 - code-quality
 - playwright

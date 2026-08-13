@@ -5,7 +5,7 @@ url: /2021/03/03/069-como-generar-una-clave-ssh/
 image: /img/blog-images/old-post/2021/02/foto66.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - git
 - qa

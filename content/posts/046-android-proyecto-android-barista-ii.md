@@ -5,7 +5,7 @@ url: /2018/11/21/046-android-proyecto-android-barista-ii/
 image: /img/blog-images/old-post/2018/11/foto45.jpg
 categories:
 - android
-- appmóviles
+- mobile-apps
 - automation
 - barista
 - git

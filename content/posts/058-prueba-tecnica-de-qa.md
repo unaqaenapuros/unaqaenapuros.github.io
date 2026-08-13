@@ -5,7 +5,7 @@ url: /2019/10/09/058-prueba-tecnica-de-qa/
 image: /img/blog-images/old-post/2019/09/foto55.png
 categories:
 - automation
-- perfiles
+- profiles
 - qa
 tags:
 - casos-de-prueba

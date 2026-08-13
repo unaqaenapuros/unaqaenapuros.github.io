@@ -5,7 +5,7 @@ url: /2026/08/10/090-playwright-fixtures-iii-tipado-composicion-y-mergetests/
 image: /img/blog-images/old-post/2026/05/foto79.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - playwright
 - qa
 tags:

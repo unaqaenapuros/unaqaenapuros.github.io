@@ -5,7 +5,7 @@ url: /2021/11/03/076-pruebas-de-rendimiento-iii-metodologia-de-pruebas-de-rendim
 image: /img/blog-images/old-post/2021/10/foto73.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - performance
 - qa
 author: estefafdez

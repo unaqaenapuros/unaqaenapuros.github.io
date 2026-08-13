@@ -5,9 +5,9 @@ url: /2026/06/29/087-playwright-el-decorador-step-para-mejorar-tus-reportes/
 image: /img/blog-images/old-post/2026/05/foto76.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
-- ia
+- ai
 - playwright
 - qa
 tags:

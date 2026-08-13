@@ -5,7 +5,7 @@ url: /2019/08/28/055-meetup-lego-serious-play-aplicado-a-qa-sevillaqa/
 image: /img/blog-images/old-post/2019/08/foto51.png
 categories:
 - automation
-- eventos
+- events
 - qa
 tags:
 - lego

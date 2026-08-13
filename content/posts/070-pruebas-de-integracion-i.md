@@ -5,7 +5,7 @@ url: /2021/03/17/070-pruebas-de-integracion-i/
 image: /img/blog-images/old-post/2021/03/foto67.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 tags:
 - integración

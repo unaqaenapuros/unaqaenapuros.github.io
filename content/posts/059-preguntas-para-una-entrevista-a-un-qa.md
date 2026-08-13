@@ -6,10 +6,10 @@ image: /img/blog-images/old-post/2019/10/foto58.png
 categories:
 - appium
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - jenkins
-- perfiles
+- profiles
 - qa
 - selenium-webdriver
 tags:

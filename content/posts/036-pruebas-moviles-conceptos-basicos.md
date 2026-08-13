@@ -4,7 +4,7 @@ date: '2017-11-22T08:00:24+00:00'
 url: /2017/11/22/036-pruebas-moviles-conceptos-basicos/
 image: /img/blog-images/old-post/2017/11/foto36.jpg
 categories:
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - apliaciones

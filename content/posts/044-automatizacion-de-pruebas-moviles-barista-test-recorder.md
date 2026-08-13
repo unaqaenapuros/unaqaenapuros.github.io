@@ -5,7 +5,7 @@ url: /2018/05/30/044-automatizacion-de-pruebas-moviles-barista-test-recorder/
 image: /img/blog-images/old-post/2018/04/foto43.jpg
 categories:
 - appium
-- appmóviles
+- mobile-apps
 - automation
 - code-quality
 - qa

@@ -5,7 +5,7 @@ url: /2024/09/16/078-pruebas-de-rendimiento-v-apache-jmeter/
 image: /img/blog-images/old-post/2024/09/foto60.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - qa
 tags:
 - apache

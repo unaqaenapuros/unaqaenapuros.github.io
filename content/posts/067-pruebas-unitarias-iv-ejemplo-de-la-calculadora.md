@@ -3,12 +3,14 @@ title: '067- Pruebas Unitarias (IV): Ejemplo de la calculadora.'
 date: '2020-12-23T08:30:00+00:00'
 url: /2020/12/23/067-pruebas-unitarias-iv-ejemplo-de-la-calculadora/
 categories:
-- sin-categoría
-tags:
-- eclipse
-- java
-- junit
+- mobile-apps
+- automation
+- best-practices
+- code-quality
+- git
 - qa
+tags:
+- quality
 - unit-test
 author: estefafdez
 ---

@@ -5,8 +5,8 @@ url: /2026/07/27/089-playwright-fixtures-ii-worker-scope-y-datos-opcionales/
 image: /img/blog-images/old-post/2026/05/foto78.png
 categories:
 - automation
-- buenas-prácticas
-- ia
+- best-practices
+- ai
 - playwright
 - qa
 tags:

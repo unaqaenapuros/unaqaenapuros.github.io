@@ -4,7 +4,7 @@ date: '2018-04-25T07:00:57+00:00'
 url: /2018/04/25/041-pruebas-moviles-historia-de-las-stores/
 image: /img/blog-images/old-post/2018/04/foto40.jpg
 categories:
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - app-stores

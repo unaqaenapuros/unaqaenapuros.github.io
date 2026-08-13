@@ -4,9 +4,9 @@ date: '2021-06-30T07:00:00+00:00'
 url: /2021/06/30/075-pruebas-de-rendimiento-ii-tipos-de-pruebas/
 image: /img/blog-images/old-post/2021/04/foto72.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - qa
 tags:

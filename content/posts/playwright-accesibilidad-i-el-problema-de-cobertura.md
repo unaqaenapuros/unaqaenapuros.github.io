@@ -5,7 +5,7 @@ url: /
 image: /img/blog-images/old-post/2026/06/foto80.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - playwright
 - qa
 tags:

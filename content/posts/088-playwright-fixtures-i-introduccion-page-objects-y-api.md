@@ -5,8 +5,8 @@ url: /2026/07/13/088-playwright-fixtures-i-introduccion-page-objects-y-api/
 image: /img/blog-images/old-post/2026/05/foto77.png
 categories:
 - automation
-- buenas-prácticas
-- ia
+- best-practices
+- ai
 - playwright
 - qa
 tags:

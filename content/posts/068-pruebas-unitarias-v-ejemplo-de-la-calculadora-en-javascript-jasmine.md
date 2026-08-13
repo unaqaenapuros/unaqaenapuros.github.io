@@ -5,7 +5,7 @@ url: /2021/02/17/068-pruebas-unitarias-v-ejemplo-de-la-calculadora-en-javascript
 image: /img/blog-images/old-post/2021/02/foto65.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - qa
 tags:

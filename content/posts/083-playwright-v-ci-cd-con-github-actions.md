@@ -5,7 +5,7 @@ url: /2026/05/04/083-playwright-v-ci-cd-con-github-actions/
 image: /img/blog-images/old-post/2026/04/foto66.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - ci
 - docker
 - playwright

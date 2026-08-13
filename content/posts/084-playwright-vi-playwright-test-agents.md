@@ -5,10 +5,10 @@ url: /2026/05/18/084-playwright-vi-playwright-test-agents/
 image: /img/blog-images/old-post/2026/04/foto67.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - ci
 - code-quality
-- perfiles
+- profiles
 - performance
 - playwright
 - qa

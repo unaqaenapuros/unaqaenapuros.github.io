@@ -4,7 +4,7 @@ date: '2017-11-29T08:00:17+00:00'
 url: /2017/11/29/037-pruebas-moviles-tipos-de-aplicaciones/
 image: /img/blog-images/old-post/2017/11/foto37.jpg
 categories:
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - app-móviles
