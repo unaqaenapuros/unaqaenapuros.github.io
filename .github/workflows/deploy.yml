@@ -5,9 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
   schedule:
-    # Every hour: makes future-dated (scheduled) posts publish themselves
-    # once their date arrives, with no manual action needed.
-    - cron: "0 * * * *"
+    # Scheduled posts always use 09:30 Madrid time. Two entries cover
+    # both DST states (CEST = UTC+2 in summer, CET = UTC+1 in winter)
+    # so it hits 09:30 local year-round with no manual changes needed.
+    - cron: "30 7 * * *"  # 09:30 CEST (summer)
+    - cron: "30 8 * * *"  # 09:30 CET (winter)
 
 permissions:
   contents: read
