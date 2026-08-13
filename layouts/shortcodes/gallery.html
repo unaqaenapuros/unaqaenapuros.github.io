@@ -1,0 +1,4 @@
+{{/* Minimal image gallery grid, used by posts migrated from WordPress. */}}
+<div class="wp-gallery" style="display:grid;grid-template-columns:repeat({{ .Get "cols" | default "3" }}, 1fr);gap:1rem;margin:1.5rem 0;">
+  {{ .Inner }}
+</div>
