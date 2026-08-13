@@ -4,9 +4,9 @@ date: '2021-04-28T07:00:00+00:00'
 url: /2021/04/28/072-pruebas-de-integracion-iii-herramientas/
 image: /img/blog-images/old-post/2021/04/foto69.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - selenium-webdriver
 tags:

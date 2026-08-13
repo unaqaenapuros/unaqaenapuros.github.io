@@ -4,13 +4,13 @@ date: '2021-05-12T07:00:00+00:00'
 url: /2021/05/12/073-soapui/
 image: /img/blog-images/old-post/2021/04/foto70.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - ci
 - code-quality
 - qa
-- tipos-de-pruebas
+- test-types
 tags:
 - integration-testing
 - soapui

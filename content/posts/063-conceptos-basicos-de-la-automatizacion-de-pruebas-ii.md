@@ -5,7 +5,7 @@ url: /2020/10/21/063-conceptos-basicos-de-la-automatizacion-de-pruebas-ii/
 image: /img/blog-images/old-post/2020/10/foto60.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - qa
 tags:

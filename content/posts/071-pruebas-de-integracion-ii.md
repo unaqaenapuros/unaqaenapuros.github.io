@@ -4,12 +4,12 @@ date: '2021-03-31T07:00:00+00:00'
 url: /2021/03/31/071-pruebas-de-integracion-ii/
 image: /img/blog-images/old-post/2021/02/foto68.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - qa
-- tipos-de-pruebas
+- test-types
 tags:
 - integration
 - pruebas-integración

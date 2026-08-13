@@ -4,13 +4,13 @@ date: '2021-06-09T07:00:00+00:00'
 url: /2021/06/09/074-pruebas-de-rendimiento-i/
 image: /img/blog-images/old-post/2021/04/foto71.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - ci
 - code-quality
 - qa
-- tipos-de-pruebas
+- test-types
 tags:
 - performance
 - pruebas

@@ -5,7 +5,7 @@ url: /2026/04/13/081-playwright-iii-escribiendo-nuestros-primeros-tests/
 image: /img/blog-images/old-post/2026/04/foto64.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - playwright
 - qa

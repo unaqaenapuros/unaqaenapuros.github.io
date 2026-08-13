@@ -5,9 +5,9 @@ url: /2026/06/15/086-playwright-por-que-tu-locator-getbyrole-no-funciona/
 image: /img/blog-images/old-post/2026/05/foto75.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
-- ia
+- ai
 - playwright
 - qa
 tags:

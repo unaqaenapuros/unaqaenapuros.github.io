@@ -5,7 +5,7 @@ url: /2019/05/08/053-como-eliminar-completamente-android-studio-de-mac-por-conso
 image: /img/blog-images/old-post/2019/02/foto52.png
 categories:
 - android
-- appmóviles
+- mobile-apps
 - automation
 - qa
 tags:

@@ -5,7 +5,7 @@ url: /2026/04/28/082-playwright-iv-depuracion-y-trace-viewer/
 image: /img/blog-images/old-post/2026/04/foto65.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - playwright
 - qa
 tags:

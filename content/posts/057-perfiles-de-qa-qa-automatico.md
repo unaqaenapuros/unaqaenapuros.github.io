@@ -5,7 +5,7 @@ url: /2019/09/25/057-perfiles-de-qa-qa-automatico/
 image: /img/blog-images/old-post/2019/08/foto54.png
 categories:
 - automation
-- perfiles
+- profiles
 - qa
 tags:
 - automatización

@@ -4,7 +4,7 @@ date: '2019-09-11T07:00:22+00:00'
 url: /2019/09/11/056-perfiles-de-qa-qa-funcional/
 image: /img/blog-images/old-post/2019/08/foto53.png
 categories:
-- perfiles
+- profiles
 - qa
 tags:
 - perfiles-qa

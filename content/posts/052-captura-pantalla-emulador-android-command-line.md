@@ -6,7 +6,7 @@ image: /img/blog-images/old-post/2019/04/foto51.png
 categories:
 - android
 - appium
-- appmóviles
+- mobile-apps
 - automation
 - qa
 tags:

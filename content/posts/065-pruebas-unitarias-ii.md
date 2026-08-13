@@ -4,9 +4,9 @@ date: '2020-11-25T08:30:00+00:00'
 url: /2020/11/25/065-pruebas-unitarias-ii/
 image: /img/blog-images/old-post/2020/10/foto62.png
 categories:
-- appmóviles
+- mobile-apps
 - automation
-- buenas-prácticas
+- best-practices
 - code-quality
 - git
 - qa

@@ -4,7 +4,7 @@ date: '2017-12-06T08:00:34+00:00'
 url: /2017/12/06/038-pruebas-moviles-clasificacion-de-aplicaciones/
 image: /img/blog-images/old-post/2017/12/foto38.jpg
 categories:
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - app-móviles

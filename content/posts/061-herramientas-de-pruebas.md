@@ -5,7 +5,7 @@ url: /2019/11/20/061-herramientas-de-pruebas/
 image: /img/blog-images/old-post/2019/11/foto57.png
 categories:
 - android
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - herramientas

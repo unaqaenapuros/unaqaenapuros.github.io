@@ -5,9 +5,9 @@ url: /2024/09/02/077-pruebas-de-rendimiento-iv-herramientas/
 image: /img/blog-images/old-post/2024/08/foto59.png
 categories:
 - automation
-- buenas-prácticas
+- best-practices
 - qa
-- tipos-de-pruebas
+- test-types
 tags:
 - jmeter
 - k6

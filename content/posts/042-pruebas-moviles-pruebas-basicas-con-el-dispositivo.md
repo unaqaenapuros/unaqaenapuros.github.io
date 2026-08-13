@@ -4,7 +4,7 @@ date: '2018-05-02T07:00:38+00:00'
 url: /2018/05/02/042-pruebas-moviles-pruebas-basicas-con-el-dispositivo/
 image: /img/blog-images/old-post/2018/04/foto41.jpg
 categories:
-- appmóviles
+- mobile-apps
 - qa
 tags:
 - mobile-testing
