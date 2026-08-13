@@ -21,13 +21,15 @@ Para seguir con el tema de las buenas prácticas, en esta entrada vamos a hablar
 
 Para ello utiliza métodos claros, devuelve siempre "this", usa métodos "void". Devuelve argumentos genéricos y con nombres auto-descriptivos
 
-> @Test
-> public void openPageWithoutErrors() throws Exception {
-> MainPage main = openMainPage();
-> main.hasNumberOfErrors(1);
-> main.withCampaignName("SELENIUM").save();
-> main.hasNumberOfErrors(2);
-> }
+```java
+@Test
+public void openPageWithoutErrors() throws Exception {
+MainPage main = openMainPage();
+main.hasNumberOfErrors(1);
+main.withCampaignName("SELENIUM").save();
+main.hasNumberOfErrors(2);
+}
+```
 
 ### Sé robusto y portable a la hora de seleccionar los elementos.
 
@@ -42,27 +44,36 @@ Para ello utiliza métodos claros, devuelve siempre "this", usa métodos "void".
 
 Sabemos que a veces debemos decirle a Selenium que espere antes de realizar alguna acción. Debemos intentar utilizar siempre métodos como Wait o FluentWait.
 
-> public void clickOnContactType() {         driver.findElement(By.id("contacttypelink")).click(); SeleniumUtil.fluentWait(By.name("handle"), getDriver());  }
+```java
+public void clickOnContactType() {
+driver.findElement(By.id("contacttypelink")).click();
+SeleniumUtil.fluentWait(By.name("handle"), getDriver());
+}
+```
 
 ### Usa siempre URLs relativas.
 
 Sabemos que hay veces que necesitamos decirle a Selenium que se vaya a una ruta concreta, pero siempre debemos evitar código como:
 
-> driver.get("http://es.wikipedia.org/wiki/Wiki");
+```java
+driver.get("http://es.wikipedia.org/wiki/Wiki");
+```
 
 ### Crea tu propio set de datos.
 
 No asumas que los datos siempre van a estar ahí, crea un fichero con los datos necesarios para los test automáticos:
 
-> CreatePage createPage = openCreatePage();
-> createPage.withName("SELENIUM" + new DateTime()).withAgent("tom").withAssignee("tom");
-> createPage.save().hasNumberOfErrors(0);
-> createPage.hasInfoMessage();
-> Long campaignId = createPage.getCampaignId();
-> ConsultPage consult = openConsultPage(campaignId);
-> EditPage edit = consult.goToEditPage();
-> consult = edit.save();
-> consult.hasInfoMessage();
+```java
+CreatePage createPage = openCreatePage();
+createPage.withName("SELENIUM" + new DateTime()).withAgent("tom").withAssignee("tom");
+createPage.save().hasNumberOfErrors(0);
+createPage.hasInfoMessage();
+Long campaignId = createPage.getCampaignId();
+ConsultPage consult = openConsultPage(campaignId);
+EditPage edit = consult.goToEditPage();
+consult = edit.save();
+consult.hasInfoMessage();
+```
 
 ### Mantén el proyecto actualizado.
 

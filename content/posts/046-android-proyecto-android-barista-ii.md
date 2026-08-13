@@ -52,24 +52,24 @@ Más info sobre Barista: [https://github.com/SchibstedSpain/Barista](https://gi
 
 Para comenzar con Barista debemos comenzar con incluir el repositorio de Google en Maven en el build.gradle ya que es obligatorio para Espresso 3. Nos vamos al build.gradle del proyecto y añadimos:
 
-> ```
-> allprojects {
->     repositories {
->         jcenter()
->         maven { url "https://maven.google.com" }
->     }
-> }
-> ```
+```groovy
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://maven.google.com" }
+    }
+}
+```
 
 ![Captura de pantalla 2018-11-04 a las 14.37.59](/img/blog-images/old-post/2018/11/captura-de-pantalla-2018-11-04-a-las-14-37-59.png)
 
 A continuación, importamos Barista como una dependencia de testing en el build.gradle de la app:
 
-> ```
-> androidTestCompile('com.schibsted.spain:barista:2.7.0') {
->     exclude group: 'com.android.support'
-> }
-> ```
+```groovy
+androidTestCompile('com.schibsted.spain:barista:2.7.0') {
+    exclude group: 'com.android.support'
+}
+```
 
 ![Captura de pantalla 2018-11-04 a las 14.39.12](/img/blog-images/old-post/2018/11/captura-de-pantalla-2018-11-04-a-las-14-39-12.png)
 
@@ -81,10 +81,10 @@ Cuando tenemos importadas las dependencias y el repositorio, nos vamos a **app/s
 
 #### La regla de barista:
 
-> ```
-> @Rule
-> public BaristaRule<MainActivity> baristaRule = BaristaRule.create(MainActivity.class);
-> ```
+```java
+@Rule
+public BaristaRule<MainActivity> baristaRule = BaristaRule.create(MainActivity.class);
+```
 
 Esta regla hace varias cosas por defecto:
 
@@ -99,9 +99,9 @@ Esta regla hace varias cosas por defecto:
 
 Añadimos también el método TestName de jUnit para usarlo en el log y saber qué test estamos ejecutando.
 
-> ```
-> TestName name = new TestName();
-> ```
+```java
+TestName name = new TestName();
+```
 
 #### Método setUp():
 
@@ -109,13 +109,13 @@ Antes de comenzar a crear los test necesitamos un método que se realice siempre
 
 Para no tener que repetir esta línea en cada test, usaremos la anotación **@Before** de jUnit:
 
-> ```
-> @Before
-> public void setUp(){
->     Log.i("Info","[START] - Launch Test: " + name.getMethodName());
->     baristaRule.launchActivity();
-> }
-> ```
+```java
+@Before
+public void setUp(){
+    Log.i("Info","[START] - Launch Test: " + name.getMethodName());
+    baristaRule.launchActivity();
+}
+```
 
 En este método añadimos en el log el nombre del test que estamos ejecutando y lanzamos la Activity principal del proyecto.
 
@@ -127,24 +127,24 @@ En este método podemos incluir todas las acciones que se realicen siempre al fi
 
 Usaremos para ello la anotación **@After** de jUnit:
 
-> ```
-> @After
-> public void tearDown(){
->     Log.i("Info", "[FINISH] - Test: " + name.getMethodName());
-> }
-> ```
+```java
+@After
+public void tearDown(){
+    Log.i("Info", "[FINISH] - Test: " + name.getMethodName());
+}
+```
 
 #### Creando nuestro primer test:
 
 Cuando tenemos todo esto definido, pasamos a crear nuestro primer test donde comprobaremos si se muestra un botón:
 
-> ```
-> @Test
-> public void testTextoIsDisplayed(){
->     BaristaVisibilityAssertions.assertDisplayed(R.id.texto);
->     Log.i("Info", "The element text is displayed.");
-> }
-> ```
+```java
+@Test
+public void testTextoIsDisplayed(){
+    BaristaVisibilityAssertions.assertDisplayed(R.id.texto);
+    Log.i("Info", "The element text is displayed.");
+}
+```
 
 Siempre debemos empezar con la anotación **@Test** antes de escribir el test. Es una buena práctica escribir _**test+NombreTest**_ para nombrar los test que creamos.
 

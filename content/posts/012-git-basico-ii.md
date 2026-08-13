@@ -19,11 +19,15 @@ En esta entrada vamos a continuar hablando de Git y de los comandos más importa
 
 Si hemos tenido cambios en el repositorio y queremos ver qué es lo que ha cambiado, usamos el comando:
 
-> git diff
+```bash
+git diff
+```
 
 y se mostrará una lista de los cambios realizados. Si queremos ver cuál es la diferencia entre nuestro commit más reciente, podemos verlo usando el puntero al **HEAD** con el comando:
 
-> git diff HEAD
+```bash
+git diff HEAD
+```
 
 HEAD es un puntero que contiene tu posición con respecto a todos los commits que se han realizado. Por defecto HEAD te posiciona en tu commit más reciente, de esta forma podrás ver de forma sencilla la referencia a ese commit y los cambios realizados.
 
@@ -31,69 +35,97 @@ HEAD es un puntero que contiene tu posición con respecto a todos los commits qu
 
 Otro uso del comando diff es el poder ver todos los cambios realizados en ficheros que están en estado staged. Recordamos que staged es el estado de los ficheros que ya hemos dicho a git que están listos para hacer el commit. Para ver estas diferencias usamos el comando:
 
-> git digg --staged
+```bash
+git digg --staged
+```
 
 #### Reseteando el Staged:
 
 Podemos quitar ficheros del estado staged usando el comando git reset. Para hacer un reset de un fichero concreto usamos el comando:
 
-> git reset carpeta/fichero.txt
+```bash
+git reset carpeta/fichero.txt
+```
 
 #### Deshacer:
 
 Si después de hacer algún reset nos damos cuenta de que queremos deshacer algún cambio que hemos realizado (dejarlo como estaba antes de nuestro último commit), podemos usar el comando:
 
-> git checkout -- fichero.txt
+```bash
+git checkout -- fichero.txt
+```
 
  **Crear un nuevo branch:**
 
 Para crear un nuevo branch o copia del código usamos el comando:
 
-> git branch <branch>
+```bash
+git branch <branch>
+```
 
 Para ver todas las ramas (branch) que tenemos en el repositorio usamos:
 
-> git branch
+```bash
+git branch
+```
 
 Si queremos **cambiar de un branch** a otro lo hacemos mediante el comando:
 
-> git checkout <branch>
+```bash
+git checkout <branch>
+```
 
 #### Borrar un fichero o una carpeta:
 
 Para borrar un fichero concreto usamos el comando:
 
-> git rm ‘fichero.txt’
+```bash
+git rm 'fichero.txt'
+```
 
 Para borrar varios ficheros de un mismo tipo usamos:
 
-> git rm ‘\*.txt’
+```bash
+git rm '*.txt'
+```
 
 Para borrar de forma recursiva un directorio con carpetas dentro usamos:
 
-> git rm -r directorio
+```bash
+git rm -r directorio
+```
 
  **Nota**: Para aplicar los cambios después de borrar algún fichero siempre tenemos que hacer un commit con el comando:
 
-> git commit -m “Comentario del commit”
+```bash
+git commit -m "Comentario del commit"
+```
 
 #### Hacer un merge desde un branch a la rama master:
 
 Para ello nos vamos a la rama master con el comando:
 
-> git checkout master
+```bash
+git checkout master
+```
 
 Hacemos un merge en la rama master indicando con qué branch queremos hacer el merge:
 
-> git merge <branch>
+```bash
+git merge <branch>
+```
 
 Una vez completado el merge con la rama master, borramos nuestro branch con el comando:
 
-> git branch -d <branch>
+```bash
+git branch -d <branch>
+```
 
 y hacemos un push final para guardar todos los cambios:
 
-> git push
+```bash
+git push
+```
 
 #### Trabajar con ramas.
 
@@ -101,11 +133,13 @@ y hacemos un push final para guardar todos los cambios:
 
 Si tenemos varias ramas en un repositorio y queremos trabajar con ellas, debemos descargarnos las ramas después de realizar el clone del repositorio (como hemos visto anteriormente). Para ello usamos los siguientes comandos:
 
-> git clone **URLRepositorio**
->
-> git fetch origin
->
-> git checkout -b "nombreDeLaRama"
+```bash
+git clone <URLRepositorio>
+
+git fetch origin
+
+git checkout -b "nombreDeLaRama"
+```
 
 Al hacer -b creamos la rama en nuestro repositorio local.  El nombre de la rama debe estar entre comillas.
 
@@ -113,7 +147,9 @@ Al hacer -b creamos la rama en nuestro repositorio local.  El nombre de la rama
 
 Para movernos a una rama concreta tenemos que hacerlo mediante el siguiente comando:
 
-> git checkout nombreRama
+```bash
+git checkout nombreRama
+```
 
 En este caso, el nombre de la rama irá sin comillas.
 
@@ -123,29 +159,41 @@ Una vez que hayamos trabajado con la rama que hemos bajado y queramos subir nues
 
 - Comprobamos los ficheros que han cambiado:
 
-> git status
+```bash
+git status
+```
 
 - Añadimos los ficheros que queremos subir.
 
-> git add "nombreFichero"
+```bash
+git add "nombreFichero"
+```
 
 - También podemos añadir todos los ficheros que se han modificado.
 
-> git add -A
+```bash
+git add -A
+```
 
 - Hacemos un commit en nuestra rama local.
 
-> git commit -m "mensajeParaElCommit"
+```bash
+git commit -m "mensajeParaElCommit"
+```
 
 - Subimos los cambios al repositorio.
 
-> git push origin nombreRama
+```bash
+git push origin nombreRama
+```
 
  **Actualizar desde una rama:**
 
 Para traernos los cambios desde un repositorio a nuestra rama local debemos actualizarnos mediante el comando pull de la siguiente forma:
 
-> git pull origin nombreRama
+```bash
+git pull origin nombreRama
+```
 
 * * *
 

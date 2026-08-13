@@ -49,7 +49,9 @@ Behavior-Driven Development ​​o BDD es un proceso de desarrollo software que
 
 ¿Cómo definimos un escenario?
 
-> **Given** \[contexto inicial del escenario\], **when** \[evento\], **then** \[resultado\]
+```gherkin
+Given [contexto inicial del escenario], when [evento], then [resultado]
+```
 
 Un ejemplo de escenario (contenido en este proyecto) podría ser:
 
@@ -81,7 +83,9 @@ Una vez que tenemos en la cabeza los conceptos en los que nos basamos, vamos a c
 
 Creamos un fork del repositorio del proyecto (indicado más arriba) y clonamos el repositorio:
 
-> git clone https://github.com/XXXX/selenium-cucumber
+```bash
+git clone https://github.com/XXXX/selenium-cucumber
+```
 
 Una vez que tenemos el proyecto descargado, lo importamos en nuestro IDE favorito, en mi caso lo haré en Eclipse, y vemos la estructura del proyecto:
 

@@ -22,21 +22,29 @@ Los comandos de navegación disponibles en Selenium son los siguientes:
 
 Lo haremos usando primero el comando findElement usando el By.linkText y poniendo el texto que queremos buscar. A continuación usamos el comando click para hacer click en ese elemento. Quedaría de la siguiente forma:
 
-> _driver_ _.findElement(By.linkText(_ _“estefafdez”_ _)).click();_
+```java
+driver.findElement(By.linkText("estefafdez")).click();
+```
 
 Si tenemos un partial link text también podemos usar esa opción para buscar el elemento que necesitamos:
 
-> _driver_ _.findElement(By.partialLinkText(_ _“est”_ _)).click();_
+```java
+driver.findElement(By.partialLinkText("est")).click();
+```
 
 - **¿Cuándo se usa findElement() y findElements()?**
 
 **findElement():** se usa para encontrar el primer elemento de la página web que tenga el valor específico que queremos encontrar y hemos definido. Eligiendo esta opción, sólo se podrá seleccionar el primer elemento que se encuentre.  Por ejemplo:
 
-> _WebElement element =_ _driver_ _.findElements(By.xpath(_ _“//div\[@class=’custom\_list’\]/ul/li”_ _));_
+```java
+WebElement element = driver.findElements(By.xpath("//div[@class='custom_list']/ul/li"));
+```
 
  **findElements():** se usa para encontrar todos los elementos en la página web actual que tengan el valor específico que queremos encontrar y hemos definido. Cuando usamos este comando, todos los elementos que se encuentren serán guardados en una lista de WebElements. Por ejemplo:
 
-> _List <WebElement> elementList =_ _driver_ _.findElements(By.xpath(_ _“//div\[@class=’custom’\]/ul/li”_ _));_
+```java
+List <WebElement> elementList = driver.findElements(By.xpath("//div[@class='custom']/ul/li"));
+```
 
 - **¿Cuál es la diferencia entre los comandos driver.close() y driver.quit()?**
 
@@ -48,32 +56,38 @@ Si tenemos un partial link text también podemos usar esa opción para buscar el
 
 Para poder acceder al título de la página tenemos que usar el comando driver.getTitle(), este comando guardará el texto y lo podremos comparar con el título que queremos comprobar mediante el comando equals, todo esto dentro de un método AssertTrue que nos devolverá si el título es correcto o no. Podemos hacerlo de la siguiente forma:
 
-> _assertTrue(“El título no es correcto.”,driver.getTitle().equals(“Título de mi página”));_
+```java
+assertTrue("El título no es correcto.", driver.getTitle().equals("Título de mi página"));
+```
 
 - **¿Cómo podemos simular la acción de mover el ratón encima de un elemento (mouse over) usando Selenium Webdriver?**
 
 Selenium nos ofrece un gran rango de utilidades para crear iteraciones que simulan el comportamiento del usuario, como por ejemplo mover el ratón encima de un elemento o usar acciones de simular la acción de escribir o pulsar teclas del teclado. Para ello tenemos que usar la interfaz Action que es una utilidad de Selenium que es la que nos permite crear este tipo de interacciones del usuario.  Una forma de usar esta utilidad sería la siguiente:
 
-> // Instanciamos la interfaz de Accion y le pasamos el driver:
->
-> Actions actions=new Actions(driver);
->
-> // Usamos el comando findElement para indicar el elemento al que queremos mover el ratón. Añadimos el comando perform para realizar la acción:
->
-> actions.moveToElement(driver.findElement(By.id("id of the dropdown"))).perform();
+```java
+// Instanciamos la interfaz de Accion y le pasamos el driver:
+
+Actions actions=new Actions(driver);
+
+// Usamos el comando findElement para indicar el elemento al que queremos mover el ratón. Añadimos el comando perform para realizar la acción:
+
+actions.moveToElement(driver.findElement(By.id("id of the dropdown"))).perform();
+```
 
 - **¿Cómo podemos realizar capturas de pantalla usando Selenium?**
 
 Para hacer capturas de pantalla debemos usar las clases File y FileUtils de la siguiente forma:
 
-> // Código para realizar la captura de pantalla.
-> File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
->
-> //Guardamos en una cadena la fecha y hora para añadirla al nombre de la captura.
-> String timestamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
->
-> // Una vez que la tengamos, debemos indicar la carpeta donde queremos guardarla:
-> FileUtils.copyFile(scrFile, new File("C://CaptureScreenshot/screenshot\_"+timestamp+".png"));
+```java
+// Código para realizar la captura de pantalla.
+File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+
+//Guardamos en una cadena la fecha y hora para añadirla al nombre de la captura.
+String timestamp = new SimpleDateFormat("yyyy-MM-dd HH-mm-ss").format(new Date());
+
+// Una vez que la tengamos, debemos indicar la carpeta donde queremos guardarla:
+FileUtils.copyFile(scrFile, new File("C://CaptureScreenshot/screenshot_"+timestamp+".png"));
+```
 
 - **¿Puede un captcha ser automatizado con Selenium Webdriver?**
 
@@ -91,13 +105,17 @@ Ahí podemos encontrar todas las versiones de Selenium y los cambios de cada una
 
 Usando el método deleteAllCookies() de la forma:
 
-> driver.manage().deleteAllCookies();
+```java
+driver.manage().deleteAllCookies();
+```
 
 - **¿Podemos ejecutar código Javascript en Selenium?, ¿Cómo?**
 
 Podemos ejecutar código javascript usando el comando JavaScriptExecuter. Lo haremos de la siguiente forma:
 
-> ((JavascriptExecutor)driver).executeScript("{JavaScript Code}");
+```java
+((JavascriptExecutor)driver).executeScript("{JavaScript Code}");
+```
 
 - **¿Qué es TestNG?**
 
