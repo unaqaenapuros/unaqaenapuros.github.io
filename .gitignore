@@ -4,3 +4,6 @@ resources/
 .DS_Store
 .claude/
 assets/jsconfig.json
+
+# raw WordPress export: contains commenter emails/IPs, keep out of the public repo
+migration-sources/
