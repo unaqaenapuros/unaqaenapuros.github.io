@@ -1,7 +1,7 @@
 ---
 title: '092 – Playwright: Accesibilidad II – Lo que axe y Lighthouse no pueden detectar.'
 date: '2026-09-07T07:05:00+00:00'
-url: /
+url: /2026/09/07/092-playwright-accesibilidad-ii-lo-que-axe-y-lighthouse-no-pueden-detectar/
 image: /img/blog-images/old-post/2026/06/foto81.png
 categories:
 - automation

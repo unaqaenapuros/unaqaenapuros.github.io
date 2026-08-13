@@ -1,7 +1,7 @@
 ---
 title: '091 – Playwright: Accesibilidad I – El problema de cobertura.'
 date: '2026-08-24T07:04:00+00:00'
-url: /
+url: /2026/08/24/091-playwright-accesibilidad-i-el-problema-de-cobertura/
 image: /img/blog-images/old-post/2026/06/foto80.png
 categories:
 - automation
