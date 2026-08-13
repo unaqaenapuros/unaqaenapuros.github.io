@@ -8,6 +8,11 @@ hasCJKLanguage = false
 enableRobotsTXT = true
 enableEmoji = true
 
+# Keep auto-generated titles (category/tag widget names) exactly as
+# written in front matter (lowercase, hyphenated) instead of Hugo's
+# default Title Case capitalization.
+titleCaseStyle = "none"
+
 [pagination]
   pagerSize = 6
 
