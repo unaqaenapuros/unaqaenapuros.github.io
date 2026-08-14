@@ -51,14 +51,13 @@ titleCaseStyle = "none"
 [params]
   mainSections = ["posts"]
   rssFullContent = true
-  favicon = "img/favicon-square.png"
 
   [params.footer]
     since = 2026
 
   [params.sidebar]
     subtitle = "QA, Testing, IA, Playwright, Selenium, Appium, Cypress y todo… con calidad!"
-    avatar = "img/avatar-square.png"
+    avatar = "img/logo/avatar-light.svg"
 
   [params.article]
     [params.article.license]

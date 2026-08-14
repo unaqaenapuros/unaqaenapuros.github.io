@@ -62,3 +62,26 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    needs: [build, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.GMAIL_ADDRESS }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: Una QA en Apuros — blog
+          to: ${{ secrets.GMAIL_ADDRESS }}
+          subject: >-
+            ${{ needs.deploy.result == 'success' && '✅ Blog deploy OK' || '❌ Blog deploy failed' }}
+          body: |
+            Build: ${{ needs.build.result }}
+            Deploy: ${{ needs.deploy.result }}
+
+            Sitio: https://unaqaenapuros.github.io/
+            Detalle del run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
