@@ -12,7 +12,7 @@ categories:
 - qa
 tags:
 - github-actions
-- ia
+- ai
 author: estefafdez
 ---
 ¡Hola a todos!

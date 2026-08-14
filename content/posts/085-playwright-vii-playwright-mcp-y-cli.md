@@ -12,7 +12,7 @@ categories:
 - qa
 tags:
 - agents
-- ia
+- ai
 - mcp
 author: estefafdez
 ---
