@@ -14,7 +14,7 @@ categories:
 tags:
 - bdd
 - gherking
-- selenium-3
+- selenium
 author: estefafdez
 ---
 ¡Hola a todos!
