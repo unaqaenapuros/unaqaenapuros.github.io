@@ -15,7 +15,7 @@ categories:
 tags:
 - generator
 - healer
-- ia
+- ai
 - planner
 author: estefafdez
 ---

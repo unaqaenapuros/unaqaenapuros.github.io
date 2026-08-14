@@ -11,7 +11,7 @@ categories:
 - qa
 tags:
 - api
-- ia
+- ai
 - testing
 author: estefafdez
 ---

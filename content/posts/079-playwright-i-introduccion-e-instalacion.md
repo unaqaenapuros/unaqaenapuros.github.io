@@ -9,7 +9,7 @@ categories:
 - qa
 tags:
 - azure
-- ia
+- ai
 - microsoft
 - testing
 author: estefafdez
