@@ -9,7 +9,7 @@ categories:
 - qa
 - selenium-webdriver
 tags:
-- selenium-3
+- selenium
 author: estefafdez
 ---
 ¡Hola a todos!
