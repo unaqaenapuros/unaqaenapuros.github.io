@@ -7,7 +7,7 @@ categories:
 - mobile-apps
 - qa
 tags:
-- clasificación-apps
+- app-classification
 author: estefafdez
 ---
 ¡Hola a todos!

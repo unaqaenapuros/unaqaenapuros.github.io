@@ -8,7 +8,6 @@ categories:
 - qa
 tags:
 - mobile-testing
-- pruebas-móviles
 - qa-testing
 - testing
 author: estefafdez

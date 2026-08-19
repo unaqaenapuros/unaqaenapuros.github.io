@@ -8,9 +8,8 @@ categories:
 - mobile-apps
 - qa
 tags:
-- herramientas
-- ios
 - tools
+- ios
 author: estefafdez
 ---
 ¡Hola a todos!

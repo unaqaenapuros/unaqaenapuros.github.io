@@ -6,8 +6,8 @@ image: /img/blog-images/old-post/2017/06/foto18.jpg
 categories:
 - qa
 tags:
-- agilidad
-- buenas-prácticas
+- agility
+- best-practices
 - scrum
 author: estefafdez
 ---

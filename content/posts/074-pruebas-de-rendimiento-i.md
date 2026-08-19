@@ -13,8 +13,6 @@ categories:
 - test-types
 tags:
 - performance
-- pruebas
-- rendimiento
 - testing
 author: estefafdez
 ---

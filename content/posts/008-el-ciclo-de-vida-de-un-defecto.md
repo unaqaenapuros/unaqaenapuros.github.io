@@ -6,14 +6,14 @@ image: /img/blog-images/old-post/2017/05/foto8.jpg
 categories:
 - qa
 tags:
-- activo
-- cerrado
-- ciclo-de-vida
-- defecto
-- nuevo
-- reabierto
-- rechazado
-- verificado
+- active
+- closed
+- lifecycle
+- defect
+- new
+- reopened
+- rejected
+- verified
 author: estefafdez
 ---
 ¡Hola a todos!

@@ -6,10 +6,10 @@ image: /img/blog-images/old-post/2017/06/foto9.jpg
 categories:
 - qa
 tags:
-- objetivos
-- principios-de-pruebas
-- pruebas
-- pruebas-iniciales
+- objectives
+- testing-principles
+- testing
+- initial-testing
 author: estefafdez
 ---
 ¡Hola a todos!

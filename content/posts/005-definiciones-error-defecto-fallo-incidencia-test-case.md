@@ -7,10 +7,10 @@ categories:
 - qa
 tags:
 - black-box-testing
-- defecto
-- definiciones
+- defect
+- definitions
 - error
-- fallo
+- failure
 - istqb
 - test-case
 - test-suite

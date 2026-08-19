@@ -6,8 +6,8 @@ image: /img/blog-images/old-post/2017/05/foto6.jpg
 categories:
 - qa
 tags:
-- validación
-- verificación
+- validation
+- verification
 author: estefafdez
 ---
 ¡Hola a todos!

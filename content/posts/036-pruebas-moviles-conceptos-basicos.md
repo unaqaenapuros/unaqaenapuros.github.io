@@ -7,10 +7,10 @@ categories:
 - mobile-apps
 - qa
 tags:
-- apliaciones
+- applications
 - app-store
 - google-play
-- historia-app-móvil
+- mobile-app-history
 - mobile
 author: estefafdez
 ---

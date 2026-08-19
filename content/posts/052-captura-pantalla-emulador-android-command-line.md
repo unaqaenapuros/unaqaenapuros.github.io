@@ -12,7 +12,7 @@ categories:
 tags:
 - adb
 - command-line
-- emulador
+- emulator
 author: estefafdez
 ---
 ¡Hola a todos!

@@ -12,12 +12,11 @@ categories:
 tags:
 - load-testing
 - performance
-- rendimiento
 - scalability-testing
 - soak-testing
 - stress-testing
 - testing
-- tipos-de-pruebas
+- testing-types
 - volume-testing
 author: estefafdez
 ---

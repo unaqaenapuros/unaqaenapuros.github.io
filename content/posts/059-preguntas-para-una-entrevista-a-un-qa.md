@@ -13,9 +13,8 @@ categories:
 - qa
 - selenium-webdriver
 tags:
-- entrevistas
 - interview
-- preguntas
+- questions
 - testing
 author: estefafdez
 ---

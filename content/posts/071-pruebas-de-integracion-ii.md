@@ -12,7 +12,7 @@ categories:
 - test-types
 tags:
 - integration
-- pruebas-integración
+- integration-testing
 author: estefafdez
 ---
 ¡Hola a todos!

@@ -6,7 +6,7 @@ image: /img/blog-images/old-post/2017/05/foto3.jpg
 categories:
 - qa
 tags:
-- pruebas-software
+- software-testing
 - testing
 author: estefafdez
 ---

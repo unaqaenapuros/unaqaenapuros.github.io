@@ -6,8 +6,8 @@ image: /img/blog-images/old-post/2017/05/foto2.jpg
 categories:
 - qa
 tags:
-- calidad-del-software
-- definición
+- software-quality
+- definition
 author: estefafdez
 ---
 Hola de nuevo,

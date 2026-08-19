@@ -8,7 +8,7 @@ categories:
 - qa
 tags:
 - testing
-- tipos-aplicaciones
+- application-types
 author: estefafdez
 ---
 ¡Hola a todos!

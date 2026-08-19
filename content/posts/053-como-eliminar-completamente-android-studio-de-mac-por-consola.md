@@ -11,7 +11,7 @@ categories:
 tags:
 - android-studio
 - command-line
-- emuladores
+- emulators
 author: estefafdez
 ---
 ¡Hola a todos!

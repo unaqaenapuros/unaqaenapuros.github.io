@@ -7,8 +7,8 @@ categories:
 - profiles
 - qa
 tags:
-- perfiles-qa
-- qa-funcional
+- profiles
+- functional-qa
 - testing
 author: estefafdez
 ---

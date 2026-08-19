@@ -10,7 +10,7 @@ categories:
 - qa
 tags:
 - appium-inspector
-- automatización
+- automation
 author: estefafdez
 ---
 ¡Hola a todos!
