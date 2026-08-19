@@ -7,7 +7,6 @@ categories:
 - mobile-apps
 - qa
 tags:
-- app-móviles
 - clasificación-apps
 author: estefafdez
 ---

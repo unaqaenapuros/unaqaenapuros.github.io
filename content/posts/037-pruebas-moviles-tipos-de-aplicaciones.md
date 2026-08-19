@@ -7,7 +7,6 @@ categories:
 - mobile-apps
 - qa
 tags:
-- app-móviles
 - híbridas
 - nativas
 author: estefafdez
