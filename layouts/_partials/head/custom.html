@@ -24,3 +24,11 @@
 {{ if hugo.IsProduction }}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b7c31836-3907-42b0-aef0-eed57eadef78"></script>
 {{ end }}
+
+{{/* Busuanzi visit counters (site total + per-page) — see footer/custom.html
+     and article/components/details.html for where the numbers get injected.
+     ponytail: free third-party counter, no auth/backend needed; if it goes
+     down the counters just silently stay hidden (busuanzi does that itself). */}}
+{{ if hugo.IsProduction }}
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{{ end }}
