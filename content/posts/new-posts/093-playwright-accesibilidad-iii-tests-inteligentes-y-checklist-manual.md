@@ -12,17 +12,11 @@ tags:
 - accesibility
 - testing
 author: estefafdez
+social_text: |
+  Cerrar la mini-serie de accesibilidad con lo más práctico: tests de Playwright que van más allá del análisis genérico de axe. Contraste en hover, focus y modo oscuro, verificación del skip link, detección de texto de enlace ambiguo, aria-labels dinámicos en toggles y el ciclo completo de teclado en modales. Más un checklist de comprobaciones manuales que la automatización nunca podrá hacer sola.
+
+  #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
 ---
-<!--
-## Resumen para LinkedIn
-
-Cerrar la mini-serie de accesibilidad con lo más práctico: tests de Playwright que van más allá del análisis genérico de axe. Contraste en hover, focus y modo oscuro, verificación del skip link, detección de texto de enlace ambiguo, aria-labels dinámicos en toggles y el ciclo completo de teclado en modales. Más un checklist de comprobaciones manuales que la automatización nunca podrá hacer sola.
-
-👉 Enlace en comentarios.
-
-#Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
--->
-
 ¡Hola a todos!
 
 Llegamos a la tercera y última entrega de la mini-serie sobre accesibilidad con Playwright. En las dos anteriores vimos por qué las herramientas automatizadas tienen una cobertura limitada y cuáles son las categorías concretas de problemas que se les escapan. Ahora viene la parte práctica: cómo escribir tests de Playwright que vayan más allá de un análisis genérico de axe, y un checklist de comprobaciones manuales que siempre deberían acompañar a la suite automatizada. ¡Empezamos!

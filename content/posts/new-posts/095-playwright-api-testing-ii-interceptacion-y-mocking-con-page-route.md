@@ -13,17 +13,11 @@ tags:
 - mocking
 - testing
 author: estefafdez
+social_text: |
+  `page.route()` es una de las funcionalidades más potentes de Playwright y una de las más infrautilizadas. En el nuevo artículo vemos qué es la interceptación y el mocking, por qué eliminan los tests inestables y cuatro casos prácticos: respuesta válida, error 500, estado vacío y modificar la respuesta real conservando el resto del backend intacto.
+
+  #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
 ---
-<!--
-## Resumen para LinkedIn
-
-`page.route()` es una de las funcionalidades más potentes de Playwright y una de las más infrautilizadas. En el nuevo artículo vemos qué es la interceptación y el mocking, por qué eliminan los tests inestables y cuatro casos prácticos: respuesta válida, error 500, estado vacío y modificar la respuesta real conservando el resto del backend intacto.
-
-👉 Enlace en comentarios.
-
-#Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
--->
-
 ¡Hola a todos!
 
 Continuamos con la serie de API testing en Playwright. En la entrada anterior vimos los fundamentos: qué es una API, los métodos HTTP y los códigos de estado. Hoy entramos en uno de los temas más potentes del testing de UI moderno: la **interceptación y el mocking de respuestas** con `page.route()`. Es una de esas técnicas que, una vez que la usas, no puedes imaginarte cómo hacías los tests sin ella. ¡Empezamos!

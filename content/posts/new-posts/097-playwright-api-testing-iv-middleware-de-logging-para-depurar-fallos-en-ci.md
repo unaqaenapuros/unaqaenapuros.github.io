@@ -14,17 +14,11 @@ tags:
 - debugging
 - testing
 author: estefafdez
+social_text: |
+  Tu test falla en CI con `expected 201, received 400` y no tienes ni petición ni respuesta. ¿La solución? No más `console.log` en los tests: instrumenta el cliente con un middleware que captura todo el ciclo y lo adjunta directamente al informe HTML de Playwright con `test.info().attach()`. Configúralo una vez en el API factory y todo se registra solo, en todos los tests, para siempre.
+
+  #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
 ---
-<!--
-## Resumen para LinkedIn
-
-Tu test falla en CI con `expected 201, received 400` y no tienes ni petición ni respuesta. ¿La solución? No más `console.log` en los tests: instrumenta el cliente con un middleware que captura todo el ciclo y lo adjunta directamente al informe HTML de Playwright con `test.info().attach()`. Configúralo una vez en el API factory y todo se registra solo, en todos los tests, para siempre.
-
-👉 Enlace en comentarios.
-
-#Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
--->
-
 ¡Hola a todos!
 
 Seguimos con la serie de API testing en Playwright. En las tres entregas anteriores vimos los fundamentos, el mocking con `page.route()` y los casos avanzados. Hoy abordamos un problema que tarde o temprano nos encuentra a todos: el test falla en CI, el error dice `expected 200, received 400`, y no tienes ni idea de qué envió realmente la petición ni qué respondió el servidor. Hoy vemos cómo resolverlo con un **middleware de logging** que captura toda esa evidencia automáticamente y la adjunta al informe HTML de Playwright. ¡Empezamos!
