@@ -126,15 +126,17 @@ jobs:
           to: ${{ secrets.GMAIL_ADDRESS }}
           subject: >-
             ${{ needs.check.outputs.should_deploy != 'true' && '🔍 Blog control check - all OK'
-              || needs.deploy.result == 'success' && '✅ Post published'
-              || '❌ Blog deploy failed' }}
+              || needs.deploy.result != 'success' && '❌ Blog deploy failed'
+              || needs.check.outputs.post_url != '' && '✅ Post published'
+              || '✅ Changes made to the site - build OK' }}
           body: |
             ${{ needs.check.outputs.should_deploy != 'true' && 'Control check: no posts to publish today. All OK.'
-              || needs.deploy.result == 'success' && format('Post published :) — https://unaqaenapuros.github.io{0}', needs.check.outputs.post_url)
-              || 'Deploy failed.' }}
+              || needs.deploy.result != 'success' && 'Deploy failed.'
+              || needs.check.outputs.post_url != '' && format('Post published :) — https://unaqaenapuros.com{0}', needs.check.outputs.post_url)
+              || 'Changes made to the site — build OK.' }}
 
             Build: ${{ needs.build.result }}
             Deploy: ${{ needs.deploy.result }}
 
-            Sitio: https://unaqaenapuros.github.io/
-            Detalle del run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            Site: https://unaqaenapuros.com/
+            Run details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
