@@ -8,7 +8,6 @@ categories:
 - qa
 tags:
 - apliaciones
-- app-móviles
 - app-store
 - google-play
 - historia-app-móvil
