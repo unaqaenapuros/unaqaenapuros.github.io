@@ -21,7 +21,46 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      should_deploy: ${{ steps.check.outputs.should_deploy }}
+      post_url: ${{ steps.check.outputs.post_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check for posts publishing today
+        id: check
+        run: |
+          # On push/manual dispatch always deploy. On the daily cron, only
+          # deploy if a post's date matches today (Madrid) — otherwise the
+          # cron would rebuild/deploy every day for nothing new.
+          # ponytail: matches exact today only, doesn't catch a missed run
+          # from a prior failed cron; re-run manually (workflow_dispatch) if that happens.
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Both cron entries fire every day; only the one matching the
+          # current DST state lands on 09:xx Madrid time. Skip the other
+          # so a single run per day gets past this point.
+          if [ "$(TZ=Europe/Madrid date +%H)" != "09" ]; then
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          today=$(TZ=Europe/Madrid date +%F)
+          post_file=$(grep -rlP "^date: '?${today}" content/posts/ | head -1)
+          if [ -n "$post_file" ]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            echo "post_url=$(grep -oP '^url: \K.*' "$post_file")" >> "$GITHUB_OUTPUT"
+          else
+            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+
   build:
+    needs: check
+    if: needs.check.outputs.should_deploy == 'true'
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.164.0
@@ -64,7 +103,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   notify:
-    needs: [build, deploy]
+    needs: [check, build, deploy]
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -78,8 +117,14 @@ jobs:
           from: Una QA en Apuros — blog
           to: ${{ secrets.GMAIL_ADDRESS }}
           subject: >-
-            ${{ needs.deploy.result == 'success' && '✅ Blog deploy OK' || '❌ Blog deploy failed' }}
+            ${{ needs.check.outputs.should_deploy != 'true' && '🔍 Blog control check - all OK'
+              || needs.deploy.result == 'success' && '✅ Post published'
+              || '❌ Blog deploy failed' }}
           body: |
+            ${{ needs.check.outputs.should_deploy != 'true' && 'Control check: no posts to publish today. All OK.'
+              || needs.deploy.result == 'success' && format('Post published :) — https://unaqaenapuros.github.io{0}', needs.check.outputs.post_url)
+              || 'Deploy failed.' }}
+
             Build: ${{ needs.build.result }}
             Deploy: ${{ needs.deploy.result }}
 
