@@ -12,6 +12,18 @@
   html[data-scheme="dark"] .site-avatar .site-logo {
     content: url("/img/logo/avatar-dark.svg");
   }
+
+  /* Per-post visit counter — styled as a tag pill (see article/components/
+     footer.html), same look as the real tag pills (.article-tags a)
+     right above it. Copied 1:1 from that rule since it targets <a>. */
+  .article-tags .tag-pill {
+    color: var(--accent-color-text);
+    background-color: var(--accent-color);
+    padding: 8px 16px;
+    border-radius: var(--tag-border-radius);
+    display: inline-block;
+    font-size: 1.4rem;
+  }
 </style>
 
 {{/* Favicons (logo v2) */}}
@@ -25,8 +37,9 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b7c31836-3907-42b0-aef0-eed57eadef78"></script>
 {{ end }}
 
-{{/* Busuanzi visit counters (site total + per-page) — see footer/custom.html
-     and article/components/details.html for where the numbers get injected.
+{{/* Busuanzi visit counters (site total + per-page) — see sidebar/left.html
+     (below the social icons) and article/components/footer.html (below the
+     tags) for where the numbers get injected.
      ponytail: free third-party counter, no auth/backend needed; if it goes
      down the counters just silently stay hidden (busuanzi does that itself). */}}
 {{ if hugo.IsProduction }}

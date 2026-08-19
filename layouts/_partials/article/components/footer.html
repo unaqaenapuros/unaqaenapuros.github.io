@@ -1,0 +1,25 @@
+<footer class="article-meta article-footer">
+    {{ partial "article/components/tags" . }}
+
+    {{/* Per-post visit counter (Busuanzi), styled as a tag pill to match
+         the row above it. */}}
+    <div class="article-tags" id="busuanzi_container_page_pv" style="display:none">
+        <span class="tag-pill"><span id="busuanzi_value_page_pv"></span> views</span>
+    </div>
+
+    {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
+    <section class="article-copyright inline-meta">
+        {{ partial "helper/icon" "copyright" }}
+        <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
+    </section>
+    {{ end }}
+
+    {{- if ne .Lastmod .Date -}}
+    <section class="article-lastmod inline-meta">
+        {{ partial "helper/icon" "clock" }}
+        <span>
+            {{ T "article.lastUpdatedOn" }} {{ .Lastmod | time.Format .Site.Params.dateFormat.lastUpdated }}
+        </span>
+    </section>
+    {{- end -}}
+</footer>
