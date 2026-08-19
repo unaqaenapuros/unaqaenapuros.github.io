@@ -13,12 +13,36 @@
     content: url("/img/logo/avatar-dark.svg");
   }
 
-  /* Per-post visit counter — styled as a tag pill (see article/components/
-     footer.html), same look as the real tag pills (.article-tags a)
-     right above it. Copied 1:1 from that rule since it targets <a>. */
+  /* Visit counters (site total in the sidebar + per-post pill) — both
+     numbers share this one blue, taken from the logo, instead of the
+     theme's --accent-color (which flips to near-white text-on-white in
+     dark mode and made the pill number unreadable). */
+  :root {
+    --visits-color: #2E7E8C;
+    --visits-background: rgba(46, 126, 140, 0.12);
+  }
+  html[data-scheme="dark"] {
+    --visits-color: #8FD0D8;
+    --visits-background: rgba(143, 208, 216, 0.16);
+  }
+
+  #busuanzi_value_site_pv,
+  .tag-pill {
+    color: var(--visits-color);
+  }
+
+  /* The eye icon (24px) and the number text don't share a baseline, so
+     without this the number sits low and off-center next to it. */
+  #busuanzi_container_site_pv svg,
+  #busuanzi_container_site_pv span {
+    vertical-align: middle;
+  }
+
+  /* Per-post visit counter — styled as a subtler pill (see
+     article/components/footer.html) than the real tag pills right
+     above it, so it doesn't compete with them for attention. */
   .article-tags .tag-pill {
-    color: var(--accent-color-text);
-    background-color: var(--accent-color);
+    background-color: var(--visits-background);
     padding: 8px 16px;
     border-radius: var(--tag-border-radius);
     display: inline-block;
