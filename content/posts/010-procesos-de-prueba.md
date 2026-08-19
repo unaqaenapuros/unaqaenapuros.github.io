@@ -6,11 +6,11 @@ image: /img/blog-images/old-post/2017/06/foto10.jpg
 categories:
 - qa
 tags:
-- analisis
-- evaluación
-- implementación
-- planificación-y-control
-- procesos-de-prueba
+- analysis
+- evaluation
+- implementation
+- planning-and-control
+- testing-process
 author: estefafdez
 ---
 ¡Hola a todos!

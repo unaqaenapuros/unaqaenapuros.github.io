@@ -8,8 +8,7 @@ categories:
 - profiles
 - qa
 tags:
-- automatización
-- perfiles-qa
+- automation
 - profiles
 author: estefafdez
 ---

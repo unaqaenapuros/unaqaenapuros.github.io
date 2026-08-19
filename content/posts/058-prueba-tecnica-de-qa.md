@@ -8,9 +8,9 @@ categories:
 - profiles
 - qa
 tags:
-- casos-de-prueba
-- prueba-técnica
-- qa-perfiles
+- test-case
+- technical-test
+- profiles
 - selenium
 - testing
 author: estefafdez

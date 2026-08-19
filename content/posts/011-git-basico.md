@@ -9,7 +9,7 @@ categories:
 tags:
 - git-workflow
 - github
-- primeros-pasos
+- getting-started
 author: estefafdez
 ---
 ¡Hola a todos!

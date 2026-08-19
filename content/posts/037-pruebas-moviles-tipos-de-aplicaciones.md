@@ -7,8 +7,8 @@ categories:
 - mobile-apps
 - qa
 tags:
-- híbridas
-- nativas
+- hybrid
+- native
 author: estefafdez
 ---
 ¡Hola a todos!

@@ -7,7 +7,7 @@ categories:
 - qa
 - selenium-webdriver
 tags:
-- buenas-prácticas
+- best-practices
 - selenium
 - testing
 - webdriver

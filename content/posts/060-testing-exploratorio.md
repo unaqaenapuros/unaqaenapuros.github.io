@@ -5,7 +5,7 @@ url: /2019/11/06/060-testing-exploratorio/
 categories:
 - qa
 tags:
-- testing-exploratorio
+- exploratory-testing
 author: estefafdez
 ---
 ¡Hola a todos!

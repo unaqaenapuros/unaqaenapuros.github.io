@@ -13,7 +13,7 @@ categories:
 tags:
 - android-studio
 - command-line
-- emuladores
+- emulators
 - emulator
 author: estefafdez
 ---

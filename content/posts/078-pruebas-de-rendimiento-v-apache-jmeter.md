@@ -11,7 +11,6 @@ tags:
 - apache
 - jmeter
 - performance
-- rendimiento
 - testing
 author: estefafdez
 ---

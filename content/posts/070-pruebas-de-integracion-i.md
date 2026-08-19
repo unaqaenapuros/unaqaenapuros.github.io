@@ -8,9 +8,9 @@ categories:
 - best-practices
 - code-quality
 tags:
-- integración
+- integration
 - integration-testing
-- pruebas
+- testing
 - qa
 author: estefafdez
 ---

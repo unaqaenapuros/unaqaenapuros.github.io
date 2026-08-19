@@ -7,9 +7,9 @@ categories:
 - code-quality
 - qa
 tags:
-- agilidad
-- buenas-prácticas
-- metodología-ágil
+- agility
+- best-practices
+- agile-methodology
 - scrum
 author: estefafdez
 ---

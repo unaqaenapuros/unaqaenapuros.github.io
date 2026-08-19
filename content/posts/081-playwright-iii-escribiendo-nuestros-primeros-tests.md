@@ -10,7 +10,7 @@ categories:
 - playwright
 - qa
 tags:
-- estructura
+- structure
 - locators
 - selectors
 - testing

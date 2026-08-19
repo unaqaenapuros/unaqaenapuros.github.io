@@ -6,15 +6,15 @@ image: /img/blog-images/old-post/2017/05/foto4.jpg
 categories:
 - qa
 tags:
-- pruebas-aceptación
-- pruebas-funcionales
-- pruebas-progresión
-- pruebas-regresión
-- pruebas-rendimiento
-- pruebas-responsive
-- pruebas-unitarias
+- acceptance-testing
+- functional-testing
+- progression-testing
+- regression-testing
+- performance-testing
+- responsive-testing
+- unit-test
 - smoke-test
-- tipos-de-pruebas
+- testing-types
 author: estefafdez
 ---
 Hola de nuevo,
