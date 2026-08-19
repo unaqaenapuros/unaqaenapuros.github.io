@@ -12,17 +12,11 @@ tags:
 - api
 - testing
 author: estefafdez
+social_text: |
+  ¿Sabías que Playwright no es solo para UI? También puedes testear tus APIs directamente con la fixture `request`. En el nuevo artículo del blog repasamos los fundamentos: qué es una API, los 5 métodos HTTP con ejemplos reales y qué significan los códigos de estado. Primera parte de la nueva mini-serie de API testing.
+
+  #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
 ---
-<!--
-## Resumen para LinkedIn
-
-¿Sabías que Playwright no es solo para UI? También puedes testear tus APIs directamente con la fixture `request`. En el nuevo artículo del blog repasamos los fundamentos: qué es una API, los 5 métodos HTTP con ejemplos reales y qué significan los códigos de estado. Primera parte de la nueva mini-serie de API testing.
-
-👉 Enlace en comentarios.
-
-#Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
--->
-
 ¡Hola a todos!
 
 Cerramos la mini-serie de accesibilidad y abrimos una nueva: **API testing con Playwright**. La mayoría conocemos Playwright como herramienta de automatización de navegador, pero tiene capacidades muy potentes para testear APIs directamente, sin necesidad de abrir ningún navegador. En esta primera entrega vamos a ver qué es una API, por qué Playwright es una buena opción para testearlas, cómo funcionan los métodos HTTP y qué significan los códigos de respuesta. ¡Empezamos!

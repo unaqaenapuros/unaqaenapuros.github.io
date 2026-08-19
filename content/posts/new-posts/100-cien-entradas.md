@@ -2,18 +2,18 @@
 title: '100 – Cien entradas.'
 date: '2026-12-26T09:30:00+01:00'
 url: /2026/12/26/100-cien-entradas/
+image: /img/blog-images/new-posts/2026/12/foto89.png
 categories:
 - qa
+- 100
+- estefafdez
+- unaqaenapuros
 author: estefafdez
+social_text: |
+  100 entradas. No sé muy bien cómo hemos llegado hasta aquí, pero aquí estamos. Hoy no hay código, no hay herramientas, no hay comandos. Hoy toca parar un momento y dar las gracias.
+
+  #QA #TestAutomation #UnaQAEnApuros #100Entradas
 ---
-<!--
-## Resumen para LinkedIn
-
-100 entradas. No sé muy bien cómo hemos llegado hasta aquí, pero aquí estamos. Hoy no hay código, no hay herramientas, no hay comandos. Hoy toca parar un momento y dar las gracias.
-
-#QA #TestAutomation #UnaQAEnApuros #100Entradas
--->
-
 ¡Hola a todos!
 
 Cien entradas. Cien.

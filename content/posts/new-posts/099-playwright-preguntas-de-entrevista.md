@@ -12,15 +12,11 @@ tags:
 - questions
 - testing
 author: estefafdez
+social_text: |
+  Llevamos varios meses hablando de Playwright en el blog: instalación, fixtures, debugging, API testing, accesibilidad… Pero ¿qué pasa cuando te sientas en una entrevista técnica y te preguntan por lo más básico? En esta entrada repasamos 20 preguntas habituales sobre Playwright con respuestas completas para que llegues preparado.
+
+  #Playwright #QA #TestAutomation #Entrevista #UnaQAEnApuros
 ---
-<!--
-## Resumen para LinkedIn
-
-Llevamos varios meses hablando de Playwright en el blog: instalación, fixtures, debugging, API testing, accesibilidad… Pero ¿qué pasa cuando te sientas en una entrevista técnica y te preguntan por lo más básico? En esta entrada repasamos 20 preguntas habituales sobre Playwright con respuestas completas para que llegues preparado.
-
-#Playwright #QA #TestAutomation #Entrevista #UnaQAEnApuros
--->
-
 ¡Hola a todos!
 
 Llevamos ya un buen puñado de entradas hablando de **Playwright**: desde la instalación hasta fixtures avanzadas, pasando por debugging, API testing, accesibilidad y hasta cómo probar extensiones de Firefox. Hemos cubierto mucho terreno. Pero hay algo que me parece importante hacer de vez en cuando: parar, mirar hacia atrás y asegurarnos de que los fundamentos están bien asentados.
