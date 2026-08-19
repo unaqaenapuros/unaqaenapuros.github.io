@@ -56,6 +56,16 @@
                 {{- $caption := .Params.social_text | default (.Summary | plainify) -}}
                 {{- $caption | transform.XMLEscape | safeHTML -}}
             </description>
+            <xText>
+                {{- /*
+                    Short caption for X/Twitter (280-char limit, so it's
+                    kept separate from social_text which is sized for
+                    LinkedIn). Set `x_text` in front matter; falls back to
+                    the post title, truncated, so the field is never empty.
+                */ -}}
+                {{- $xCaption := .Params.x_text | default (.Title | truncate 240) -}}
+                {{- $xCaption | transform.XMLEscape | safeHTML -}}
+            </xText>
         </item>
         {{- end -}}
     </channel>
