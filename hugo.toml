@@ -33,10 +33,18 @@ titleCaseStyle = "none"
     icon = "linkedin"
 
 [[menu.social]]
+  weight = 25
+  identifier = "twitter"
+  name = "Twitter / X"
+  url = "https://twitter.com/estefafdez"
+  [menu.social.params]
+    icon = "brand-twitter"
+
+[[menu.social]]
   weight = 30
   identifier = "website"
   name = "Website"
-  url = "https://estefafdez.github.io/"
+  url = "https://estefafdez.com/"
   [menu.social.params]
     icon = "link"
 
