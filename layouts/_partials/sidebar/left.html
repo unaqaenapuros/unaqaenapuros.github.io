@@ -50,13 +50,18 @@
     {{- end -}}
 
     {{/* Total site visits (Busuanzi) — same row style as the social icons
-         above it. Hidden until the script fills in the number. */}}
+         above it. Hidden until the script fills in the number.
+         ponytail: display commented out while we sort out replacing this
+         counter with Cloudflare data; the busuanzi script itself (see
+         head/custom.html) stays loaded. */}}
+    <!--
     <ol class="menu-social">
         <li id="busuanzi_container_site_pv" style="display:none">
             {{ partial "helper/icon" "eye" }}
             <span id="busuanzi_value_site_pv"></span>
         </li>
     </ol>
+    -->
 
     <ol class="menu" id="main-menu">
         {{ $currentPage := . }}
