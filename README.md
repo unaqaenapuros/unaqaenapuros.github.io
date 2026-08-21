@@ -2,7 +2,7 @@
 
 Blog personal sobre QA, testing y automatización.
 
-🔗 https://unaqaenapuros.github.io/
+🔗 https://unaqaenapuros.com/
 
 Sitio estático generado con [Hugo](https://gohugo.io/) + tema
 [Stack](https://stack.jimmycai.com/), publicado en GitHub Pages.
