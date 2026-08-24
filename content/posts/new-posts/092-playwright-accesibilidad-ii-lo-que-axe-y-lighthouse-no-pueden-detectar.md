@@ -29,7 +29,7 @@ x_text: |
 
 Continuamos con la serie sobre accesibilidad en Playwright. En la entrada anterior vimos por qué las herramientas automatizadas tienen una cobertura limitada: pueden leer el DOM, pero no pueden entender el contexto. Hoy vamos a ver en detalle las categorías concretas de problemas que se les escapan sistemáticamente. Cada una viene con su causa, un ejemplo y cómo deberíamos corregirla. ¡Empezamos!
 
-{{< figure src="/img/blog-images/new-posts/2026/09/gemini%5Fgenerated%5Fimage%5F9ooets9ooets9ooe.jpg?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/new-posts/2026/09/gemini%5Fgenerated%5Fimage%5F9ooets9ooets9ooe.jpg?w=1024" width="1024" height="571" alt="" caption="" >}}
 
 ### 1\. Texto de enlace ambiguo.
 

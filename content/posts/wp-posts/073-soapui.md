@@ -23,13 +23,13 @@ Antes de nada muchas gracias a todos por leerme y por seguir este blog desde el 
 
 Ahora si... ¡Comenzamos!
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/83.jpg?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/83.jpg?w=1024" width="1024" height="576" alt="" caption="" >}}
 
 ## ¿Qué es SoapUI?
 
 SoapUI es una herramienta de gran alcance diseñada para ayudar en la prueba y el desarrollo de aplicaciones. Permite efectuar el testeo de la web, con docenas de características, incluyendo una interfaz simple, fácil e intuitiva. Permite la utilización de métodos de captura y repetición, siendo una herramienta de gran ayuda en la realización de pruebas de carga de gran alcance, informes detallados, gráficos, etc…
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/84.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/84.png?w=1024" width="1024" height="574" alt="" caption="" >}}
 
 ## Ventajas de usar SoapUI.
 

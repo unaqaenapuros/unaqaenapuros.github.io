@@ -73,13 +73,13 @@ Para terminar y para que veáis lo bien que nos lo pasamos, os dejo unas fotos d
 
 
 {{< gallery cols="1" >}}  
-{{< figure src="/img/blog-images/wp-posts/2019/08/1-1.jpg" title="1" alt="1" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/1-1.jpg" width="1600" height="900" title="1" alt="1" >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/2-1.jpg" title="2" alt="2" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/2-1.jpg" width="1600" height="1200" title="2" alt="2" >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/3-1.jpg" title="3" alt="3" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/3-1.jpg" width="1600" height="1200" title="3" alt="3" >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/4.jpg" title="4" alt="4" >}}  
+{{< figure src="/img/blog-images/wp-posts/2019/08/4.jpg" width="1600" height="1200" title="4" alt="4" >}}  
 {{< /gallery >}}  
 
 Como veis fue una tarde genial que estoy deseando repetir. Gracias de nuevo a SevillaQA y Alex Gomez Morón por el esfuerzo en organizarlo todo, a SDOS por la organización, el sitio, las cervezas y todo el esfuerzo que hicieron, a Victor por venir a Sevilla sólo para conoceros y enseñarnos un poquito de lo que sabe y a todos los asistentes que vinieron, fue un éxito!
