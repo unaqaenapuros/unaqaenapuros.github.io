@@ -32,7 +32,7 @@ Puedes descargarla desde el siguiente enlace:
 
 ### ¿Qué acciones podemos realizar con Barista?
 
-![b1](/img/blog-images/wp-posts/2018/04/b1.png)Podemos grabar acciones sobre cualquier aplicación y exportar el resultado de esas acciones como un test automático en Appium, Expresso o UIAutomator.Podemos limpiar los datos de la aplicación de forma sencilla realizando el gesto de slide hacia la izquierda. De esta forma comenzaremos nuestro test de la aplicación sin datos previos para crear una prueba "limpia" como si el usuario abriera la aplicación por primera vez.![b2](/img/blog-images/wp-posts/2018/04/b2.png)![b3](/img/blog-images/wp-posts/2018/04/b3.png)En cada aplicación que queramos grabar acciones, nos encontraremos un asistente flotante (la taza del icono de Barista en este caso) donde podemos hacer click cuando queramos y de forma sencilla para ver las acciones que podemos realizar.Al hacer click en el asistente, nos despliega una serie de opciones, estas son:
+![Pantalla de Barista para seleccionar la app a probar (Select App Under Test).](/img/blog-images/wp-posts/2018/04/b1.png)Podemos grabar acciones sobre cualquier aplicación y exportar el resultado de esas acciones como un test automático en Appium, Expresso o UIAutomator.Podemos limpiar los datos de la aplicación de forma sencilla realizando el gesto de slide hacia la izquierda. De esta forma comenzaremos nuestro test de la aplicación sin datos previos para crear una prueba "limpia" como si el usuario abriera la aplicación por primera vez.![Icono flotante del asistente de Barista sobre la aplicación que se está probando.](/img/blog-images/wp-posts/2018/04/b2.png)![Menú de opciones del asistente de Barista: check, comentario, captura de pantalla, enviar test y terminar sesión.](/img/blog-images/wp-posts/2018/04/b3.png)En cada aplicación que queramos grabar acciones, nos encontraremos un asistente flotante (la taza del icono de Barista en este caso) donde podemos hacer click cuando queramos y de forma sencilla para ver las acciones que podemos realizar.Al hacer click en el asistente, nos despliega una serie de opciones, estas son:
 
 - Añadir un check (assert) en un elemento, por ejemplo para comprobar si un elemento está presente o visible.
 - Añadir un comentario en el código: por si necesitamos dejar una notación a la hora de exportar el código.
@@ -40,7 +40,7 @@ Puedes descargarla desde el siguiente enlace:
 - Terminar y enviar el test creado una vez finalizada la prueba.
 - Terminar la sesión.
 
-![b4](/img/blog-images/wp-posts/2018/04/b4.png)![b5](/img/blog-images/wp-posts/2018/04/b5.png)Cada vez que queramos comprobar un elemento (por ejemplo checkear que está presente), seleccionamos ese elemento a checkear y la acción que queremos hacer. Además de eso en la parte baja de la pantalla, nos aparecerá la información en tiempo de ejecución de las propiedades de ese elemento: el ID, la posición...Las acciones que podemos realizar sobre un elemento son:
+![Pantalla de Barista para comprobar un elemento, con sus propiedades (ID, posición) en la parte inferior.](/img/blog-images/wp-posts/2018/04/b4.png)![Lista de acciones disponibles para comprobar un elemento en Barista: Displayed, Enabled, Matches text, entre otras.](/img/blog-images/wp-posts/2018/04/b5.png)Cada vez que queramos comprobar un elemento (por ejemplo checkear que está presente), seleccionamos ese elemento a checkear y la acción que queremos hacer. Además de eso en la parte baja de la pantalla, nos aparecerá la información en tiempo de ejecución de las propiedades de ese elemento: el ID, la posición...Las acciones que podemos realizar sobre un elemento son:
 
 - **Displayed**: podemos comprobar si el elemento se está mostrando o no.
 - **Completely displayed**: comprobar si el elemento se ha mostrado completamente.
@@ -52,7 +52,7 @@ Puedes descargarla desde el siguiente enlace:
 - **Check Everything**: comprobamos todas las propiedades del elemento.
 - **Cancel check**: cancelamos la comprobación.
 
-![b6.png](/img/blog-images/wp-posts/2018/04/b6.png)![b7](/img/blog-images/wp-posts/2018/04/b7.png)Por último, antes de enviar el test por correo, podemos comprobar los pasos y acciones que hemos hecho  y podemos dar un nombre y una descripción al test que hemos completado. Después de esto, al hacer click en enviar, la aplicación enviará el código generado a la cuenta de google que está sincronizada en el sistema.
+![Resumen de los pasos y acciones grabados en Barista antes de enviar el test.](/img/blog-images/wp-posts/2018/04/b6.png)![Diálogo de Barista para dar nombre y descripción al test antes de enviarlo por correo.](/img/blog-images/wp-posts/2018/04/b7.png)Por último, antes de enviar el test por correo, podemos comprobar los pasos y acciones que hemos hecho  y podemos dar un nombre y una descripción al test que hemos completado. Después de esto, al hacer click en enviar, la aplicación enviará el código generado a la cuenta de google que está sincronizada en el sistema.
 
 ### Ejemplo de código generado por Barista.
 
@@ -75,11 +75,11 @@ Os dejo un video para que podáis ver lo sencillo que es. Lo he hecho utilizando
 
 Después de hacer estas acciones la aplicación nos envía el siguiente correo:
 
-![mail](/img/blog-images/wp-posts/2018/04/mail.png)
+![Correo recibido de Barista con el enlace para ver el test generado.](/img/blog-images/wp-posts/2018/04/mail.png)
 
 Hacemos click en _**here**_ para ver el test y nos lleva a la siguiente página.
 
-![exp](/img/blog-images/wp-posts/2018/04/exp.png)
+![Página de exportación de Barista con las opciones Appium, Espresso y UIAutomator.](/img/blog-images/wp-posts/2018/04/exp.png)
 
 Nos aparecen las 3 opciones, nosotros elegiremos **Appium** para ver el código.
 
