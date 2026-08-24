@@ -2,7 +2,7 @@
 title: '096 – Playwright: API Testing III – Mocking avanzado y buenas prácticas.'
 date: '2026-11-02T09:30:00+01:00'
 url: /2026/11/02/096-playwright-api-testing-iii-mocking-avanzado-y-buenas-practicas/
-image: /img/blog-images/new-posts/2026/11/foto85.png
+image: /img/blog-images/new-posts/2026/11/foto85.jpg
 categories:
 - automation
 - best-practices

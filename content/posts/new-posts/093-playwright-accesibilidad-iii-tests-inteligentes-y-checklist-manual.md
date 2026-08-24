@@ -2,7 +2,7 @@
 title: '093 – Playwright: Accesibilidad III – Tests inteligentes y checklist manual.'
 date: '2026-09-21T09:30:00+02:00'
 url: /2026/09/21/093-playwright-accesibilidad-iii-tests-inteligentes-y-checklist-manual/
-image: /img/blog-images/new-posts/2026/09/foto82.png
+image: /img/blog-images/new-posts/2026/09/foto82.jpg
 categories:
 - automation
 - best-practices

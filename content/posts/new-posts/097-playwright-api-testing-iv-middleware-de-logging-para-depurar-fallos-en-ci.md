@@ -2,7 +2,7 @@
 title: '097 – Playwright: API Testing IV – Middleware de logging para depurar fallos en CI.'
 date: '2026-11-16T09:30:00+01:00'
 url: /2026/11/16/097-playwright-api-testing-iv-middleware-de-logging-para-depurar-fallos-en-ci/
-image: /img/blog-images/new-posts/2026/11/foto86.png
+image: /img/blog-images/new-posts/2026/11/foto86.jpg
 categories:
 - automation
 - best-practices

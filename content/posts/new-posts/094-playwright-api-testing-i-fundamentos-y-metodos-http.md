@@ -2,7 +2,7 @@
 title: '094 – Playwright: API Testing I – Fundamentos y métodos HTTP.'
 date: '2026-10-05T09:30:00+02:00'
 url: /2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/
-image: /img/blog-images/new-posts/2026/10/foto83.png
+image: /img/blog-images/new-posts/2026/10/foto83.jpg
 categories:
 - automation
 - best-practices
