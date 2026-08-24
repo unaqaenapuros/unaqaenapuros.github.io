@@ -14,6 +14,8 @@ author: estefafdez
 social_text: |
   ¿Alguna vez te has preguntado cómo se prueba una extensión de navegador? No es lo mismo que testear una web normal: tiene su propia arquitectura, sus propias limitaciones y sus propias trampas. En esta entrada explico paso a paso cómo probar una extensión de Firefox real con Playwright, desde la configuración hasta los tests de renderizado, dark mode, caché offline y más.
 
+  https://unaqaenapuros.com/2026/11/30/098-playwright-probando-extensiones-de-firefox/
+
   #Playwright #QA #TestAutomation #Firefox #UnaQAEnApuros
 ---
 ¡Hola a todos!

@@ -15,6 +15,8 @@ author: estefafdez
 social_text: |
   Cerrar la mini-serie de accesibilidad con lo más práctico: tests de Playwright que van más allá del análisis genérico de axe. Contraste en hover, focus y modo oscuro, verificación del skip link, detección de texto de enlace ambiguo, aria-labels dinámicos en toggles y el ciclo completo de teclado en modales. Más un checklist de comprobaciones manuales que la automatización nunca podrá hacer sola.
 
+  https://unaqaenapuros.com/2026/09/21/093-playwright-accesibilidad-iii-tests-inteligentes-y-checklist-manual/
+
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
 ---
 ¡Hola a todos!

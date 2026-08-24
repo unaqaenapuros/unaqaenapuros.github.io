@@ -15,6 +15,8 @@ author: estefafdez
 social_text: |
   Llevamos varios meses hablando de Playwright en el blog: instalación, fixtures, debugging, API testing, accesibilidad… Pero ¿qué pasa cuando te sientas en una entrevista técnica y te preguntan por lo más básico? En esta entrada repasamos 20 preguntas habituales sobre Playwright con respuestas completas para que llegues preparado.
 
+  https://unaqaenapuros.com/2026/12/14/099-playwright-preguntas-de-entrevista/
+
   #Playwright #QA #TestAutomation #Entrevista #UnaQAEnApuros
 ---
 ¡Hola a todos!

@@ -12,6 +12,8 @@ author: estefafdez
 social_text: |
   100 entradas. No sé muy bien cómo hemos llegado hasta aquí, pero aquí estamos. Hoy no hay código, no hay herramientas, no hay comandos. Hoy toca parar un momento y dar las gracias.
 
+  https://unaqaenapuros.com/2026/12/26/100-cien-entradas/
+
   #QA #TestAutomation #UnaQAEnApuros #100Entradas
 ---
 ¡Hola a todos!

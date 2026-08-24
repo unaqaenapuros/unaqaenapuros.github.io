@@ -15,6 +15,8 @@ author: estefafdez
 social_text: |
   ¿Sabías que axe y Lighthouse no detectan entre el 43 y el 70% de los errores reales de accesibilidad? Empezamos una nueva mini-serie sobre accesibilidad con Playwright: qué detectan bien las herramientas automatizadas, por qué siguen siendo imprescindibles para prevenir regresiones, y cuáles son sus límites estructurales que ninguna herramienta puede superar. Primera parte de tres.
 
+  https://unaqaenapuros.com/2026/08/24/091-playwright-accesibilidad-i-el-problema-de-cobertura/
+
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
 ---
 ¡Hola a todos!

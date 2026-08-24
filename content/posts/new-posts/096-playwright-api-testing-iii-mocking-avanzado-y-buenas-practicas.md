@@ -17,6 +17,8 @@ author: estefafdez
 social_text: |
   Cerramos la mini-serie de API testing con los casos más avanzados de mocking en Playwright: simular respuestas lentas para testear spinners de carga, bloquear llamadas de analítica en CI, mocking condicional para flujos de login por roles, y las buenas prácticas para no caer en los errores típicos. El mocking no es evitar la realidad: es controlarla.
 
+  https://unaqaenapuros.com/2026/11/02/096-playwright-api-testing-iii-mocking-avanzado-y-buenas-practicas/
+
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
 ---
 ¡Hola a todos!

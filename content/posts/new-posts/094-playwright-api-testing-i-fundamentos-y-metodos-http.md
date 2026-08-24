@@ -15,6 +15,8 @@ author: estefafdez
 social_text: |
   ¿Sabías que Playwright no es solo para UI? También puedes testear tus APIs directamente con la fixture `request`. En el nuevo artículo del blog repasamos los fundamentos: qué es una API, los 5 métodos HTTP con ejemplos reales y qué significan los códigos de estado. Primera parte de la nueva mini-serie de API testing.
 
+  https://unaqaenapuros.com/2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/
+
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
 ---
 ¡Hola a todos!
