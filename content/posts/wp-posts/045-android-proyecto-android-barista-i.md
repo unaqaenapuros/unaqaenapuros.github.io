@@ -27,7 +27,7 @@ Antes de seguir avanzando en las pruebas de automatización móvil, debemos tene
 
 * * *
 
-## ![11](/img/blog-images/wp-posts/2018/04/11.png)
+## ![Logo de Android junto al logo de Barista (una máquina de café).](/img/blog-images/wp-posts/2018/04/11.png)
 
 ## ¿Por qué surgió este proyecto?
 
@@ -59,7 +59,7 @@ Para ello debemos irnos al siguiente repositorio de Github: [https://github.com
 
 Hacemos click en clone or download y copiamos la URL que nos aparece:
 
-![1](/img/blog-images/wp-posts/2018/04/1.png)
+![Diálogo de GitHub para copiar la URL de clonado del repositorio AndroidBaristaProject.](/img/blog-images/wp-posts/2018/04/1.png)
 
 Una vez que tengamos esa URL, abrimos un terminal para escribir el comando de git para clonar el repositorio:
 
@@ -67,7 +67,7 @@ Una vez que tengamos esa URL, abrimos un terminal para escribir el comando de gi
 git clone git@github.com:estefafdez/AndroidBaristaProject.git
 ```
 
-![2](/img/blog-images/wp-posts/2018/04/21.png)
+![Terminal clonando el repositorio AndroidBaristaProject con git clone.](/img/blog-images/wp-posts/2018/04/21.png)
 
 Y después de todo esto tendremos el proyecto clonado dentro de nuestro equipo.
 
@@ -77,55 +77,55 @@ Una vez que tengamos el Android Studio descargado en nuestro sistema operativo, 
 
 Cuando abramos Android Studio nos aparecerá la siguiente pantalla:
 
-![Captura de pantalla 2018-11-04 a las 13.48.41](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-13-48-41.png)
+![Pantalla de bienvenida de Android Studio con las opciones para crear o abrir un proyecto.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-13-48-41.png)
 
 Podemos crear un proyecto nuevo de Android (si queremos investigar o ver la estructura de un proyecto básico) o importar un proyecto existente. Como acabamos de descargarnos el proyecto de Android Barista, lo que haremos será hacer click en la segunda opción: _Open an existing Android Studio Project_ y abrir el proyecto que acabamos de descargar.
 
-![Captura_de_pantalla_2018-11-04_a_las_13_50_51](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_13_50_51.png)
+![Selector de carpeta para abrir el proyecto AndroidBaristaProject en Android Studio.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_13_50_51.png)
 
 Cuando hacemos click en Open, se nos abrirá Android Studio de la siguiente forma:
 
-![Captura de pantalla 2018-11-04 a las 13.53.50](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-13-53-50.png)
+![Android Studio con el proyecto AndroidBaristaProject ya abierto.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-13-53-50.png)
 
 Ya que tenemos el proyecto en Android Studio vamos a crear un emulador para ejecutar la app de Android Barista. Para ello tenemos que hacer click en AVD Manager:
 
-![Captura_de_pantalla_2018-11-04_a_las_13_58_53](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_13_58_53.png)
+![Botón AVD Manager en la barra de herramientas de Android Studio.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_13_58_53.png)
 
 Y nos aparece la siguiente pantalla:
 
-![Captura de pantalla 2018-11-04 a las 14.00.14](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-00-14.png)
+![Pantalla del AVD Manager de Android Studio con la lista de dispositivos virtuales.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-00-14.png)
 
 Podremos crear tanto un emulador de dispositivo móvil, android wear, android TV... etc. Nosotros crearemos un emulador de Android. Hacemos click en **_Create Virtual Device._**.. y nos aparece la siguiente pantalla:
 
-![Captura de pantalla 2018-11-04 a las 14.02.39](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-02-39.png)Para nuestro ejemplo vamos a elegir un _**Nexus 5X**_ con Play Store, hacemos click en _**Next**_.
+![Selección del dispositivo virtual Nexus 5X con Play Store en el AVD Manager.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-02-39.png)Para nuestro ejemplo vamos a elegir un _**Nexus 5X**_ con Play Store, hacemos click en _**Next**_.
 
-![Captura_de_pantalla_2018-11-04_a_las_14_04_28](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_04_28.png)
+![Selección de la imagen del sistema Android 8.1 (API 27, x86) para el emulador.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_04_28.png)
 
 Para elegir la imagen del sistema, elegiremos las imágenes de _**x86**_ y escogeremos una de las APIs disponibles, en nuestro caso cogeremos la _**API 27 (Android 8.1).**_ Hacemos click en _**Next**_ y nos aparece la siguiente pantalla:
 
-![Captura de pantalla 2018-11-04 a las 14.11.16](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-11-16.png)
+![Pantalla de configuración final del emulador, con el nombre emulator_27.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-11-16.png)
 
 Elegiremos un nombre para el emulador, en nuestro caso escogeremos _**emulator\_27**_ y haremos click en _**Show Advanced Settings**_ donde podremos ver más opciones disponibles:
 
-![Captura_de_pantalla_2018-11-04_a_las_14_12_03](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_12_03.png)
+![Opciones avanzadas del emulador en Android Studio, incluyendo Enable Device Frame.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_12_03.png)
 
 Dentro de estas opciones eliminaremos la de _**Enable Device Frame**_ para evitar que el emulador tenga la skin del móvil seleccionado y nos ocupe menos recursos en nuestro sistema, además para que el emulador se cargue de forma más rápida.
 
 Una vez que tenemos todas estas opciones haremos click en **Finish** y tendremos nuestro emulador creado:
 
-![Captura_de_pantalla_2018-11-04_a_las_14_16_03.png](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_16_03.png)
+![Emulador emulator_27 ya creado en la lista del AVD Manager.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_16_03.png)
 
 Para poder arrancar el emulador, haremos click en el botón de play y se nos abrirá nuestro emulador ya iniciado:
 
-![Captura de pantalla 2018-11-04 a las 14.21.29.png](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-21-29.png)
+![Emulador de Android arrancado, mostrando la pantalla de inicio del sistema.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-21-29.png)
 
 Una vez que tenemos el emulador creado y arrancado, lo único que tenemos que hacer es arrancar la aplicación de Barista que nos hemos descargado, para ello hacemos click en el botón de play de Android Studio y elegimos el emulador en el que lo vamos a ejecutar:
 
-![Captura_de_pantalla_2018-11-04_a_las_14_22_54](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_22_54.png)![Captura de pantalla 2018-11-04 a las 14.23.35](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-23-35.png)
+![Botón de ejecutar (play) en Android Studio.](/img/blog-images/wp-posts/2018/11/captura_de_pantalla_2018-11-04_a_las_14_22_54.png)![Selector de dispositivo para ejecutar la app, con el emulador creado seleccionado.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-23-35.png)
 
 Al hacer click en Ok tendremos la app iniciada y funcionando en el emulador:
 
-![Captura de pantalla 2018-11-04 a las 14.24.50](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-24-50.png)
+![App de Android Barista ejecutándose en el emulador.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-24-50.png)
 
 Y ya podremos empezar a ver la app y a jugar con ella. En la siguiente entrada, hablaremos de cómo utilizar esta app para hacer test con _**Barista: The guy who serves a great Espresso**_ ([https://github.com/SchibstedSpain/Barista](https://github.com/SchibstedSpain/Barista)) de forma sencilla.
 
