@@ -29,7 +29,13 @@ Esto no es una crítica a Axe, Lighthouse o cualquier herramienta que use su mot
 
 Las cifras varían según la fuente, pero la conclusión es siempre la misma:
 
-FuenteResultadoWebAIM~30% de los fallos reales de WCAG son detectables por automatizaciónW3C / WAI~20-30% de los criterios de éxito de WCAG son completamente automatizablesU.S. GSA – Sección 508Aproximadamente 1 de cada 3 problemas es detectado por tests automatizadosDeque (axe)57,38% de las violaciones conocidas detectadas al analizar páginas auditadas realesAccessible.org13% completamente automatizable, 45% parcialmente, 42% no automatizable (WCAG 2.2 AA)
+| Fuente | Resultado |
+| --- | --- |
+| WebAIM | ~30% de los fallos reales de WCAG son detectables por automatización |
+| W3C / WAI | ~20-30% de los criterios de éxito de WCAG son completamente automatizables |
+| U.S. GSA – Sección 508 | Aproximadamente 1 de cada 3 problemas es detectado por tests automatizados |
+| Deque (axe) | 57,38% de las violaciones conocidas detectadas al analizar páginas auditadas reales |
+| Accessible.org | 13% completamente automatizable, 45% parcialmente, 42% no automatizable (WCAG 2.2 AA) |
 
 La cifra de Deque es la más optimista y se obtiene de un enfoque pragmático: en lugar de calcular cuántos criterios son teóricamente automatizables, midieron cuántos defectos reales documentados habrían detectado al pasar axe-core por un conjunto amplio de páginas auditadas. Es una buena noticia relativa — en la práctica, las herramientas encuentran más de lo que la teoría sugiere. Pero incluso así, dejan una **brecha del 43%**. Podemos tener un informe completamente verde y publicar una experiencia inutilizable para muchas personas.
 
