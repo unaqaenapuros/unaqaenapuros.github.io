@@ -34,7 +34,7 @@ Para esto utilizaremos el comando **adb** y **screencap.**
 
 Empezamos abriendo un emulador (por consola o Android Studio) y abrimos una aplicación (la que queramos, podemos utilizar la de [AndroidBarista](/2018/11/07/045-android-proyecto-android-barista-i/) que vimos en artículos anteriores).
 
-![](/img/blog-images/wp-posts/2019/02/install_apk.gif)
+![Gif arrastrando un APK al emulador de Android para instalarlo.](/img/blog-images/wp-posts/2019/02/install_apk.gif)
 
 ## Screencap.
 
@@ -67,7 +67,7 @@ $ ./adb shell screencap -p /sdcard/nameOfScreenshot.png
 
 Esto tendrá la siguiente salida por consola y cuando termine sabremos que la captura se ha hecho:
 
-![](/img/blog-images/wp-posts/2019/04/captura-de-pantalla-2019-02-18-a-las-13.22.50.png)
+![Terminal mostrando la salida del comando adb shell screencap tras hacer la captura en el emulador.](/img/blog-images/wp-posts/2019/04/captura-de-pantalla-2019-02-18-a-las-13.22.50.png)
 
 Con este comando habremos conseguido el primer punto que comentábamos antes, hacer la captura y guardarla dentro de la memoria (sdcard) del emulador.
 
@@ -79,15 +79,15 @@ Ahora queremos hacer la segunda parte, pasarla de la memoria del emulador a nues
 $ ./adb pull /sdcard/nameOfScreenshot.png
 ```
 
-![](/img/blog-images/wp-posts/2019/04/captura-de-pantalla-2019-02-18-a-las-13.42.46.png)
+![Terminal ejecutando el comando adb pull para copiar la captura del emulador al equipo.](/img/blog-images/wp-posts/2019/04/captura-de-pantalla-2019-02-18-a-las-13.42.46.png)
 
 Con este comando nos traeremos al directorio donde nos encontramos (ahora mismo donde está el adb: ../sdk/platform-tools) una copia del archivo que acabamos de almacenar en el emulador:
 
-![](/img/blog-images/wp-posts/2019/04/captura_de_pantalla_2019-02-18_a_las_13_27_50.png)
+![Fichero de la captura ya copiado en la carpeta platform-tools del equipo.](/img/blog-images/wp-posts/2019/04/captura_de_pantalla_2019-02-18_a_las_13_27_50.png)
 
 Además podremos abrirla y comprobar que es correcta:
 
-![](/img/blog-images/wp-posts/2019/04/captura_de_pantalla_2019-02-18_a_las_13_43_16.png)
+![Captura de pantalla del emulador abierta para comprobar que se ha copiado correctamente.](/img/blog-images/wp-posts/2019/04/captura_de_pantalla_2019-02-18_a_las_13_43_16.png)
 
 ## Paso 3: Borrar la captura del emulador.
 

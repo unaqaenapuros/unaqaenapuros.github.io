@@ -20,7 +20,7 @@ En esta entrada os voy a hablar del último meetup que organizamos desde Sevilla
 
 ## Antes de empezar... ¿Qué es SevillaQA?
 
-{{< figure align="alignnone" width=1180 src="/img/blog-images/wp-posts/2019/08/screenshot-2019-06-10-at-08.44.21.png" alt="Screenshot 2019-06-10 at 08.44.21.png" caption="Screenshot 2019-06-10 at 08.44.21.png" >}}
+{{< figure align="alignnone" width=1180 src="/img/blog-images/wp-posts/2019/08/screenshot-2019-06-10-at-08.44.21.png" alt="Logo de la comunidad SevillaQA." caption="" >}}
 
 En Sevilla QA queremos crear una comunidad de QAs empezando en Sevilla y, por qué no, seguir creciendo! La idea es compartir metodología, herramientas, etc así como contribuir a la comunidad con nuestra verdadera pasión: cualquier cosa relacionada con el mundo QA!.
 
@@ -28,7 +28,7 @@ En Sevilla QA queremos crear una comunidad de QAs empezando en Sevilla y, por qu
 
 ## El ponente: Victor Gomez Adán.
 
-![Screenshot 2019-06-11 at 16.48.07.png](/img/blog-images/wp-posts/2019/08/screenshot-2019-06-11-at-16.48.07.png)
+![Retrato de Víctor Gómez Adán, el ponente del meetup, sonriendo.](/img/blog-images/wp-posts/2019/08/screenshot-2019-06-11-at-16.48.07.png)
 
 Víctor Gómez Adán, además de un buen amigo, es un apasionado de la Calidad con casi 10 años de experiencia. Es experto en implantación de procesos y en control de la calidad en proyectos tecnológicos. Su mayor motivación es ayudar a que el día a día de las personas sea mejor, capacitándolos positivamente. Además de todo eso, es el creador de la comunidad QA Lovers ([https://www.qacommunity.es/](https://www.qacommunity.es/)) donde colaboro y siempre intento estar activa en Slack ayudando a cualquier persona con las dudas que tenga.
 
@@ -73,13 +73,13 @@ Para terminar y para que veáis lo bien que nos lo pasamos, os dejo unas fotos d
 
 
 {{< gallery cols="1" >}}  
-{{< figure src="/img/blog-images/wp-posts/2019/08/1-1.jpg" width="1600" height="900" title="1" alt="1" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/1-1.jpg" width="1600" height="900" title="1" alt="Foto de grupo de los asistentes al meetup Lego Serious Play aplicado a QA." >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/2-1.jpg" width="1600" height="1200" title="2" alt="2" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/2-1.jpg" width="1600" height="1200" title="2" alt="Foto del taller Lego Serious Play durante el meetup." >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/3-1.jpg" width="1600" height="1200" title="3" alt="3" >}}
+{{< figure src="/img/blog-images/wp-posts/2019/08/3-1.jpg" width="1600" height="1200" title="3" alt="Foto de los asistentes trabajando con piezas de Lego durante el taller." >}}
 
-{{< figure src="/img/blog-images/wp-posts/2019/08/4.jpg" width="1600" height="1200" title="4" alt="4" >}}  
+{{< figure src="/img/blog-images/wp-posts/2019/08/4.jpg" width="1600" height="1200" title="4" alt="Foto de grupo al finalizar el meetup Lego Serious Play aplicado a QA." >}}  
 {{< /gallery >}}  
 
 Como veis fue una tarde genial que estoy deseando repetir. Gracias de nuevo a SevillaQA y Alex Gomez Morón por el esfuerzo en organizarlo todo, a SDOS por la organización, el sitio, las cervezas y todo el esfuerzo que hicieron, a Victor por venir a Sevilla sólo para conoceros y enseñarnos un poquito de lo que sabe y a todos los asistentes que vinieron, fue un éxito!
