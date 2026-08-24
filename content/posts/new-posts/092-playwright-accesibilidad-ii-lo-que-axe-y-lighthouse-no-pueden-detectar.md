@@ -15,6 +15,8 @@ author: estefafdez
 social_text: |
   axe y Lighthouse ven el DOM, no el contexto. En el último artículo de la serie repasamos las 10 categorías de problemas de accesibilidad que los escáneres no pueden detectar: desde texto de enlace ambiguo hasta modales que fallan en teclado, pasando por alt text de baja calidad o labels ARIA que mienten sobre el estado del control. Con ejemplos y cómo corregirlos.
 
+  https://unaqaenapuros.com/2026/09/07/092-playwright-accesibilidad-ii-lo-que-axe-y-lighthouse-no-pueden-detectar/
+
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
 ---
 ¡Hola a todos!
