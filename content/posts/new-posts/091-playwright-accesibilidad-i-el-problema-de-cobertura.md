@@ -23,7 +23,7 @@ social_text: |
 
 Después de la mini-serie sobre fixtures, hoy empezamos una nueva: **accesibilidad web con Playwright**. Es un tema fundamental que, en mi experiencia, se trata de forma muy superficial en muchos proyectos. La mayoría de los equipos ejecutan un análisis con axe o miran el informe de Lighthouse, ven todo en verde y dan por hecha la accesibilidad. Pero hay un problema serio con ese enfoque: las herramientas automatizadas solo detectan entre el **30 y el 57% de los errores reales de WCAG**. En esta primera entrega vamos a entender por qué ocurre esto, si detectan bien estas herramientas y cuáles son sus límites estructurales. ¡Empezamos!
 
-{{< figure src="/img/blog-images/new-posts/2026/08/gemini%5Fgenerated%5Fimage%5Fwx54fewx54fewx54.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/new-posts/2026/08/gemini%5Fgenerated%5Fimage%5Fwx54fewx54fewx54.png?w=1024" alt="" caption="Cuando le dices a Gemini que te genere una foto de accesibilidad y te hace esto... perdonad xD" >}}
 
 ### El gap de cobertura: lo que dice la investigación.
 
