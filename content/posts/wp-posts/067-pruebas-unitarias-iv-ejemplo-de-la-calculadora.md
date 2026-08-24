@@ -42,17 +42,17 @@ Una vez que tenemos el **fork** creado y el clone realizado, podemos importar el
 
 Para importar un proyecto en Eclipse hacemos click en File -> Import -> Existing Projects into Workspace:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/75.png?w=417" width="417" height="422" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/75.png?w=417" width="417" height="422" alt="Diálogo de Eclipse File > Import con la opción Existing Projects into Workspace seleccionada." caption="" >}}
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/76.png?w=540" width="540" height="591" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/76.png?w=540" width="540" height="591" alt="Diálogo de Eclipse para seleccionar la carpeta raíz del proyecto a importar." caption="" >}}
 
 Seleccionamos la carpeta donde hemos guardado el proyecto y hacemos click en Finalizar:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/77.png?w=733" width="733" height="475" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/77.png?w=733" width="733" height="475" alt="Diálogo de importación de Eclipse con la carpeta del proyecto seleccionada y el botón Finalizar." caption="" >}}
 
 Una vez que lo importamos tendremos la siguiente estructura en el proyecto:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/screenshot-2020-11-04-at-13.51.28.png?w=532" width="532" height="410" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/screenshot-2020-11-04-at-13.51.28.png?w=532" width="532" height="410" alt="Estructura de paquetes del proyecto ya importado en Eclipse." caption="" >}}
 
 ## Entendiendo las anotaciones de JUnit:
 
@@ -83,7 +83,7 @@ Si JUnit no está añadido en el proyecto, lo tenemos que añadir de la siguient
 
 A continuación hacemos click en Add library -> JUnit.
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/screenshot-2020-11-04-at-13.58.08.png?w=1024" width="1024" height="561" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/screenshot-2020-11-04-at-13.58.08.png?w=1024" width="1024" height="561" alt="Diálogo de Configure Build Path de Eclipse añadiendo la librería JUnit." caption="" >}}
 
 Y ya podemos usarla para ejecutar nuestros test.
 
@@ -91,11 +91,11 @@ Y ya podemos usarla para ejecutar nuestros test.
 
 Para ejecutar los test con JUnit nos iremos o bien al test (si queremos probar un test concreto) o a la clase, y haremos click en el botón derecho y Run As -> JUnit Test.
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/80.png?w=737" width="737" height="843" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/80.png?w=737" width="737" height="843" alt="Menú contextual de Eclipse con la opción Run As > JUnit Test." caption="" >}}
 
 Una vez terminados de ejecutar, podremos comprobar los resultados:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/81.png?w=1024" width="1024" height="185" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/81.png?w=1024" width="1024" height="185" alt="Resultados de la ejecución de los tests JUnit en Eclipse." caption="" >}}
 
 Tenéis varios tests en el proyecto sobre la suma y la resta, cualquier PR con nuevas operaciones en la calculadora y nuevos tests son bienvenidos :)
 

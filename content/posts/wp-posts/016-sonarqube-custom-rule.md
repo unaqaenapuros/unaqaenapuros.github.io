@@ -29,11 +29,11 @@ Tenemos que tener en cuenta el hecho de que eliminar una regla personalizada no 
 1. Cuando tenemos la lista de plantillas, seleccionamos una de ellas del lenguaje en el que queramos crear la regla (por ejemplo Java).
 1. En esta plantilla, encontramos el botón para crear una regla personalizada.
 
-![sonar_template_create](/img/blog-images/wp-posts/2017/06/sonar_template_create.png)
+![Botón para crear una regla personalizada desde una plantilla en SonarQube.](/img/blog-images/wp-posts/2017/06/sonar_template_create.png)
 
 Hacemos click y rellenamos el formulario con los campos de la regla:
 
-![create_custom_rule](/img/blog-images/wp-posts/2017/06/create_custom_rule.png)
+![Formulario de SonarQube para crear una regla personalizada, con los campos nombre, clave, descripción, gravedad, estado, expresión regular y mensaje.](/img/blog-images/wp-posts/2017/06/create_custom_rule.png)
 
 1. Nombre.
 1. Clave (auto sugerida).
