@@ -20,7 +20,7 @@ Como comentábamos ya en las pasadas entradas, vamos a dejar atrás las entradas
 
 Debemos tener en cuenta que SonarQube es una herramienta para gestionar la calidad del código, la herramienta controla la calidad en 7 ejes:
 
-![image0031](/img/blog-images/wp-posts/2017/06/image0031.png)
+![Diagrama con los 7 ejes de calidad de código que evalúa SonarQube.](/img/blog-images/wp-posts/2017/06/image0031.png)
 
 La plataforma soporta actualmente más de 20 lenguajes incluyendo Java, Javascript, Cobol, PL, C#… nosotros nos centraremos en Java.
 
@@ -35,7 +35,7 @@ El objetivo que deseamos obtener con la integración de SonarQube con Eclipse 
 1. Añadir la siguiente url [http://downloads.sonarsource.com/eclipse/eclipse/](http://downloads.sonarsource.com/eclipse/eclipse/)
 1. Install
 
-![instalarSonar1.png](/img/blog-images/wp-posts/2017/06/instalarsonar1.png)
+![Diálogo de Eclipse Install New Software con la URL del repositorio de SonarQube añadida.](/img/blog-images/wp-posts/2017/06/instalarsonar1.png)
 
 #### Configuración de servidor
 
@@ -47,7 +47,7 @@ El objetivo que deseamos obtener con la integración de SonarQube con Eclipse 
 1. SonarQube Server URL: URL donde se localiza la instalación de sonar (por defecto **http://localhost:9000**)
 1. Username y Password: Usuario y Password para conectarnos a SonarQUBE
 
-![instalarSonar2.png](/img/blog-images/wp-posts/2017/06/instalarsonar2.png)
+![Preferencias de SonarQube en Eclipse con la configuración del servidor: ID, URL, usuario y contraseña.](/img/blog-images/wp-posts/2017/06/instalarsonar2.png)
 
 #### Añadir y seleccionar proyecto Sonar.
 
@@ -57,7 +57,7 @@ El objetivo que deseamos obtener con la integración de SonarQube con Eclipse 
 1. Escribimos el nombre del proyecto de SonarQube
 1. Finish
 
-#### ![instalarSonar4](/img/blog-images/wp-posts/2017/06/instalarsonar4.png)
+#### ![Diálogo de Eclipse para asociar el proyecto con un proyecto de SonarQube.](/img/blog-images/wp-posts/2017/06/instalarsonar4.png)
 
 #### Analizar el proyecto con Sonar.
 
@@ -65,7 +65,7 @@ El objetivo que deseamos obtener con la integración de SonarQube con Eclipse 
 1. Hacemos click en SonarQube
 1. Analyze.
 
-![instalarSonar3.png](/img/blog-images/wp-posts/2017/06/instalarsonar3.png)
+![Menú contextual de Eclipse con la opción SonarQube > Analyze.](/img/blog-images/wp-posts/2017/06/instalarsonar3.png)
 
 #### Revisión de errores
 

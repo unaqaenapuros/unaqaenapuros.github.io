@@ -22,7 +22,7 @@ En esta entrada hablaremos de las diferentes herramientas que tenemos para reali
 
 ## Herramientas de pruebas unitarias para Java/Kotlin:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/131avj4z6%5Ffkoii0k0p1atq.jpeg?w=618" width="618" height="575" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/131avj4z6%5Ffkoii0k0p1atq.jpeg?w=618" width="618" height="575" alt="Logos de Java y Kotlin junto a fragmentos de código de una clase User escrita en cada lenguaje." caption="" >}}
 
 - **JUnit:** Entorno de pruebas para Java creado por Erich Gamma y Kent Beck. Se encuentra basado en SUnit creado originalmente para realizar pruebas unitarias para el lenguaje Smalltalk.
 - **TestNG:** Creado para suplir algunas deficiencias en JUnit.
@@ -31,7 +31,7 @@ En esta entrada hablaremos de las diferentes herramientas que tenemos para reali
 
 ## Herramientas de pruebas unitarias para Javascript/TypeScript :
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/1o94xamjaceg3ao9gai02za.png?w=1024" width="1024" height="512" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/1o94xamjaceg3ao9gai02za.png?w=1024" width="1024" height="512" alt="Logos de JavaScript (JS) y TypeScript (TS)." caption="" >}}
 
 - **Mocha**: Marco de prueba rico en funciones que se ejecuta en Node.js y en el navegador.
 - **Jasmine**: es un marco «impulsado por el comportamiento” para probar JavaScript. No depende de otros marcos de JavaScript y no necesita un DOM.
@@ -42,20 +42,20 @@ En esta entrada hablaremos de las diferentes herramientas que tenemos para reali
 
 ## Herramientas de pruebas unitarias para PHP:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/1200px-php-logo.svg%5F.png?w=1024" width="1024" height="553" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/1200px-php-logo.svg%5F.png?w=1024" width="1024" height="553" alt="Logo de PHP." caption="" >}}
 
 - **SimpleTest:** Entorno de pruebas para aplicaciones realizadas en PHP.
 - **PHPUnit:** Sistema para la realización pruebas unitarias en PHP.
 
 ## Herramientas de pruebas unitarias para Python:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/0f6019e15f1d8ae07e7e8ea16d242676.png?w=1024" width="1024" height="444" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/0f6019e15f1d8ae07e7e8ea16d242676.png?w=1024" width="1024" height="444" alt="Logo de Python." caption="" >}}
 
 - **PyUnit:** Framework para la elaboración de pruebas unitarias en python.
 
 ## Herramientas de pruebas unitarias para C/C++:
 
-{{< figure src="/img/blog-images/wp-posts/2020/11/class.jpg?w=495" width="495" height="276" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/11/class.jpg?w=495" width="495" height="276" alt="Logos de C y C++." caption="" >}}
 
 - **CPPUnit:** Versión del framework para lenguajes C/C++.
 - **QUnit:** Librería para pruebas unitarias en Javascript. Creada por la fundación jQuery, ha sido reescrita para ser independiente de la librería jQuery. libunittest: Librería portable para pruebas unitarias en C++ que usa el nuevo estándar C++11.

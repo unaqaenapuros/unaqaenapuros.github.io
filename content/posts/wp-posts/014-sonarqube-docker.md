@@ -23,11 +23,11 @@ Play with docker es una web que nos permite crear contenedores virtuales que pod
 - Accedemos a la web de Play with Docker: [http://labs.play-with-docker.com/](http://labs.play-with-docker.com/)
 - Se nos crea por defecto una nueva sesión que se verá de la siguiente forma:
 
-![instancia_play_with_docker](/img/blog-images/wp-posts/2017/06/instancia_play_with_docker.png)
+![Sesión recién creada en Play with Docker, con el terminal del contenedor.](/img/blog-images/wp-posts/2017/06/instancia_play_with_docker.png)
 
 - Creamos una nueva instancia haciendo click en " **+Add new Instance**":
 
-![instancia_docker.png](/img/blog-images/wp-posts/2017/06/instancia_docker.png)
+![Nueva instancia añadida en Play with Docker mediante +Add new Instance.](/img/blog-images/wp-posts/2017/06/instancia_docker.png)
 
 - Una vez que tenemos la instancia funcionando, podemos comenzar a instalar Sonar. Para ello ponemos los siguientes comandos:
 
@@ -36,11 +36,11 @@ docker pull sonarqube
 docker run -d --name sonarqube -p 9000:9000 sonarqube
 ```
 
-![sonar.png](/img/blog-images/wp-posts/2017/06/sonar.png)
+![Terminal descargando y ejecutando el contenedor de SonarQube con docker pull y docker run.](/img/blog-images/wp-posts/2017/06/sonar.png)
 
 - El puerto aparece en la web y sólo tenemos que hacer click en él para ver la página de inicio de Sonar.
 
-![sonar_url.png](/img/blog-images/wp-posts/2017/06/sonar_url.png)
+![Puerto de SonarQube expuesto en Play with Docker, listo para abrir la página de inicio.](/img/blog-images/wp-posts/2017/06/sonar_url.png)
 
 - Una vez tenemos esto, debemos añadir esta URL dentro de nuestro proyecto en el pom.xml de la siguiente forma:
 
@@ -87,7 +87,7 @@ Cuando tengamos el POM actualizado con la URL en la que está Sonar, nos vamos a
 mvn clean install sonar:sonar
 ```
 
-![sonar_ok.png](/img/blog-images/wp-posts/2017/06/sonar_ok.png)Una vez que tengamos el Build Success ya veremos los resultados del análisis del código del proyecto en la página de Sonar:![sonar_resultados.png](/img/blog-images/wp-posts/2017/06/sonar_resultados.png)
+![Terminal con el resultado Build Success tras ejecutar mvn clean install sonar:sonar.](/img/blog-images/wp-posts/2017/06/sonar_ok.png)Una vez que tengamos el Build Success ya veremos los resultados del análisis del código del proyecto en la página de Sonar:![Página de resultados del análisis de código del proyecto en SonarQube.](/img/blog-images/wp-posts/2017/06/sonar_resultados.png)
 
 #### Usando la aplicación de Docker.
 
@@ -96,7 +96,7 @@ Si lo que queremos es tener los resultados guardados en un Docker propio y que n
 - Versión para Mac: [https://www.docker.com/docker-mac](https://www.docker.com/docker-mac)
 - Versión para Windows: [https://www.docker.com/docker-windows](https://www.docker.com/docker-windows)
 
-Una vez descargada, la instalamos e iniciamos, y cuando tengamos el docker iniciado abrimos cualquier terminal y seguimos exactamente los mismos pasos que hemos explicado anteriormente.![Docker_running.png](/img/blog-images/wp-posts/2017/06/docker_running.png) **Nota**: La única diferencia que tenemos que tener en cuenta es que ahora, la URL en la que se encontrará Sonar después de instalarlo en el docker es la URL por defecto: [http://localhost:9000](http://localhost:9000/)
+Una vez descargada, la instalamos e iniciamos, y cuando tengamos el docker iniciado abrimos cualquier terminal y seguimos exactamente los mismos pasos que hemos explicado anteriormente.![Aplicación de Docker Desktop en ejecución.](/img/blog-images/wp-posts/2017/06/docker_running.png) **Nota**: La única diferencia que tenemos que tener en cuenta es que ahora, la URL en la que se encontrará Sonar después de instalarlo en el docker es la URL por defecto: [http://localhost:9000](http://localhost:9000/)
 
 Y esto es todo en cuanto a SonarQube con Docker. En la siguiente entrada seguiremos hablando de Sonar y descubriremos qué son las reglas en Sonar y cómo crear una plantilla.
 
