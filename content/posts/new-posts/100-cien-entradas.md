@@ -15,6 +15,12 @@ social_text: |
   https://unaqaenapuros.com/2026/12/26/100-cien-entradas/
 
   #QA #TestAutomation #UnaQAEnApuros #100Entradas
+x_text: |
+  100 entradas. Hoy no hay código ni comandos, solo gracias.
+
+  https://unaqaenapuros.com/2026/12/26/100-cien-entradas/
+
+  #QA #100Entradas
 ---
 ¡Hola a todos!
 

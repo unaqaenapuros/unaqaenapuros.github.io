@@ -20,6 +20,12 @@ social_text: |
   https://unaqaenapuros.com/2026/11/16/097-playwright-api-testing-iv-middleware-de-logging-para-depurar-fallos-en-ci/
 
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
+x_text: |
+  Tu test falla en CI con un 400 y no tienes ni petición ni respuesta. Nada de console.log: un middleware que lo captura todo.
+
+  https://unaqaenapuros.com/2026/11/16/097-playwright-api-testing-iv-middleware-de-logging-para-depurar-fallos-en-ci/
+
+  #Playwright #APITesting #QA
 ---
 ¡Hola a todos!
 

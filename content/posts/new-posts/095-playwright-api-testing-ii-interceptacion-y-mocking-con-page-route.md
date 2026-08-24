@@ -19,6 +19,12 @@ social_text: |
   https://unaqaenapuros.com/2026/10/19/095-playwright-api-testing-ii-interceptacion-y-mocking-con-page-route/
 
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
+x_text: |
+  page.route() es de lo más potente de Playwright y de lo más infrautilizado. Interceptación y mocking para eliminar tests inestables.
+
+  https://unaqaenapuros.com/2026/10/19/095-playwright-api-testing-ii-interceptacion-y-mocking-con-page-route/
+
+  #Playwright #APITesting #QA
 ---
 ¡Hola a todos!
 

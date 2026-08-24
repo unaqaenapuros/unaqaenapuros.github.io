@@ -18,6 +18,12 @@ social_text: |
   https://unaqaenapuros.com/2026/08/24/091-playwright-accesibilidad-i-el-problema-de-cobertura/
 
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
+x_text: |
+  Axe y Lighthouse no detectan hasta el 70% de errores reales de accesibilidad. Empezamos una mini-serie sobre por qué no bastan.
+
+  https://unaqaenapuros.com/2026/08/24/091-playwright-accesibilidad-i-el-problema-de-cobertura/
+
+  #Playwright #Accesibilidad #QA
 ---
 ¡Hola a todos!
 

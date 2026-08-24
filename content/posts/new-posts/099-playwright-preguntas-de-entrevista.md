@@ -18,6 +18,12 @@ social_text: |
   https://unaqaenapuros.com/2026/12/14/099-playwright-preguntas-de-entrevista/
 
   #Playwright #QA #TestAutomation #Entrevista #UnaQAEnApuros
+x_text: |
+  20 preguntas típicas de entrevista sobre Playwright, con respuestas completas.
+
+  https://unaqaenapuros.com/2026/12/14/099-playwright-preguntas-de-entrevista/
+
+  #Playwright #Entrevista #QA
 ---
 ¡Hola a todos!
 
