@@ -18,6 +18,12 @@ social_text: |
   https://unaqaenapuros.com/2026/09/21/093-playwright-accesibilidad-iii-tests-inteligentes-y-checklist-manual/
 
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
+x_text: |
+  Cerramos la serie de accesibilidad: tests de Playwright más allá de axe, y un checklist manual que la automatización nunca hará sola.
+
+  https://unaqaenapuros.com/2026/09/21/093-playwright-accesibilidad-iii-tests-inteligentes-y-checklist-manual/
+
+  #Playwright #Accesibilidad #QA
 ---
 ¡Hola a todos!
 

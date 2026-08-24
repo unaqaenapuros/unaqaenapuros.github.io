@@ -18,6 +18,12 @@ social_text: |
   https://unaqaenapuros.com/2026/09/07/092-playwright-accesibilidad-ii-lo-que-axe-y-lighthouse-no-pueden-detectar/
 
   #Playwright #QA #TestAutomation #Accesibilidad #UnaQAEnApuros
+x_text: |
+  axe y Lighthouse ven el DOM, no el contexto. 10 categorías de problemas de accesibilidad que los escáneres no detectan.
+
+  https://unaqaenapuros.com/2026/09/07/092-playwright-accesibilidad-ii-lo-que-axe-y-lighthouse-no-pueden-detectar/
+
+  #Playwright #Accesibilidad #QA
 ---
 ¡Hola a todos!
 

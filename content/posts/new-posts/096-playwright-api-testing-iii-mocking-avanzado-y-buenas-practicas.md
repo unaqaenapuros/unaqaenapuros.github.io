@@ -20,6 +20,12 @@ social_text: |
   https://unaqaenapuros.com/2026/11/02/096-playwright-api-testing-iii-mocking-avanzado-y-buenas-practicas/
 
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
+x_text: |
+  Cerramos la serie de API testing: mocking avanzado en Playwright — respuestas lentas, bloqueo de analítica en CI y buenas prácticas.
+
+  https://unaqaenapuros.com/2026/11/02/096-playwright-api-testing-iii-mocking-avanzado-y-buenas-practicas/
+
+  #Playwright #APITesting #QA
 ---
 ¡Hola a todos!
 

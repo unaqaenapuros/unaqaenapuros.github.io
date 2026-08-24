@@ -17,6 +17,12 @@ social_text: |
   https://unaqaenapuros.com/2026/11/30/098-playwright-probando-extensiones-de-firefox/
 
   #Playwright #QA #TestAutomation #Firefox #UnaQAEnApuros
+x_text: |
+  ¿Cómo se prueba una extensión de navegador? Paso a paso: testear una extensión real de Firefox con Playwright.
+
+  https://unaqaenapuros.com/2026/11/30/098-playwright-probando-extensiones-de-firefox/
+
+  #Playwright #Firefox #QA
 ---
 ¡Hola a todos!
 

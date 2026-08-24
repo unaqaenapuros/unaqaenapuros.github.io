@@ -18,6 +18,12 @@ social_text: |
   https://unaqaenapuros.com/2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/
 
   #Playwright #QA #TestAutomation #APITesting #UnaQAEnApuros
+x_text: |
+  Playwright no es solo para UI. Empezamos una mini-serie de API testing: métodos HTTP, códigos de estado y la fixture request.
+
+  https://unaqaenapuros.com/2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/
+
+  #Playwright #APITesting #QA
 ---
 ¡Hola a todos!
 
