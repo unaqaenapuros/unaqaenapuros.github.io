@@ -20,7 +20,7 @@ En esta entrada vamos a hablar de las pruebas de integración. ¡Empezamos!
 
 ## ¿Qué son las pruebas de integración?
 
-{{< figure src="/img/blog-images/wp-posts/2021/02/image-1.png?w=922" width="922" height="538" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/02/image-1.png?w=922" width="922" height="538" alt="Diagrama de Venn con dos módulos, A y B, superpuestos: las pruebas de integración cubren la zona donde ambos se solapan." caption="" >}}
 
 Las **pruebas de integración** son aquellas que se realizan en el ámbito del desarrollo de software una vez que se han aprobado las pruebas unitarias. Únicamente se refieren a la prueba o pruebas de todos los elementos unitarios que componen un proceso, hecha en conjunto, de una sola vez. Consiste en realizar pruebas para verificar que un gran conjunto de partes de software funcionan juntos.
 

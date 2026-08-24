@@ -28,7 +28,7 @@ A continuación haremos una lista de las pruebas hardware que tenemos que añadi
 
 ### **Instalación de la aplicación.**
 
-![7](/img/blog-images/wp-posts/2018/04/7.png)
+![Ilustración del flujo de instalación de una app: botón de descarga y pantalla de instalación en la store.](/img/blog-images/wp-posts/2018/04/7.png)
 
 La primera prueba que debemos hacer es la de instalación. Debemos comprobar que la aplicación se instala correctamente en las versiones del sistema operativo que se soporten (iOS 10 y 11, Android 4.4, 5, 6...). Es muy importante que la instalación se realice correctamente y la aplicación se abra sin dar ningún fallo.
 
@@ -36,37 +36,37 @@ Tenemos que tener en cuenta que podemos instalar la aplicación desde el navegad
 
 ### **Desinstalación de la aplicación.**
 
-![8](/img/blog-images/wp-posts/2018/04/8.jpeg)
+![Ilustración representando la desinstalación de una aplicación móvil.](/img/blog-images/wp-posts/2018/04/8.jpeg)
 
 Al igual que hacemos pruebas de instalación también debemos hacerlas de desinstalación de la app. Tenemos que comprobar que los datos se borran correctamente y no se quedan datos corruptos en el dispositivo, además de comprobar que la desinstalación se realiza correctamente y el proceso termina bien.
 
 ### **Tamaño y densidad de pantalla.**
 
-![6](/img/blog-images/wp-posts/2018/04/6.jpg)
+![Ilustración comparando distintos tamaños y densidades de pantalla de dispositivos móviles.](/img/blog-images/wp-posts/2018/04/6.jpg)
 
 Es de máxima importancia saber y conocer los dispositivos para los que está adaptada nuestra aplicación y en los dispositivos en los que tiene que funcionar bien, no es lo mismo probar en un iPhone 8 Plus ( _5,5 pulgadas, 1.920x1.080 píxeles a 401 ppp_) que en un iPhone SE ( _4 pulgadas, 1,136x640 pixeles a 326ppp)._ Debemos hacer pruebas en ambas densidades (así como en otros dispositivos como tablets si también lo soportamos como parte de los requerimientos). Es importante que comprobemos que la aplicación encaja visualmente en los dispositivos y que no se encuentre ninguna deficiencia visual al utilizarla.
 
 ### **Orientación de la pantalla.**
 
-![5](/img/blog-images/wp-posts/2018/04/5.jpeg)
+![Ilustración de un dispositivo móvil en orientación portrait y landscape.](/img/blog-images/wp-posts/2018/04/5.jpeg)
 
 Al igual que el tamaño y la densidad, es muy importante conocer la orientación de la pantalla en la que se permite en uso de la app. Hay aplicaciones que sólo están diseñadas para portrait pero, por el contrario, hay otras que permiten ambas orientaciones, tanto portrait como landscape. Es necesario que probemos que todas las pantallas de la aplicación se adaptan correctamente a ambas orientaciones y que todos los elementos se ven correctamente.
 
 ### **Datos y conectividad.**
 
-![9.png](/img/blog-images/wp-posts/2018/04/9.png)
+![Ilustración de un dispositivo móvil conectado por WiFi y por red de datos.](/img/blog-images/wp-posts/2018/04/9.png)
 
 Si nuestra aplicación soporta estar sin conexión o no lo soporta, debemos de conocerlo y probar que si la aplicación lo necesita, puede descargar los datos cuando nos conectamos a ella, estemos en una red Wifi o en una red de datos. Es importante que si estamos usando la aplicación con una red de datos y pasamos a una red Wifi, la aplicación reconoce el cambio y el usuario no tiene problemas de conexión, así como el pasar de estar en una red Wifi a una red de datos.
 
 ### **Llamadas entrantes.**
 
-![1](/img/blog-images/wp-posts/2018/04/1.jpeg)
+![Ilustración de una llamada entrante en un dispositivo móvil.](/img/blog-images/wp-posts/2018/04/1.jpeg)
 
 Otra prueba que tenemos que tener en mente es el que nuestra aplicación permita o no las llamadas entrantes y que cuando las tengamos, si estamos usando la aplicación, ésta se mantenga en segundo plano con la sesión abierta y los datos guardados, de esta forma si estamos realizando una compra en nuestra aplicación (por ejemplo) y nos llama alguien, una vez que finalicemos la llamada, podremos seguir realizando la compra en el punto exacto en el que nos encontrábamos.
 
 ### **Teclas físicas del dispositivo.**
 
-![2](/img/blog-images/wp-posts/2018/04/2.jpg)
+![Ilustración de los botones físicos de un dispositivo móvil.](/img/blog-images/wp-posts/2018/04/2.jpg)
 
 Además de todo lo anterior, tenemos que tener en cuenta el hecho de los botones físicos en los dispositivos móviles. Puede que tengamos botones físicos para hacer click hacia atrás o para poner la app en segundo plano, y debemos comprobar que estas teclas funcionan sobre la aplicación (por ejemplo el botón físico de atrás) y que esa funcionalidad se realiza correctamente. También debemos comprobar que al ponerla en segundo plano (usando un botón físico), podemos volver a traer de nuevo nuestra aplicación a primer plano y sigue funcionando en el mismo punto en el que la dejamos.
 

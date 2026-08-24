@@ -16,7 +16,7 @@ author: estefafdez
 
 En esta entrada seguiremos hablando del proyecto [Selenium-Cucumber](https://github.com/estefafdez/selenium-cucumber) que comenzamos en la anterior entrada. ¡Comenzamos!
 
-![a.png](/img/blog-images/wp-posts/2017/08/a.png)
+![Logos de Cucumber y Selenium.](/img/blog-images/wp-posts/2017/08/a.png)
 
 * * *
 
@@ -42,17 +42,17 @@ Esta clase es una de las más importantes ya que nos sirve para poder configurar
 
 Para empezar en esta clase tenemos un Singleton pattern para devolver una única instancia de la clase así como un constructor privado:
 
-![constructor](/img/blog-images/wp-posts/2017/10/constructor.png)
+![Código Java del patrón Singleton y el constructor privado de la clase CreateDriver.](/img/blog-images/wp-posts/2017/10/constructor.png)
 
 Esto nos permitirá inicializar la configuración del driver cuando se cree una nueva instancia de la clase.
 
 Después de estas funciones principales necesitamos inicializar la configuración del driver con los parámetros que se han seleccionado en el POM (como explicamos en la anterior entrada, la funcionalidad principal de este proyecto es tener un core en el que mediante el POM podamos seleccionar tanto el sistema operativo como el navegador que queremos usar para lanzar los test automáticos).
 
-¿Cómo hacemos esta lectura de propiedades del POM y las usamos para configurar la instancia del Driver? Mediante la función **initConfig():**![initconfig.png](/img/blog-images/wp-posts/2017/10/initconfig.png)
+¿Cómo hacemos esta lectura de propiedades del POM y las usamos para configurar la instancia del Driver? Mediante la función **initConfig():**![Código Java del método initConfig() que lee los parámetros del navegador, sistema operativo y nivel de log desde el POM.](/img/blog-images/wp-posts/2017/10/initconfig.png)
 
 ¿Qué podemos ver en esta función? que tenemos una función load para cargar las diferentes properties que necesitamos, en nuestro caso esas properties son: **browser, os, logLevel.**¿Cómo las definimos en el POM? Escribiendo en los siguientes campos el valor que queramos de los disponibles:
 
-![pom.png](/img/blog-images/wp-posts/2017/10/pom.png)
+![Fragmento del pom.xml con las propiedades browser, os y logLevel configurables.](/img/blog-images/wp-posts/2017/10/pom.png)
 
 - Browser: podemos seleccionar como navegador Firefox, Chrome, Internet Explorer (Remote sería para lanzar los test automáticos en SauceLabs que es un WIP por ahora).
 - OS: Podemos seleccionar el sistema operativo con el que trabajemos, ya sea Linux, Mac o Windows.

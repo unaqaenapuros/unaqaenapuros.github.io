@@ -16,7 +16,7 @@ author: estefafdez
 
 En esta entrada hablaremos sobre la historia de las stores, esas plataformas que forman parte de nuestro día a día y que nos permiten descargar cualquier aplicación en segundos... ¡Comenzamos!
 
-![1.jpg](/img/blog-images/wp-posts/2018/04/1.jpg)
+![Logos de Android y de la App Store.](/img/blog-images/wp-posts/2018/04/1.jpg)
 
 Antes de entrar a hablar de cada una de las stores debemos conocer cómo empezó a surgir el movimiento de las apps móviles hasta llegar a este punto. Al principio no había ninguna app-store ni conocíamos si quiera esa palabra, lo único que conocíamos eran las aplicaciones pre-instaladas que venían en los primeros teléfonos (antes de ser los smartphones que conocemos hoy en día). Aquel "snake" de los primeros nokias o incluso la aplicación de sms o la agenda del teléfono era la única fuente de aplicaciones que teníamos sobre los 90, a partir de ahí comenzó el movimiento de mejora que nos llevó a lo que hoy son las stores.
 
@@ -24,7 +24,7 @@ Los primeros móviles como comentábamos en entradas anteriores, utilizaban tecn
 
 ## Lanzamiento de iOS y App Store.
 
-![2](/img/blog-images/wp-posts/2018/04/2.png)
+![Botón Download on the App Store.](/img/blog-images/wp-posts/2018/04/2.png)
 
 El 29 de junio de 2007, Apple lanzó [iOS](https://es.wikipedia.org/wiki/IOS) , un sistema operativo desarrollado originalmente para el [iPhone](https://es.wikipedia.org/wiki/IPhone "IPhone") ( _iPhone OS_), y que después se ha usado en otros dispositivos como el [iPod touch](https://es.wikipedia.org/wiki/IPod_touch "IPod touch") y el [iPad](https://es.wikipedia.org/wiki/IPad "IPad").  Al contrario de Android, iOS es un sistema más restrictivo y no se permite la instalación de iOS en hardware de terceros.
 
@@ -40,7 +40,7 @@ Como ya comentamos el entradas [previas](/2017/11/29/037-pruebas-moviles-tipos-d
 
 ## Lanzamiento de Android y Google Market.
 
-![3.png](/img/blog-images/wp-posts/2018/04/3.png)
+![Botón Disponible en Google Play.](/img/blog-images/wp-posts/2018/04/3.png)
 
 El 23 de septiembre de 2008, Google lanzó [Android](https://es.wikipedia.org/wiki/Android), un sistema operativo libre basado en el núcleo de Linux diseñado principalmente para dispositivos móviles con pantalla táctil. El primer móvil con el sistema operativo Android fue el [HTC Dream](https://es.wikipedia.org/wiki/HTC_Dream "HTC Dream") y se vendió en octubre de 2008.
 
@@ -54,7 +54,7 @@ A partir del cambio de nombre de 2012 a Google Play Store, Google optó por aña
 
 ## Otras Stores: Windows Store.
 
-![4.png](/img/blog-images/wp-posts/2018/04/4.png)
+![Botón Download from Windows Store.](/img/blog-images/wp-posts/2018/04/4.png)
 
 Después de ver el éxito de Apple y Android, Windows creó Windows Phone que presentó oficialmente el 15 de febrero de 2010 en el [Mobile World Congress](https://es.wikipedia.org/wiki/Mobile_World_Congress "Mobile World Congress") en Barcelona.
 

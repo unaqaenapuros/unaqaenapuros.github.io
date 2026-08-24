@@ -16,7 +16,7 @@ author: estefafdez
 
 Esta será la última entrada referente al proyecto [Selenium-Cucumber](https://github.com/estefafdez/selenium-cucumber). ¡Comenzamos!
 
-![a.png](/img/blog-images/wp-posts/2017/08/a.png)
+![Logos de Cucumber y Selenium.](/img/blog-images/wp-posts/2017/08/a.png)
 
 * * *
 
@@ -32,7 +32,7 @@ Esta sección se compone de las diferentes Features (test) del proyecto.
 
 #### **HomePage.feature**
 
-![feature.png](/img/blog-images/wp-posts/2017/10/feature.png)
+![Fichero HomePage.feature en Gherkin, con el nombre de la feature, su descripción y el escenario de test.](/img/blog-images/wp-posts/2017/10/feature.png)
 
 Pues bien, después de todo lo que hemos hablado sobre la estructura, ahora nos vamos a la parte más sencilla, crear un test automático.
 
@@ -53,7 +53,7 @@ En esta sección encontraremos los ficheros .properties con los selectores de lo
 
 #### **selector.properties**
 
-![selectors.png](/img/blog-images/wp-posts/2017/10/selectors.png)
+![Fichero selector.properties con los selectores xpath, id y className de los elementos.](/img/blog-images/wp-posts/2017/10/selectors.png)
 
 Así es como se ve nuestro fichero de properties llamado selector.properties. ¿Qué definimos aquí? pues el xpath, ID, clase, className o forma de seleccionar el elemento que queramos de forma concreta. Podemos añadir todos los selectores que queramos teniendo en cuenta que debemos seguir algún tipo de orden para seguir haciendo mantenible este fichero.
 

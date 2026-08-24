@@ -38,7 +38,7 @@ Identificar los principales escenarios, determinar la variabilidad de los usuari
 
 ### Configurar el entorno de prueba.
 
-{{< figure src="/img/blog-images/wp-posts/2021/10/test-dev-and-production-environment.jpg?w=485" width="485" height="165" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/10/test-dev-and-production-environment.jpg?w=485" width="485" height="165" alt="Diagrama de flujo de entornos: los desarrolladores despliegan al entorno de Test, y de ahí a los entornos de Producción." caption="" >}}
 
 Preparar el entorno de prueba, herramientas y recursos necesarios para ejecutar cada una de las estrategias, así como las características y componentes disponibles para la prueba. Asegurarse de que el entorno de prueba se ha preparado para la monitorización de los recursos según sea necesario.
 
@@ -48,13 +48,13 @@ Desarrollar las pruebas de rendimiento de acuerdo con el diseño del plan.
 
 ### Ejecutar la prueba.
 
-{{< figure src="/img/blog-images/wp-posts/2021/10/load-testing2.png?w=627" width="627" height="407" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/10/load-testing2.png?w=627" width="627" height="407" alt="Meme de un elefante subido a un monitor con el texto: tiene que haber una forma mejor de hacer pruebas de carga." caption="" >}}
 
 Ejecutar y monitorizar las pruebas. Validar las pruebas, los datos de las pruebas, y recoger los resultados. Ejecutar pruebas válidas para analizar, mientras se monitoriza la prueba y su entorno.
 
 ### Analizar los resultados, realizar un informe y repetirlo.
 
-{{< figure src="/img/blog-images/wp-posts/2021/10/performancesummary1.webp?w=1024" width="1024" height="661" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/10/performancesummary1.webp?w=1024" width="1024" height="661" alt="Gráfico de resumen de rendimiento por endpoint, con tiempos de respuesta mínimo, medio y máximo, y desviación estándar." caption="" >}}
 
 Consolidar y compartir los resultados de la prueba. Analizar los datos, tanto individualmente, como con un equipo multidisciplinario. Volver a priorizar el resto de las pruebas y volver a ejecutarlas de ser necesario. Cuando todas las métricas estén dentro de los límites aceptados, ninguno de los umbrales establecidos han sido rebasados, y toda la información deseada se ha reunido, las pruebas han acabado para el escenario definido por la configuración.
 

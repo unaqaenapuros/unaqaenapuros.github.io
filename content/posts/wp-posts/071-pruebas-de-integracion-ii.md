@@ -19,7 +19,7 @@ author: estefafdez
 
 En esta entrada vamos a seguir con las pruebas de integración como empezamos en la entrada anterior. Esta vez vamos a aprender qué tipos de pruebas de integración existen así como sus ventajas e inconvenientes. ¡Empezamos!
 
-{{< figure src="/img/blog-images/wp-posts/2021/02/image-2.png?w=900" width="900" height="702" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/02/image-2.png?w=900" width="900" height="702" alt="Diagrama de Venn con tres componentes solapándose entre sí, representando la integración entre componentes de software." caption="" >}}
 
 ## Tipos de pruebas de integración.
 

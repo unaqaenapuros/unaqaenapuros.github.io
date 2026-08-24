@@ -16,7 +16,7 @@ author: estefafdez
 
 En esta entrada seguiremos hablando del proyecto [Selenium-Cucumber](https://github.com/estefafdez/selenium-cucumber). ¡Comenzamos!
 
-![a.png](/img/blog-images/wp-posts/2017/08/a.png)
+![Logos de Cucumber y Selenium.](/img/blog-images/wp-posts/2017/08/a.png)
 
 * * *
 
@@ -42,15 +42,15 @@ En esta clase tenemos una factoría de Drivers que nos permitirá seleccionar y 
 
 Empezamos declarando la carpeta en la que se encuentran los ficheros que nos permitirán lanzar los diferentes drivers (Gekodriver para Firefox, Chromedriver...)
 
-![resources](/img/blog-images/wp-posts/2017/10/resources.png)
+![Código Java con la declaración de la carpeta de recursos donde están los drivers de cada navegador.](/img/blog-images/wp-posts/2017/10/resources.png)
 
 De nuevo creamos un constructor privado y un Singleton pattern para crear una instancia única de la clase:
 
-![constructor.png](/img/blog-images/wp-posts/2017/10/constructor1.png)
+![Código Java del patrón Singleton y el constructor privado de la clase WebDriverFactory.](/img/blog-images/wp-posts/2017/10/constructor1.png)
 
 Y ahora vamos al método más importante de esta clase: createNewWebDriver().
 
-![createnewwebdriver.png](/img/blog-images/wp-posts/2017/10/createnewwebdriver.png)
+![Código Java del método createNewWebDriver(), con los bloques para Firefox, Chrome e IE.](/img/blog-images/wp-posts/2017/10/createnewwebdriver.png)
 
 En este método tenemos 3 grandes bloques diferenciados: si el driver seleccionado es Firefox, Chrome o IE.
 
@@ -60,7 +60,7 @@ Si el driver seleccionado es Firefox, vemos el sistema operativo y devolvemos un
 
 ¿Qué se incluye en la carpeta files/software? Pues en esta carpeta encontramos diferentes carpetas por sistema operativo con los drivers disponibles para cada uno de ellos:
 
-![drivers](/img/blog-images/wp-posts/2017/10/drivers.png)
+![Carpetas por sistema operativo dentro de files/software, cada una con los drivers correspondientes.](/img/blog-images/wp-posts/2017/10/drivers.png)
 
 y después de cada nueva instancia del driver la guardamos en la variable driver y la devolvemos y ya tenemos nuestra instancia del driver creada y configurada con los valores del POM leídos mediante properties.
 
@@ -72,11 +72,11 @@ Esta es una clase customizada para gestionar la lectura de properties de un fich
 
 Esta clase tiene dos funciones importantes:
 
-_**getSelectorFromProperties():**_![getselector](/img/blog-images/wp-posts/2017/10/getselector.png)
+_**getSelectorFromProperties():**_![Código Java del método getSelectorFromProperties() de la clase PropertiesHandler.](/img/blog-images/wp-posts/2017/10/getselector.png)
 
 ¿Qué hace este método? Nos selecciona un fichero .properties donde esté la key que le pasamos y nos de vuelve el selector que necesitamos de ese fichero .properties. ¿Para qué nos sirve esta función? Pues para el siguiente método que contiene la clase.
 
-**_getCompleteElement()_**![get.png](/img/blog-images/wp-posts/2017/10/get.png)
+**_getCompleteElement()_**![Código Java del método getCompleteElement(), que devuelve un WebElement a partir de un type y una key.](/img/blog-images/wp-posts/2017/10/get.png)
 
 ¿Qué hace este método? nos devuelve el WebElement a partir de un type y una key.
 
