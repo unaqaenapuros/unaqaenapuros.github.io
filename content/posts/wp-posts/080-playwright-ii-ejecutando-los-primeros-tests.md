@@ -39,7 +39,7 @@ npx playwright test
 
 Por defecto, los tests se ejecutan en modo **headless** (sin ventana de navegador visible) y en **paralelo** en todos los navegadores configurados en el fichero `playwright.config.ts` (en este caso sólo en Chrome). Los resultados se muestran directamente en el terminal como se puede ver en la imagen:
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.45.34.png?w=1024" width="1024" height="518" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.45.34.png?w=1024" width="1024" height="518" alt="Terminal mostrando el resultado de la ejecución de los tests de Playwright." caption="" >}}
 
 Algunos modificadores útiles que podemos añadir a este comando son:
 
@@ -63,7 +63,7 @@ npx playwright show-report
 
 El reporte HTML es especialmente útil cuando ejecutamos los tests en un entorno CI/CD, ya que nos da toda la información necesaria para entender qué ha fallado sin necesidad de volver a ejecutar los tests.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.48.02.png?w=1024" width="1024" height="635" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.48.02.png?w=1024" width="1024" height="635" alt="Reporte HTML de Playwright con el resumen de tests pasados y fallidos." caption="" >}}
 
 ### UI Mode.
 
@@ -82,7 +82,7 @@ Con el UI Mode tenemos acceso a:
 
 Si estamos desarrollando o depurando tests, el UI Mode es la opción más recomendable, ya que nos da una visión completa de lo que está pasando en cada momento.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.51.03.png?w=1024" width="1024" height="639" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.51.03.png?w=1024" width="1024" height="639" alt="Interfaz del UI Mode de Playwright, con la lista de tests y el navegador en tiempo real." caption="" >}}
 
 ### Extensión de VS Code.
 
@@ -93,7 +93,7 @@ Playwright tiene una extensión oficial para **VS Code** que integra todas las c
 1. Abrimos la paleta de comandos con `Ctrl+Shift+P` y ejecutamos el comando `Test: Install Playwright`.
 1. Seleccionamos los navegadores que queremos configurar.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.52.21.png?w=1024" width="1024" height="644" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.52.21.png?w=1024" width="1024" height="644" alt="Instalación de la extensión oficial de Playwright para VS Code." caption="" >}}
 
 Una vez instalada, tenemos acceso al **Test Explorer** desde la barra lateral de VS Code. Desde aquí podemos:
 
@@ -104,7 +104,7 @@ Una vez instalada, tenemos acceso al **Test Explorer** desde la barra lateral de
 
 La extensión de VS Code es la forma más cómoda de trabajar con Playwright en el día a día, ya que nos permite ejecutar y depurar tests sin salir del editor.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.54.46.png?w=1024" width="1024" height="516" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-03-at-18.54.46.png?w=1024" width="1024" height="516" alt="Panel Test Explorer de la extensión de Playwright en VS Code, con los tests y sus botones de ejecución." caption="" >}}
 
 * * *
 
