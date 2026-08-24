@@ -74,7 +74,7 @@ También puedes encontrar el script en el siguiente repositorio de Github: [http
 
 Copia el siguiente script y guárdalo en un fichero de nombre **emulator.sh.** Cada vez que lo necesites, ejecútalo y podrás abrir el emulador que necesites de forma rápida.
 
-![](/img/blog-images/wp-posts/2019/02/1-2.png)
+![Terminal ejecutando el script emulator.sh, con la lista de emuladores disponibles para seleccionar.](/img/blog-images/wp-posts/2019/02/1-2.png)
 
 Y hasta aquí el tutorial para crear este script. En la siguiente entrada hablaremos de cómo crear, abrir y eliminar emuladores de Android por consola.
 

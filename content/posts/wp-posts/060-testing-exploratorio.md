@@ -12,7 +12,7 @@ author: estefafdez
 
 En esta entrada hablaremos de una parte del testing muy utilizada en cualquier equipo y que tenemos que conocer bien las bases para saber hacerla correctamente, hablamos del testing exploratorio. ¡Comenzamos!
 
-![1](/img/blog-images/wp-posts/2019/08/1.png)
+![Ciclo del testing exploratorio: Learn, Test Design, Test Execution, Analysis y vuelta a Learn.](/img/blog-images/wp-posts/2019/08/1.png)
 
 Por defecto, cuando pensamos en **testing exploratorio**, lo que se nos viene a la cabeza es un tipo de testing ad-hoc, sin planificación, sin límite de tiempo, sin documentación... pero el testing exploratorio bien realizado es mucho más que todo eso.
 
