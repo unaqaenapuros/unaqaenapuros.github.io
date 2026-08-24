@@ -26,7 +26,7 @@ Continuamos en esta entrada con el proyecto Android Barista, en esta entrada hab
 
 * * *
 
-## ![11](/img/blog-images/wp-posts/2018/04/11.png)
+## ![Logo de Android junto al logo de Barista (una máquina de café).](/img/blog-images/wp-posts/2018/04/11.png)
 
 En esta sección hablaremos de cómo hacer pruebas automáticas de UI en Android usando Barista.
 
@@ -61,7 +61,7 @@ allprojects {
 }
 ```
 
-![Captura de pantalla 2018-11-04 a las 14.37.59](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-37-59.png)
+![Fichero build.gradle del proyecto con el repositorio de Google en Maven añadido.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-37-59.png)
 
 A continuación, importamos Barista como una dependencia de testing en el build.gradle de la app:
 
@@ -71,7 +71,7 @@ androidTestCompile('com.schibsted.spain:barista:2.7.0') {
 }
 ```
 
-![Captura de pantalla 2018-11-04 a las 14.39.12](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-39-12.png)
+![Fichero build.gradle de la app con la dependencia de Barista importada.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-39-12.png)
 
 Si necesitamos otro [paquete de Espresso](https://developer.android.com/topic/libraries/testing-support-library/packages.html#atsl-dependencies) podemos añadirlo al proyecto sin ningún problema.
 
@@ -156,11 +156,11 @@ Si esta comprobación es correcta, se escribirá en el log que el botón1 se mue
 
 Una vez que tenemos el test creado, pasaremos a ejecutarlo, para ello debemos poner el ratón encima del test, hacemos click con el botón derecho y le damos a Run:
 
-![Captura de pantalla 2018-11-04 a las 14.43.57](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-43-57.png)
+![Menú contextual de Android Studio con la opción Run sobre el test de Barista.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-43-57.png)
 
 El emulador se abrirá y el test comenzará a ejecutarse. Una vez que termine, podremos ver los resultados:
 
-![Captura de pantalla 2018-11-04 a las 14.44.39](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-44-39.png)
+![Resultado de la ejecución del test de Barista en Android Studio, marcado como superado.](/img/blog-images/wp-posts/2018/11/captura-de-pantalla-2018-11-04-a-las-14-44-39.png)
 
 Y así podemos hacer test usando Barista de forma sencilla.
 

@@ -23,7 +23,7 @@ Como alternativa a Appium Inspector, podemos utilizar (sólo para Android) la he
 
 _UIautomatorviewer_ es una aplicación de GUI que analiza los componentes de interfaz de usuario de una aplicación de Android. Para automatizar cualquier aplicación de Android utilizando Appium, necesitamos identificar los objetos AUT (Application under test / objetos de la aplicación a probar). Con _UIAutomatorViewer_ podemos inspeccionar la UI de una aplicación de Android y descubrir el árbol DOM de la aplicación, además de ver las propiedades de las diferentes vistas (id, text...) de un elemento.
 
-![](/img/blog-images/wp-posts/2019/02/1-1.png?w=1000)
+![Interfaz de UIAutomatorViewer con tres paneles etiquetados: la imagen de la app, el árbol DOM de la pantalla y las propiedades de cada objeto.](/img/blog-images/wp-posts/2019/02/1-1.png?w=1000)
 
 ## ¿Cómo descargar e instalar UIAutomator?
 
@@ -45,34 +45,34 @@ Para usuarios de Mac:
 
 Una vez que estemos en la carpeta, ejecutaremos el fichero (doble click en): _UIAutomatorViewer_ y se abrirá la aplicación:
 
-![](/img/blog-images/wp-posts/2019/02/3-2.png)
+![Aplicación UIAutomatorViewer abierta tras ejecutarla desde la carpeta tools/bin del SDK.](/img/blog-images/wp-posts/2019/02/3-2.png)
 
 ## ¿Cómo utilizar UIAutomatorViewer?
 
 En primer lugar, debemos tener el emulador de Android ejecutándose y después debemos instalar el apk que queremos inspeccionar. Esto es tan sencillo como arrastrar un apk dentro del emulador:
 
-![](/img/blog-images/wp-posts/2019/02/install_apk.gif)
+![Gif arrastrando un APK al emulador de Android para instalarlo.](/img/blog-images/wp-posts/2019/02/install_apk.gif)
 
 Una vez que tengamos la aplicación abierta y el _UIAutomatorViewer_ abierto, hacemos click en el botón de Device screenshot del _UIAutomatorViewer_:
 
-![](/img/blog-images/wp-posts/2019/02/4-1.png)
+![Botón Device screenshot en UIAutomatorViewer.](/img/blog-images/wp-posts/2019/02/4-1.png)
 
 Al refrescar la pantalla aparecerá la pantalla del emulador con la aplicación y seremos capaces de ver todos los elementos:
 
-![](/img/blog-images/wp-posts/2019/02/5.png?w=1000)
+![UIAutomatorViewer mostrando la pantalla del emulador junto al árbol de elementos.](/img/blog-images/wp-posts/2019/02/5.png?w=1000)
 
 Como podemos ver en la imagen, tenemos dos paneles:
 
 1. En la primera parte del panel (arriba a la derecha) aparece el DOM de la página así como todos los contenedores y elementos que aparecen.
 1. Al hacer click en un botón, además de aparecer la parte del árbol donde está, en la segunda parte del panel (abajo a la derecha) aparecen las propiedades de los elementos, como, por ejemplo: text, resource-id...
 
-![](/img/blog-images/wp-posts/2019/02/6.png?w=1000)
+![UIAutomatorViewer mostrando las propiedades de un elemento seleccionado, como text y resource-id.](/img/blog-images/wp-posts/2019/02/6.png?w=1000)
 
 ## Posibles errores en UIAutomator.
 
 Aunque _UIAutomatorViewer_ funciona bastante bien (a veces incluso mejor que Appium Inspector), hay veces que podemos encontrarnos errores como este:
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-18.49.45.png)
+![Mensaje de error mostrado por UIAutomatorViewer.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-18.49.45.png)
 
 Este tipo de errores se solucionan:
 

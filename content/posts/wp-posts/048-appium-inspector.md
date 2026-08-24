@@ -29,23 +29,23 @@ Appium Inspector es una aplicación que nos permite, de forma rápida, inspeccio
 
 Para poder descargarlo debemos  ir al siguiente enlace: [https://github.com/appium/appium-desktop/releases/](https://github.com/appium/appium-desktop/releases/). Podemos elegir la plataforma para la que queramos utilizarlo (Linux, Windows o Mac). Descargamos el ejecutable, lo abrimos y seguimos los pasos y ya lo tenemos completamente instalado para utilizarlo.
 
-![](/img/blog-images/wp-posts/2019/02/1.png?w=1000)
+![Página de releases de Appium Desktop en GitHub, con los ejecutables para Linux, Windows y Mac.](/img/blog-images/wp-posts/2019/02/1.png?w=1000)
 
 ## ¿Cómo lo utilizamos?
 
 Una vez que lo tengamos descargado e instalado, debemos hacer click en **Start Server**:
 
-![](/img/blog-images/wp-posts/2019/02/2.png?w=1000)
+![Pantalla de inicio de Appium Desktop con el botón Start Server.](/img/blog-images/wp-posts/2019/02/2.png?w=1000)
 
 Donde nos aparecerá la siguiente pantalla:
 
-![](/img/blog-images/wp-posts/2019/02/3.png?w=1000)
+![Appium Server ya arrancado, con el icono de la lupa para abrir el Inspector.](/img/blog-images/wp-posts/2019/02/3.png?w=1000)
 
 Hacemos click en el icono de la lupa y nos aparece la siguiente pantalla:
 
-![](/img/blog-images/wp-posts/2019/02/4.png?w=1000)
+![Pantalla de nueva sesión de Appium Inspector con la opción Automatic Server.](/img/blog-images/wp-posts/2019/02/4.png?w=1000)
 
-Seleccionamos **Automatic Server** y ponemos las capabilities de nuestra aplicación a probar, un ejemplo podría ser _(utilizaremos la aplicación de AndroidBarista de la que hablamos en [entradas anteriores](/2018/11/21/046-android-proyecto-android-barista-ii/) para Android):_![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.49.38.png?w=1000)
+Seleccionamos **Automatic Server** y ponemos las capabilities de nuestra aplicación a probar, un ejemplo podría ser _(utilizaremos la aplicación de AndroidBarista de la que hablamos en [entradas anteriores](/2018/11/21/046-android-proyecto-android-barista-ii/) para Android):_![Capabilities configuradas en Appium Inspector: deviceName, platformName, platformVersion y app.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.49.38.png?w=1000)
 
 Las capabilities mínimas que debemos poner son:
 
@@ -56,15 +56,15 @@ Las capabilities mínimas que debemos poner son:
 
 Una vez que tengamos todas las capabilities correctas, hacemos click en **Start Session** y veremos la misma pantalla del emulador en Appium Inspector:
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.53.29.png?w=1000)
+![Appium Inspector mostrando la misma pantalla que el emulador tras iniciar sesión.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.53.29.png?w=1000)
 
 Para poder inspeccionar un elemento, hacemos click en él y veremos las siguientes propiedades:
 
-![](/img/blog-images/wp-posts/2019/02/2-1.png?w=1000)
+![Propiedades de un elemento seleccionado en Appium Inspector.](/img/blog-images/wp-posts/2019/02/2-1.png?w=1000)
 
 Cuando terminemos que ver todos los identificadores de los elementos de la pantalla, quitaremos la sesión haciendo click en:
 
-![](/img/blog-images/wp-posts/2019/02/3-1.png?w=1000)
+![Botón para terminar la sesión en Appium Inspector.](/img/blog-images/wp-posts/2019/02/3-1.png?w=1000)
 
 ## Más funcionalidades.
 
@@ -72,21 +72,21 @@ Ademas de inspeccionar elemento, también podemos realizar funcionalidades como:
 
 - Realizar grabación de pasos: como si utilizáramos Selenium IDE.
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.57.46.png)
+![Funcionalidad de grabación de pasos en Appium Inspector.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.57.46.png)
 
 - Buscar un id/xpath: podemos buscar dentro de nuestra pantalla mediante un ID o Xpath un elemento para comprobar que verdaderamente es el correcto.
 
 Hacemos click en search for element:
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.00.png)
+![Botón Search for element en Appium Inspector.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.00.png)
 
 Seleccionamos como estratégia a localizar ID e introducimos el nombre del ID a buscar:
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.29.png)
+![Formulario de búsqueda de elemento en Appium Inspector, con la estrategia ID seleccionada.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.29.png)
 
 Hacemos click en search para buscar el elemento:
 
-![](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.37.png)
+![Resultado de la búsqueda del elemento por ID en Appium Inspector.](/img/blog-images/wp-posts/2019/02/captura-de-pantalla-2019-02-16-a-las-13.58.37.png)
 
 Y hasta aquí Appium Inspector, en la siguiente entrada hablaremos del UIAutomator como herramienta para localizar elementos en Android.
 
