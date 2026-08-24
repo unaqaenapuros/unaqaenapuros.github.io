@@ -19,7 +19,7 @@ author: estefafdez
 
 En esta entrada hablaremos de las diferentes herramientas que tenemos para realizar pruebas de integración. ¡Comenzamos!
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/screenshot-2021-04-14-at-17.47.09.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/screenshot-2021-04-14-at-17.47.09.png?w=1024" width="1024" height="621" alt="" caption="" >}}
 
 ## Herramientas disponibles.
 

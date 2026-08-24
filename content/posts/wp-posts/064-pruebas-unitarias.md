@@ -19,7 +19,7 @@ author: estefafdez
 
 En esta entrada y siguientes vamos a hablar de las pruebas unitarias. ¡Empezamos!
 
-{{< figure src="/img/blog-images/wp-posts/2020/10/74.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/10/74.png?w=1024" width="1024" height="576" alt="" caption="" >}}
 
 Una **prueba unitaria** es una forma de comprobar el correcto funcionamiento de una unidad de código. Por ejemplo en diseño estructurado o en diseño funcional una función o un procedimiento, en diseño orientado a objetos una clase.
 

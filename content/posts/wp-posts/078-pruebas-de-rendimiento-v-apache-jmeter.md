@@ -20,11 +20,11 @@ Volvemos a la carga para hablar de Apache Jmeter, una de las herramientas de aut
 
 ## ¿Qué es Jmeter?
 
-{{< figure src="/img/blog-images/wp-posts/2024/09/imagen.png?w=600" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2024/09/imagen.png?w=600" width="600" height="300" alt="" caption="" >}}
 
 JMeter es un proyecto de Apache que puede ser utilizado como una herramienta de prueba de carga para analizar y medir el desempeño de una variedad de servicios, con énfasis en aplicaciones web. Con esta aplicación podemos realizar también pruebas funcionales.
 
-{{< figure src="/img/blog-images/wp-posts/2024/09/imagen-1.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2024/09/imagen-1.png?w=1024" width="1024" height="561" alt="" caption="" >}}
 
 JMeter puede ser usado como una herramienta de pruebas unitarias para conexiones de bases de datos con JDBC, FTP, LDAP, Servicios web, JMS, HTTP y conexiones TCP genéricas. Puede también ser configurado como un monitor de peticiones HTTP (lo realmente importante para nuestro propósito), aunque es comúnmente considerado una solución ad-hoc respecto de soluciones avanzadas de monitoreo.
 

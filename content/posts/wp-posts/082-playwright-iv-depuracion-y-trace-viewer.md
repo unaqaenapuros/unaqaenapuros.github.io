@@ -50,7 +50,7 @@ El **UI-Mode** nos permite:
 
 El UI Mode es la herramienta recomendada para el desarrollo y depuración local de tests.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.38.23.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.38.23.png?w=1024" width="1024" height="642" alt="" caption="" >}}
 
 ### Playwright Inspector.
 
@@ -68,7 +68,7 @@ Con el Inspector podemos:
 - **Explorar locators** en la propia ventana del navegador.
 - **Modificar el test en caliente** y ver el efecto inmediato.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.40.25.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.40.25.png?w=1024" width="1024" height="636" alt="" caption="" >}}
 
 Si solo queremos depurar un test concreto, podemos combinarlo con el nombre del test:
 
@@ -88,7 +88,7 @@ test('mi test', async ({ page }) => {
 
 ```
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.42.38.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.42.38.png?w=1024" width="1024" height="645" alt="" caption="" >}}
 
 ### Trace Viewer.
 
@@ -124,7 +124,7 @@ Las trazas se pueden abrir de varias formas:
 - Desde el **reporte HTML**: hacemos click en el icono de traza junto al nombre del test fallido.
 - O directamente desde la vista detallada del test, en la pestaña "Traces".
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/monosnap-playwright-test-report-2026-04-10-18-45-30.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/monosnap-playwright-test-report-2026-04-10-18-45-30.png?w=1024" width="1024" height="426" alt="" caption="" >}}
 
 #### ¿Qué podemos ver en el Trace Viewer?
 
@@ -139,7 +139,7 @@ El Trace Viewer nos da una visión completa de la ejecución del test:
 
 El Trace Viewer es especialmente útil en entornos **CI/CD**, donde no podemos ver el navegador en tiempo real. Gracias a las trazas podemos analizar los fallos a posteriori con el mismo nivel de detalle que si hubiéramos estado viendo la ejecución en directo.
 
-{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.46.30.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/04/screenshot-2026-04-10-at-18.46.30.png?w=1024" width="1024" height="563" alt="" caption="" >}}
 
 ### Conclusión.
 

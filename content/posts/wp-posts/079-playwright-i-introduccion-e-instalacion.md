@@ -22,7 +22,7 @@ Empezamos, ahora sí, con una nueva serie en el blog, y esta vez vamos a hablar 
 
 ## **¿Qué es Playwright?**
 
-{{< figure src="/img/blog-images/wp-posts/2026/03/pw.png?w=960" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2026/03/pw.png?w=960" width="960" height="194" alt="" caption="" >}}
 
 **Playwright** es un framework de código abierto desarrollado por **Microsoft** que permite realizar pruebas end-to-end (E2E) de aplicaciones web. Fue lanzado oficialmente el **31 de enero de 2020** _(¡menudo año y fecha eh!)_ y, curiosamente, su equipo principal tiene raíces de **Puppeteer**: los desarrolladores que trabajaron en esa herramienta en Google se unieron a Microsoft y canalizaron toda esa experiencia para crear algo mejor, superando las limitaciones de frameworks anteriores ( _si no puedes con el enemigo, únete_).
 

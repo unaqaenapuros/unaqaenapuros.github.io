@@ -43,7 +43,7 @@ Aunque los tests automáticos y manuales tengan coste inicial el ponerlos en fun
 
 La siguiente gráfica muestra esa relación:
 
-{{< figure src="/img/blog-images/wp-posts/2020/10/chart.jpg?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/10/chart.jpg?w=1024" width="1024" height="512" alt="" caption="" >}}
 
 ### Limitaciones de las pruebas automáticas.
 

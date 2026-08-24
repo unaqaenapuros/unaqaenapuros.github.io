@@ -35,7 +35,7 @@ Las principales razones para realizar la automatización de pruebas son:
 
 En el siguiente gráfico podremos comprobar el retorno de inversión cuando realizamos automatización de pruebas con respecto a ejecutar pruebas manuales a lo largo de los diferentes sprint:
 
-{{< figure src="/img/blog-images/wp-posts/2020/10/roi-automation-testing.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/10/roi-automation-testing.png?w=1024" width="1024" height="724" alt="" caption="" >}}
 
 ### Necesidades para la automatización
 

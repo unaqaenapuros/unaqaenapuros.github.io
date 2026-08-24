@@ -26,7 +26,7 @@ En esta entrada vamos a hablar de los tipos de pruebas de rendimiento. ¡Comenza
 
 ## Tipos de pruebas de rendimiento.
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/performancetesting-07.png?w=503" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/performancetesting-07.png?w=503" width="503" height="319" alt="" caption="" >}}
 
 Algunas de las pruebas que pueden realizarse son:
 

@@ -86,7 +86,7 @@ En esta clase tendremos varias cosas a tener en cuenta:
 
 Para ejecutar los tests simplemente abre el fichero _index.html_ y actualiza el fichero. Al tener números aleatorios generados en cada iteración, veréis las operaciones y los resultados de los tests.
 
-{{< figure src="/img/blog-images/wp-posts/2021/02/image.png?w=948" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/02/image.png?w=948" width="948" height="470" alt="" caption="" >}}
 
 Y hasta aquí esta entrada sobre testing unitario con JavaScript y Jasmine.
 
