@@ -32,7 +32,7 @@ La aplicación también dispone de diálogos con ventanas emergentes con la p
 
 La herramienta dispone de una interfaz sencilla, con un diseño básico. Como herramienta de ejecución de casos de prueba y a su vez entorno de desarrollo, dispone de los siguientes elementos:
 
-![ide_-_labelled_parts](/img/blog-images/wp-posts/2017/07/ide_-_labelled_parts.png)
+![Interfaz de Selenium IDE con sus elementos señalados: URL de la página, barra de acceso rápido, menú de tests creados, cuadro de definición de test y muestra de resultados.](/img/blog-images/wp-posts/2017/07/ide_-_labelled_parts.png)
 
 - **URL de la página**: dirección de la página principal sobre la que se está ejecutando el test.
 - **Barra de acceso rápido**: conjunto de botones a través de los cuales se pueden manejar las herramientas de forma rápida y sencilla (ejecutar un test, pausar la ejecución...).

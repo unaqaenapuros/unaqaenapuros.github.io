@@ -25,23 +25,23 @@ Vamos a comenzar creando un nuevo proyecto Maven de la siguiente forma:
 
 Create new project -> Maven.
 
-![Captura de pantalla 2017-07-15 a las 21.26.15.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-26-15.png)
+![Diálogo de IntelliJ IDEA para crear un nuevo proyecto Maven.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-26-15.png)
 
 Escribimos un GroupId y un ArtifactId y hacemos click en next.
 
-![Captura de pantalla 2017-07-15 a las 21.27.44.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-27-44.png)
+![Formulario de IntelliJ IDEA con los campos GroupId y ArtifactId del nuevo proyecto Maven.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-27-44.png)
 
 Elegimos la localización donde guardar el proyecto y hacemos click en finalizar. Tendremos un proyecto con la siguiente estructura:
 
-![Captura de pantalla 2017-07-15 a las 21.30.24.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-30-24.png)
+![Estructura de carpetas del proyecto Maven recién creado en IntelliJ IDEA.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-30-24.png)
 
 Comenzaremos con el fichero pom.xml. En él añadiremos las librerías que vamos a necesitar para nuestro proyecto como son Selenium 3 y JUnit. Lo añadimos como dependencias en nuestro pom.xml de la siguiente forma:
 
-![Captura de pantalla 2017-07-15 a las 21.36.51](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-36-51.png)
+![Fichero pom.xml con las dependencias de Selenium 3 y JUnit añadidas.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-21-36-51.png)
 
 Ahora vamos a realizar nuestro primer test, para ello vamos a crear una nueva clase y vamos a escribir nuestro primer test (vamos a usar los Xpath que vimos en la anterior entrada y la web de Google para ello):
 
-![Captura de pantalla 2017-07-16 a las 19.20.14.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-20-14.png)
+![Código del primer test de Selenium en Java usando los XPath de Google explicados en la entrada anterior.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-20-14.png)
 
 Después de ver el código tenemos que comentar varias cosas:
 
@@ -59,11 +59,11 @@ System.setProperty("webdriver.gecko.driver", resourceFolder+"/geckodriver");
 
 Lo único que nos queda es ejecutar este test y comprobar el resultado, para ello nos ponemos encima del test, hacemos click con el botón derecho y hacemos click en Run test().
 
-![Captura de pantalla 2017-07-16 a las 19.29.57.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-29-57.png)
+![Menú contextual de IntelliJ IDEA con la opción Run test() seleccionada.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-29-57.png)
 
 El navegador se abrirá, se ejecutará el test y obtendremos el resultado:
 
-![Captura de pantalla 2017-07-16 a las 19.30.57.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-30-57.png)
+![Resultado de la ejecución del test de Selenium en IntelliJ IDEA, marcado en verde como superado.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-16-a-las-19-30-57.png)
 
 Y ya tenemos nuestro primer test realizado con Selenium 3 y JUnit. En el siguiente artículo haremos una recopilación de preguntas acerca de Selenium que todos deberíamos conocer.
 
