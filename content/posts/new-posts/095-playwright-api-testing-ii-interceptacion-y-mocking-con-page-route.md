@@ -2,7 +2,7 @@
 title: '095 – Playwright: API Testing II – Interceptación y mocking con page.route().'
 date: '2026-10-19T09:30:00+02:00'
 url: /2026/10/19/095-playwright-api-testing-ii-interceptacion-y-mocking-con-page-route/
-image: /img/blog-images/new-posts/2026/10/foto84.png
+image: /img/blog-images/new-posts/2026/10/foto84.jpg
 categories:
 - automation
 - best-practices

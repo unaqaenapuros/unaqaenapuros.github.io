@@ -2,7 +2,7 @@
 title: '092 – Playwright: Accesibilidad II – Lo que axe y Lighthouse no pueden detectar.'
 date: '2026-09-07T09:30:00+02:00'
 url: /2026/09/07/092-playwright-accesibilidad-ii-lo-que-axe-y-lighthouse-no-pueden-detectar/
-image: /img/blog-images/new-posts/2026/09/foto81.png
+image: /img/blog-images/new-posts/2026/09/foto81.jpg
 categories:
 - automation
 - best-practices
@@ -29,7 +29,7 @@ x_text: |
 
 Continuamos con la serie sobre accesibilidad en Playwright. En la entrada anterior vimos por qué las herramientas automatizadas tienen una cobertura limitada: pueden leer el DOM, pero no pueden entender el contexto. Hoy vamos a ver en detalle las categorías concretas de problemas que se les escapan sistemáticamente. Cada una viene con su causa, un ejemplo y cómo deberíamos corregirla. ¡Empezamos!
 
-{{< figure src="/img/blog-images/new-posts/2026/09/gemini%5Fgenerated%5Fimage%5F9ooets9ooets9ooe.png?w=1024" alt="" caption="" >}}
+{{< figure src="/img/blog-images/new-posts/2026/09/gemini%5Fgenerated%5Fimage%5F9ooets9ooets9ooe.jpg?w=1024" alt="" caption="" >}}
 
 ### 1\. Texto de enlace ambiguo.
 

@@ -2,7 +2,7 @@
 title: '090 – Playwright: Fixtures III – Tipado, composición y mergeTests.'
 date: '2026-08-10T07:06:00+00:00'
 url: /2026/08/10/090-playwright-fixtures-iii-tipado-composicion-y-mergetests/
-image: /img/blog-images/wp-posts/2026/05/foto79.png
+image: /img/blog-images/wp-posts/2026/05/foto79.jpg
 categories:
 - automation
 - best-practices

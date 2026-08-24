@@ -2,7 +2,7 @@
 title: '099 – Playwright: 20 preguntas básicas para una entrevista técnica.'
 date: '2026-12-14T09:30:00+01:00'
 url: /2026/12/14/099-playwright-preguntas-de-entrevista/
-image: /img/blog-images/new-posts/2026/12/foto88.png
+image: /img/blog-images/new-posts/2026/12/foto88.jpg
 categories:
 - automation
 - playwright

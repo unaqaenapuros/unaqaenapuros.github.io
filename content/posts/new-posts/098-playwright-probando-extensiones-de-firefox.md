@@ -2,7 +2,7 @@
 title: '098 – Playwright: Probando extensiones de Firefox.'
 date: '2026-11-30T09:30:00+01:00'
 url: /2026/11/30/098-playwright-probando-extensiones-de-firefox/
-image: /img/blog-images/new-posts/2026/11/foto87.png
+image: /img/blog-images/new-posts/2026/11/foto87.jpg
 categories:
 - automation
 - best-practices
