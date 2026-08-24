@@ -22,7 +22,7 @@ En esta entrada hablaremos de forma detallada del ciclo de vida que tienen los d
 
 Podríamos definir el ciclo de vida de un defecto como el viaje de éste por los diferentes estados durante su vida útil. Estos estados pueden variar dependiendo de la organización, del proyecto o de las herramientas que utilicemos, aún así, sus diferentes estados podrían definirse con este flujo:
 
-![ciclo-vida-defecto](/img/blog-images/wp-posts/2017/05/ciclo-vida-defecto.jpg)
+![Diagrama del ciclo de vida de un defecto: Nuevo, Asignado, Activo, Para probar, Verificado, Cerrado, Reabierto, Aplazado y Rechazado.](/img/blog-images/wp-posts/2017/05/ciclo-vida-defecto.jpg)
 
 - **Nuevo:** Defecto que se acaba de crear y aún no se ha validado.
 - **Asignado:** Defecto que es asignado a un equipo de desarrollo  o desarrollador para hacer frente a él. Aún no está resuelto.

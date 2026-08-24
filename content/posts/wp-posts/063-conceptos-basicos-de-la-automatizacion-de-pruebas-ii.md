@@ -35,7 +35,14 @@ Debemos tener en cuenta que cada vez que se ejecute un test automático, la apli
 
 Existen diversas tipologías de tests automáticos y cada uno de ellos aportan un valor diferenciado:
 
-Tipo de TestDefiniciónTests unitarios.Los test unitarios comprueban que cada función desarrollada es correcta y que no se han cometido errores en el desarrollo. Con la ayuda de la integración contínua, se ejecutarán siempre antes de cada commit.Tests de User Interface y funcionales.Los test de UI y funcionales simulan acciones de usuario para los diferentes Use Cases y por tanto se anticipa que la experiencia de usuario y las funcionalidades sean las esperadas y funcionen correctamente.Monkey TestingLos tests aleatorios permiten detectar casos de error no controlados y ayuda a depurar la aplicación y prepararla para un despliegue en todo tipo de dispositivos. Además, estas herramientas no requieren de esfuerzo adicional para preparar los diferentes casos de uso.Cloud TestingSi se programan los tests de User Interface, es posible contratar servicios que ejecuten estos tests en multitud de Dispositivos (reales y virtuales), sin necesidad de que el Servicio disponga de ellos.Tipos de tests y su definición.
+| Tipo de test | Definición |
+| --- | --- |
+| Tests unitarios | Los test unitarios comprueban que cada función desarrollada es correcta y que no se han cometido errores en el desarrollo. Con la ayuda de la integración contínua, se ejecutarán siempre antes de cada commit. |
+| Tests de User Interface y funcionales | Los test de UI y funcionales simulan acciones de usuario para los diferentes Use Cases y por tanto se anticipa que la experiencia de usuario y las funcionalidades sean las esperadas y funcionen correctamente. |
+| Monkey Testing | Los tests aleatorios permiten detectar casos de error no controlados y ayuda a depurar la aplicación y prepararla para un despliegue en todo tipo de dispositivos. Además, estas herramientas no requieren de esfuerzo adicional para preparar los diferentes casos de uso. |
+| Cloud Testing | Si se programan los tests de User Interface, es posible contratar servicios que ejecuten estos tests en multitud de Dispositivos (reales y virtuales), sin necesidad de que el Servicio disponga de ellos. |
+
+_Tipos de tests y su definición._
 
 ### Valoración de esfuerzo.
 
@@ -43,7 +50,7 @@ Aunque los tests automáticos y manuales tengan coste inicial el ponerlos en fun
 
 La siguiente gráfica muestra esa relación:
 
-{{< figure src="/img/blog-images/wp-posts/2020/10/chart.jpg?w=1024" width="1024" height="512" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2020/10/chart.jpg?w=1024" width="1024" height="512" alt="Gráfico de barras: coste relativo de corregir un bug según la fase en la que se detecta, desde 1x en requisitos/arquitectura hasta 30x en producción." caption="" >}}
 
 ### Limitaciones de las pruebas automáticas.
 
