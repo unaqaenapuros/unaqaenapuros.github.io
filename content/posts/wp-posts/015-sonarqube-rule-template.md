@@ -39,7 +39,7 @@ Si queremos ver las plantillas de reglas incluidas en SonarQube tenemos que segu
 1. En el menú de la izquierda, seleccionamos Plantillas y hacemos click sobre: Mostrar solo plantillas.
 1. Podemos seleccionar una de las plantillas y ver su contenido.
 
-![sonar_templates_rules](/img/blog-images/wp-posts/2017/06/sonar_templates_rules.png)
+![Listado de plantillas de reglas (Rule Templates) en la pestaña de reglas de SonarQube.](/img/blog-images/wp-posts/2017/06/sonar_templates_rules.png)
 
 Una vez estamos aquí podemos ver qué incluye cada plantilla de reglas, sus expresiones, los mensajes que aparecen...
 

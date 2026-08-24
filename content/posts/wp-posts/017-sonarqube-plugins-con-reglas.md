@@ -31,7 +31,7 @@ Para incluir un plugin en Sonar debemos seguir los siguientes pasos:
 1. Le damos a restart y esperamos a que Sonar se restaure.
 1. Una vez que termina de restaurarse, ya tenemos ese plugin disponible e instalado en nuestro Sonar para usarlo.
 
-![sonar_install_plugin](/img/blog-images/wp-posts/2017/06/sonar_install_plugin.png)
+![Sección Update Center de SonarQube con la lista de plugins disponibles para instalar.](/img/blog-images/wp-posts/2017/06/sonar_install_plugin.png)
 
 Y hasta aquí la entrada de plugins en Sonar.
 
