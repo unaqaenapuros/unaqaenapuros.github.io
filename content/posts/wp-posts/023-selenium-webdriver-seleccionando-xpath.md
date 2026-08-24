@@ -39,17 +39,17 @@ Una vez que tenemos ambos complementos instalados vamos a seleccionar el Xpath d
 
 Primero abrimos www.google.com en nuestro navegador, seleccionamos un elemento y hacemos click en el botón derecho y le damos a inspeccionar con Firebug.
 
-![Captura de pantalla 2017-07-15 a las 20.22.14](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-22-14.png)
+![Menú contextual del navegador con la opción Inspeccionar con Firebug seleccionada.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-22-14.png)
 
 Al hacer click en inspeccionar con Firebug nos saldrá la siguiente consola:
 
-![Captura de pantalla 2017-07-15 a las 20.23.14](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-23-14.png)
+![Consola de Firebug abierta tras inspeccionar un elemento de la página.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-23-14.png)
 
 Vemos que al pulsar sobre la barra nos aparece una expresión Xpath auto-generada. Este tipo de expresiones es el que vamos a intentar evitar.
 
 Cuando seleccionamos un elemento nos aparece dentro de la estructura DOM de la página, dónde se encuentra:
 
-![Captura de pantalla 2017-07-15 a las 20.23.30](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-23-30.png)
+![Elemento seleccionado resaltado dentro de la estructura DOM en Firebug.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-23-30.png)
 
 ¿Cómo podemos seleccionar entonces el Xpath de la barra de búsqueda de la mejor forma? Así:
 
@@ -67,7 +67,7 @@ Si le damos click a evaluar vemos que el elemento se encuentra pero que dentro d
 
 Si hacemos click en evaluar, podemos comprobar que el elemento que estábamos buscando se ha seleccionado correctamente:
 
-![Captura de pantalla 2017-07-15 a las 20.35.15](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-35-15.png)
+![Firepath mostrando el elemento seleccionado correctamente al evaluar la expresión XPath del DIV hijo.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-35-15.png)
 
 Este ha sido un elemento fácil de seleccionar, pero, ¿cómo hacemos por ejemplo para seleccionar un elemento que contenta un texto concreto que queramos buscar? Usando contains dentro de nuestra expresión Xpath.
 
@@ -81,11 +81,11 @@ Hemos visto que el elemento está dentro de un a (si el a no tuviera clase, coge
 
 Una vez que tenemos la expresión, hacemos click en evaluar para comprobar que se selecciona el elemento que estábamos buscando:
 
-![Captura de pantalla 2017-07-15 a las 20.39.17](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-39-17.png)
+![Firepath mostrando el enlace Publicidad seleccionado al evaluar la expresión XPath con contains.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-39-17.png)
 
 Si queremos evaluar otro tipo de expresión (no solo Xpath, también podemos usar CSS), seleccionamos la opción que queramos dentro de Firepath de la siguiente forma:
 
-![Captura de pantalla 2017-07-15 a las 20.44.53.png](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-44-53.png)
+![Selector de tipo de expresión, XPath o CSS, en la barra de Firepath.](/img/blog-images/wp-posts/2017/07/captura-de-pantalla-2017-07-15-a-las-20-44-53.png)
 
 Y hasta aquí nuestra entrada sobre los Xpath y el cómo crear expresiones para seleccionar nuestros elementos. En la siguiente entrada hablaremos de cómo comenzar con Selenium Webdriver en un proyecto Maven con Java para hacer nuestro primer test automático.
 

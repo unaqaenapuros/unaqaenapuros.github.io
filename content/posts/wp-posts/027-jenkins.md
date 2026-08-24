@@ -17,7 +17,7 @@ En esta entrada vamos a hablar de lo que es Jenkins y del concepto de integraci�
 
 ## ¿Qué es Jenkins?
 
-![original](/img/blog-images/wp-posts/2017/08/original.png?w=300) **Jenkins** es un software de Integración continua, gratuito y Open Source escrito en Java y está basado en el proyecto Hudson, creado por Kohsuke Kawaguchi.  Podemos descargar Jenkins aquí: [https://jenkins.io/index.html](https://jenkins.io/index.html) **Jenkins** proporciona integración continua para el desarrollo de software. Es un sistema que se ejecuta en un servidor que es un contenedor de servlets, como Apache Tomcat. Soporta herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven, Gradle, así como scripts de shell y programas batch de Windows.
+![Logo de Jenkins.](/img/blog-images/wp-posts/2017/08/original.png?w=300) **Jenkins** es un software de Integración continua, gratuito y Open Source escrito en Java y está basado en el proyecto Hudson, creado por Kohsuke Kawaguchi.  Podemos descargar Jenkins aquí: [https://jenkins.io/index.html](https://jenkins.io/index.html) **Jenkins** proporciona integración continua para el desarrollo de software. Es un sistema que se ejecuta en un servidor que es un contenedor de servlets, como Apache Tomcat. Soporta herramientas de control de versiones como CVS, Subversion, Git, Mercurial, Perforce y Clearcase y puede ejecutar proyectos basados en Apache Ant y Apache Maven, Gradle, así como scripts de shell y programas batch de Windows.
 
 Debemos conocer de qué hablamos al hablar de **integración continua**.
 
