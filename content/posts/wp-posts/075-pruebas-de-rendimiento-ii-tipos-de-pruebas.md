@@ -26,7 +26,7 @@ En esta entrada vamos a hablar de los tipos de pruebas de rendimiento. ¡Comenza
 
 ## Tipos de pruebas de rendimiento.
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/performancetesting-07.png?w=503" width="503" height="319" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/performancetesting-07.png?w=503" width="503" height="319" alt="Ilustración con un velocímetro y los cinco tipos de pruebas de rendimiento: load testing, stress testing, volume testing, soak testing y scalability testing." caption="" >}}
 
 Algunas de las pruebas que pueden realizarse son:
 

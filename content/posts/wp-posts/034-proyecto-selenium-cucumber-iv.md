@@ -16,7 +16,7 @@ author: estefafdez
 
 En esta entrada seguiremos hablando del proyecto [Selenium-Cucumber](https://github.com/estefafdez/selenium-cucumber). ¡Comenzamos!
 
-![a.png](/img/blog-images/wp-posts/2017/08/a.png)
+![Logos de Cucumber y Selenium.](/img/blog-images/wp-posts/2017/08/a.png)
 
 * * *
 
@@ -48,7 +48,7 @@ _\\* Cada una de estas clases representa un conjunto de acciones agrupadas en ca
 
 Esta es la clase base de inicialización de los test. ¿Qué tiene esta clase que la hace tan importante? Vamos a ver los métodos que la componen:
 
-![before.png](/img/blog-images/wp-posts/2017/10/before.png)
+![Código Java de los métodos @Before de la clase Hooks, que guardan el escenario e inicializan el driver.](/img/blog-images/wp-posts/2017/10/before.png)
 
 Estos métodos @Before son de los más importantes a la hora de lanzar los test. Como hemos hablado en otras entradas, estamos usando métodos de jUnit, en este caso el método @Before (y después el @After). Recordemos que estos métodos son los que se ejecutan antes y después de lanzar la clase de test.
 
@@ -59,7 +59,7 @@ Estos métodos @Before son de los más importantes a la hora de lanzar los test.
 
 Ahora pasaremos a ver el método que se ejecuta en el @After.
 
-![after.png](/img/blog-images/wp-posts/2017/10/after.png)
+![Código Java del método @After de la clase Hooks, que hace una captura si el test falla y cierra el driver.](/img/blog-images/wp-posts/2017/10/after.png)
 
 ¿Qué necesitamos hacer después de ejecutar cada test? Pues lo que hacemos es que si el escenario ha fallado (el test falla) hacemos una captura de pantalla y la guardamos y una vez que haya terminado, quitamos el driver.
 
@@ -69,7 +69,7 @@ Esta es una clase con pasos (acciones) ya definidas. Hemos catalogado las accion
 
 Vamos a ver cómo es la inicialización de esta clase y uno de sus métodos para hacernos una idea de cómo hemos organizado las demás clases:
 
-![click.png](/img/blog-images/wp-posts/2017/10/click.png)
+![Código Java de la inicialización de la clase ClickSteps, que obtiene el driver desde Hooks.](/img/blog-images/wp-posts/2017/10/click.png)
 
 Lo primero que tenemos que hacer al inicializar la clase es llamar a la clase Hooks (que acabamos de comentar) para traernos el driver (recordemos que esta clase es la que llama a nuestro método para inicializar el driver y traernos la instancia).
 
@@ -79,7 +79,7 @@ Una vez que tenemos el driver, podremos usarlo en nuestra función.
 
 Primero ponemos el paso en Gherkin al que corresponde:
 
-![when.png](/img/blog-images/wp-posts/2017/10/when.png)
+![Paso Gherkin @When definido para hacer click en un elemento por type y key.](/img/blog-images/wp-posts/2017/10/when.png)
 
 ¿Qué necesitamos para hacer click? como ya vimos, el type para seleccionar el elemento ( _xpath, css, id...)_ y la key del elemento al que queremos hacer click. Con estos datos llamamos a la función **getCompleteElement** (de la que ya hablamos en previas entradas) y nos devuelve el elemento completo (By) al que queremos hacer click. Una vez que tenemos esto, podemos utilizar nuestra función de Selenium **findElement(y el elemento)** y la función **click()** para hacer click en él.
 

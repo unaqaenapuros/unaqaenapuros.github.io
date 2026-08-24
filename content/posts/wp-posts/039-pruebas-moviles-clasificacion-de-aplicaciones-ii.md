@@ -16,7 +16,7 @@ En esta entrada seguiremos hablando sobre la clasificación de las aplicaciones 
 
 ### Condiciones de distribución
 
-![app.png](/img/blog-images/wp-posts/2017/12/app.png)
+![Listado de apps en la App Store con precios: algunas gratuitas, otras de pago y otras con compras dentro de la app.](/img/blog-images/wp-posts/2017/12/app.png)
 
 Las aplicaciones se pueden clasificar por las condiciones de distribución que hay, estas pueden ser:
 
@@ -26,7 +26,7 @@ Las aplicaciones se pueden clasificar por las condiciones de distribución que h
 
 ### Tipos de diseño
 
-![native.png](/img/blog-images/wp-posts/2017/12/native.png)
+![](/img/blog-images/wp-posts/2017/12/native.png)
 
 Las aplicaciones pueden clasificarse dependiendo de cómo estén diseñadas. Como vimos en entradas anteriores, esta clasificación puede ser:
 
@@ -35,7 +35,7 @@ Las aplicaciones pueden clasificarse dependiendo de cómo estén diseñadas. Com
 
 ### Edad de los usuarios.
 
-![app.jpg](/img/blog-images/wp-posts/2017/12/app.jpg?w=431)
+![Filtro de categorías infantiles en la App Store, por tramos de edad: Kids 5 & Under, 6-8, 9-11.](/img/blog-images/wp-posts/2017/12/app.jpg?w=431)
 
 Las aplicaciones pueden clasificarse según la edad de los usuarios que las consumen. Esta clasificación se realiza como en los video juegos o películas en las que se indica los tramos de edades aptos para cada aplicación. ¿Qué tramos podemos tener?
 

@@ -28,7 +28,7 @@ Las pruebas de rendimiento son las pruebas que se realizan, desde una perspectiv
 
 Las pruebas de rendimiento son un subconjunto de la ingeniería de pruebas, una práctica informática que se esfuerza por mejorar el rendimiento, englobando en el diseño y la arquitectura de un sistema, antes incluso del esfuerzo inicial de la codificación.
 
-{{< figure src="/img/blog-images/wp-posts/2021/04/96.png?w=480" width="480" height="330" alt="" caption="" >}}
+{{< figure src="/img/blog-images/wp-posts/2021/04/96.png?w=480" width="480" height="330" alt="Medidor de rendimiento tipo velocímetro, de bajo (0%) a alto (100%)." caption="" >}}
 
 Pueden servir para diferentes propósitos. Pueden demostrar que el sistema cumple los criterios de rendimiento. Pueden comparar dos sistemas para encontrar cual de ellos funciona mejor. O pueden medir qué partes del sistema o de carga de trabajo provocan que el conjunto rinda mal. Para su diagnóstico, se utilizan herramientas como pueden ser monitorizaciones que midan qué partes de un dispositivo o software contribuyen más al mal rendimiento o para establecer niveles (y umbrales) del mismo que mantenga un tiempo de respuesta aceptable.
 

@@ -21,7 +21,7 @@ author: estefafdez
 
 En esta entrada hablaremos del proyecto [Selenium-Cucumber](https://github.com/estefafdez/selenium-cucumber). ¡Comenzamos!
 
-![a.png](/img/blog-images/wp-posts/2017/08/a.png)
+![Logos de Cucumber y Selenium.](/img/blog-images/wp-posts/2017/08/a.png)
 
 Este proyecto propio fue llevado a cabo con [Francisco Fernández González](https://www.linkedin.com/in/francisco-fern%C3%A1ndez-gonz%C3%A1lez-71b178115/), gran compañero y amigo.
 
@@ -55,7 +55,7 @@ Given [contexto inicial del escenario], when [evento], then [resultado]
 
 Un ejemplo de escenario (contenido en este proyecto) podría ser:
 
-![escenario.png](/img/blog-images/wp-posts/2017/08/escenario.png)
+![Escenario de ejemplo en Gherkin: navegar a la home de estefafdez.com, esperar, hacer click en la bandera de inglés, esperar, tomar una captura y cerrar el navegador.](/img/blog-images/wp-posts/2017/08/escenario.png)
 
 Como vemos, un lenguaje sencillo de entender tanto para la parte técnica como para la de negocio.
 
@@ -89,7 +89,7 @@ git clone https://github.com/XXXX/selenium-cucumber
 
 Una vez que tenemos el proyecto descargado, lo importamos en nuestro IDE favorito, en mi caso lo haré en Eclipse, y vemos la estructura del proyecto:
 
-![estructura.png](/img/blog-images/wp-posts/2017/08/estructura.png)
+![Estructura de paquetes del proyecto Selenium-Cucumber importado en Eclipse.](/img/blog-images/wp-posts/2017/08/estructura.png)
 
 1. **Configure Environment**: en este paquete se encuentran las clases de configuración en las que definiremos una factoría de Drivers (para los diferentes navegadores), un manejador de properties y una clase de inicialización del Driver.
 1. **SauceLabs**: un WIP para la integración de SauceLabs en el proyecto para lanzar los test en remoto.

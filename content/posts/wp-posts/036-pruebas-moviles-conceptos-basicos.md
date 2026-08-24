@@ -18,7 +18,7 @@ author: estefafdez
 
 En esta entrada vamos a comenzar con las pruebas en dispositivos móviles y empezaremos el camino hacia saber cómo hacer pruebas automáticas para móviles con diferentes herramientas. Pero antes de llegar a ese punto tenemos que tener en cuenta varios conceptos importantes que debemos saber antes de empezar, por eso en esta entrada nos dedicaremos a hablar de unos conceptos previos o conceptos básicos que debemos conocer... ¡Comenzamos!
 
-![ChicagoLaunch_DAssets_MCV4_DeviceFarm_RemoteAccess (2).5799cb66bfcf6496e5cf178eaec85804cbe3dec7.png](/img/blog-images/wp-posts/2017/11/chicagolaunch_dassets_mcv4_devicefarm_remoteaccess-2-5799cb66bfcf6496e5cf178eaec85804cbe3dec7.png)
+![](/img/blog-images/wp-posts/2017/11/chicagolaunch_dassets_mcv4_devicefarm_remoteaccess-2-5799cb66bfcf6496e5cf178eaec85804cbe3dec7.png)
 
 ### ¿Qué es una aplicación móvil?
 
@@ -30,7 +30,7 @@ Investigando sobre sus orígenes, no existe un criterio único aceptado por la c
 
 El popular **Tetris** fue el primer juego instalado en el año **1994** en un teléfono móvil de manufactura danesa, el _Hagenuk mt-2000_. Tres años más tarde **Nokia** lanzó el juego de mayor aceptación hasta el momento el **Snake** cuyo desarrollo se basa en Arcade Blockade. Este juego y sus variantes fue preinstalado en más de 350 millones de dispositivos móviles de la marca finlandesa. El modelo 6110 fue el primer videojuego que permitía el uso compartido de dos jugadores utilizando el puerto infrarrojo. A día de hoy (2017) aun perdura una variante del mismo, Arrow, desarrollado por la empresa francesa Ketchapp.
 
-![maxresdefault.jpg](/img/blog-images/wp-posts/2017/11/maxresdefault.jpg)
+![](/img/blog-images/wp-posts/2017/11/maxresdefault.jpg)
 
 Hacía el año 2000 la irrupción tecnológica del WAP (protocolo de aplicaciones inalámbricas) permitió una mayor capacidad para la descarga de juegos distribuidos por los operadores de telefonía con un volumen de negocio era marginal comparado con las videoconsolas de quinta y sexta generación coetáneas. Pero el verdadero auge de las aplicaciones se produjo a partir del año 2008 con el lanzamiento del **App Store de Apple,** la publicación del primer **SDK para Android** y la posterior pero casi inmediata inauguración del **Android Market,** renombrado en marzo de 2012 como **Google Play,** tras su fusión con Google Music, en un nuevo planteamiento estratégico en la distribución digital de Google.
 
@@ -44,7 +44,7 @@ Las aplicaciones pueden ser tanto gratuitas, como de pago o incluir pagos dentro
 
 ### ¿Qué ventajas tienen las aplicaciones móviles?
 
-![duelo-de-camaras-los-mejores-smartphones-del-ano-frente-a-frente-quien-gana.jpg](/img/blog-images/wp-posts/2017/11/duelo-de-camaras-los-mejores-smartphones-del-ano-frente-a-frente-quien-gana.jpg)
+![](/img/blog-images/wp-posts/2017/11/duelo-de-camaras-los-mejores-smartphones-del-ano-frente-a-frente-quien-gana.jpg)
 
 Con el auge de los smartphones, cada vez más se utilizan más los dispositivos móviles que los ordenadores para las gestiones diarias en los usuarios, además cada día salen al mercado nuevos teléfonos inteligentes cada vez más potentes y con mejores prestaciones, así como nuevas aplicaciones que nos ayudan en nuestro día a día.
 

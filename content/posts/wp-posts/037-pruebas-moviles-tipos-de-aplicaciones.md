@@ -17,13 +17,13 @@ En esta entrada vamos a continuar con los conceptos básicos que debemos saber a
 
 ### Tipos de aplicaciones.
 
-![blog-apps-nativas-vs-apps-html-designplus](/img/blog-images/wp-posts/2017/11/blog-apps-nativas-vs-apps-html-designplus.jpg)
+![Comparativa app nativa (con los logos de Android, BlackBerry, Windows e iOS) frente a app web (con el logo de HTML5).](/img/blog-images/wp-posts/2017/11/blog-apps-nativas-vs-apps-html-designplus.jpg)
 
 Como comentamos en la anterior entrada, hay diferentes formas y lenguajes de programación utilizados para crear una aplicación móvil ( _Java, C#, Swift, Kotlin.._.) pero no sólo podemos hacerlos en esos también podemos desarrollar aplicaciones mediante frameworks como _Ionic_, _Phonegap_, _Xamarin_... esto da lugar a tener dos tipos claramente diferenciados de aplicaciones móviles, estas son conocidas como aplicaciones **nativas e híbridas.**
 
 ### Aplicaciones nativas.
 
-![nativas.png](/img/blog-images/wp-posts/2017/11/nativas.png)Las aplicaciones nativas son aquellas que están creadas, diseñadas  y optimizadas para un sistema operativo concreto y sólo pueden ejecutarse en ese sistema operativo y en todos los dispositivos móviles que tengan ese sistema operativo. Estas aplicaciones utilizan mejor los recursos del sistema y los elementos disponibles en los SDKs para lograr la mayor funcionalidad posible entre la app y el teléfono.  Estas aplicaciones se escriben y desarrollan en función de un sistema operativo concreto, por lo que es necesario tener permisos de desarrollador en ese sistema para poder subir la aplicación a las tiendas de cada uno de los sistemas.
+![](/img/blog-images/wp-posts/2017/11/nativas.png)Las aplicaciones nativas son aquellas que están creadas, diseñadas  y optimizadas para un sistema operativo concreto y sólo pueden ejecutarse en ese sistema operativo y en todos los dispositivos móviles que tengan ese sistema operativo. Estas aplicaciones utilizan mejor los recursos del sistema y los elementos disponibles en los SDKs para lograr la mayor funcionalidad posible entre la app y el teléfono.  Estas aplicaciones se escriben y desarrollan en función de un sistema operativo concreto, por lo que es necesario tener permisos de desarrollador en ese sistema para poder subir la aplicación a las tiendas de cada uno de los sistemas.
 
 En el mercado de las aplicaciones nativas, cada una de ellas está desarrollada en un sistema operativo diferente y con lenguajes de programación distintos, siendo los más usados los siguientes:
 
@@ -47,7 +47,7 @@ En el mercado de las aplicaciones nativas, cada una de ellas está desarrollada 
 
 ### Aplicaciones híbridas.
 
-![hibridas.png](/img/blog-images/wp-posts/2017/11/hibridas.png)Las aplicaciones híbridas son aquellas que se desarrollan utilizando tecnologías webs como **HTML, JavaScript y CSS** y que normalmente se ejecutan mediante el navegador nativo del sistema en el que se ejecuten (valen tanto para Android como para iOS). Estas aplicaciones aparentemente ofrecen las mismas ventajas que una nativa, teniendo en cuenta que al no ser nativo del sistema, y dependiendo del framework que utilicemos para desarrollarlas, no podremos tener acceso a tantas funcionalidades del hardware del dispositivo en el que la queramos ejecutar (no como una nativa), ni podremos tener acceso a las librerías del sistema. Por regla general ofrecen un peor diseño (aunque no es 100% cierto con la llegada de los nuevos frameworks de desarrollo como **Ionic, Phonegap o  Xamarin**) y tienen un rendimiento algo más bajo que una aplicación nativa ya que al no estar desarrollada explícitamente para un sistema operativo, no aprovecha todos los recursos del sistema como si lo hace una nativa específicamente diseñada para un sistema operativo.
+![](/img/blog-images/wp-posts/2017/11/hibridas.png)Las aplicaciones híbridas son aquellas que se desarrollan utilizando tecnologías webs como **HTML, JavaScript y CSS** y que normalmente se ejecutan mediante el navegador nativo del sistema en el que se ejecuten (valen tanto para Android como para iOS). Estas aplicaciones aparentemente ofrecen las mismas ventajas que una nativa, teniendo en cuenta que al no ser nativo del sistema, y dependiendo del framework que utilicemos para desarrollarlas, no podremos tener acceso a tantas funcionalidades del hardware del dispositivo en el que la queramos ejecutar (no como una nativa), ni podremos tener acceso a las librerías del sistema. Por regla general ofrecen un peor diseño (aunque no es 100% cierto con la llegada de los nuevos frameworks de desarrollo como **Ionic, Phonegap o  Xamarin**) y tienen un rendimiento algo más bajo que una aplicación nativa ya que al no estar desarrollada explícitamente para un sistema operativo, no aprovecha todos los recursos del sistema como si lo hace una nativa específicamente diseñada para un sistema operativo.
 
 #### Ventajas de las aplicaciones híbridas:
 

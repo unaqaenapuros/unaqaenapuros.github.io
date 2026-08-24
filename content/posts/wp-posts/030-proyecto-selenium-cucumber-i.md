@@ -12,7 +12,7 @@ tags:
 - sdos
 author: estefafdez
 ---
-![](http://sdos.es/wp-content/uploads/2017/08/Jenkins.jpg)
+![Logo de Jenkins, imagen de portada del artículo sobre cómo compilar aplicaciones Android con Jenkins publicado en el blog de SDOS.](http://sdos.es/wp-content/uploads/2017/08/Jenkins.jpg)
 
 ¡Hola a todos!
 
