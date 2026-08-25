@@ -1,0 +1,16 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+{{/* Overrides the theme's custom-font.html: display=swap still reflows the
+     page once Lato loads over the fallback font, which is the CLS the
+     report keeps pinning on section.article-content across every post
+     (including text-only ones with no images) — the one thing common to
+     all of them is body text in this font. display=optional tells the
+     browser to commit to whichever font (Lato or the fallback) is ready
+     within its first ~100ms and never swap after that, trading "Lato on
+     every first visit" for "no layout shift ever". Once cached, repeat
+     visits get Lato immediately anyway.
+     ponytail: simplest fix for the reflow; the byte-perfect alternative is
+     a @font-face override with size-adjust/ascent-override tuned to Lato's
+     metrics, worth it only if this doesn't move the needle. */}}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=optional">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=optional">
