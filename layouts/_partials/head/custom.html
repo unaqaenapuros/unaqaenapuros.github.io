@@ -87,3 +87,9 @@
 {{ if hugo.IsProduction }}
 <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 {{ end }}
+
+{{ if .IsHome }}
+<meta property="og:image" content="{{ "img/logo/icono-192.png" | absURL }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{ "img/logo/icono-192.png" | absURL }}">
+{{ end }}
