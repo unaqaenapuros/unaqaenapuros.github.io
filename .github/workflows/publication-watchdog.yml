@@ -1,0 +1,36 @@
+name: Publication watchdog
+on:
+  workflow_dispatch:
+  schedule:
+    # Safety net, not an exact 09:30 publication scheduler. GitHub can delay cron.
+    - cron: '17 10,16 * * *'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          submodules: recursive
+      - run: bash scripts/install_hugo.sh
+      - name: Check publication
+        run: |
+          python3 scripts/pending_posts.py > pending.json
+          cat pending.json
+          test "$(cat pending.json)" = '[]'
+      - name: Notify only on missed publication or check error
+        if: failure()
+        uses: dawidd6/action-send-mail@4226df7daafa6fc901a43789c49bf7ab309066e7 # v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.GMAIL_ADDRESS }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          from: Una QA en Apuros - blog
+          to: ${{ secrets.GMAIL_ADDRESS }}
+          subject: Blog publication watchdog needs attention
+          body: |
+            A due post is missing from the live sitemap, or the check failed.
+            Inspect the run before manually deploying:
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
