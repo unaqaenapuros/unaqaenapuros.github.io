@@ -11,11 +11,11 @@
             <figure class="site-avatar">
                 <a href="{{ $.Site.Home.RelPermalink }}">
                     <img src="{{ $avatar.Permalink }}"
-                        width="{{ $avatar.Width }}"
-                        height="{{ $avatar.Height }}"
+                        width="{{ default 400 $avatar.Width }}"
+                        height="{{ default 400 $avatar.Height }}"
                         class="site-logo"
-                        loading="lazy"
-                        alt="Avatar">
+                        loading="eager"
+                        alt="Una QA en Apuros">
                 </a>
                 {{ with $.Site.Params.sidebar.emoji }}
                     <span class="emoji">{{ . }}</span>
