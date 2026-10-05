@@ -1,0 +1,9 @@
+{{- $description := default .Site.Params.sidebar.subtitle .Site.Params.description -}}
+{{- with .Description -}}
+    {{- $description = . -}}
+{{- else -}}
+    {{- if .IsPage -}}{{- $description = .Summary -}}{{- end -}}
+{{- end -}}
+{{- $description = replace $description `\n` " " -}}
+{{- $description = replaceRE `\s+` " " ($description | plainify | htmlUnescape) -}}
+{{- return (strings.TrimSpace $description | truncate 160) -}}
