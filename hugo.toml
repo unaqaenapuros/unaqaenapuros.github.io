@@ -2,9 +2,10 @@ baseURL = "https://unaqaenapuros.com/"
 theme = "stack"
 title = "Una QA en Apuros"
 copyright = "Una QA en Apuros (by estefafdez)"
-locale = "en-us"
-defaultContentLanguage = "en"
+locale = "es-es"
+defaultContentLanguage = "es"
 hasCJKLanguage = false
+timeZone = "Europe/Madrid"
 
 enableRobotsTXT = true
 enableEmoji = true
