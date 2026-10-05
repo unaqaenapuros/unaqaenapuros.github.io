@@ -24,6 +24,7 @@ x_text: |
   https://unaqaenapuros.com/2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/
 
   #Playwright #APITesting #QA
+description: "Métodos HTTP, códigos de estado y pruebas de API con la fixture request de Playwright."
 ---
 ¡Hola a todos!
 
