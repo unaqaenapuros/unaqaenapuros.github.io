@@ -1,4 +1,15 @@
 <style>
+  html[data-scheme="dark"] .article-meta { --card-text-color-tertiary: #bbb; }
+  html:not([data-scheme="dark"]) .chroma :is(.l, .ld, .m, .mb, .mf, .mh, .mi, .il, .mo) { color: #7040a0; }
+  html[data-scheme="dark"] .article-category a { color: #eee; background-color: #424242; }
+
+  .article-content .chroma .lnt, .article-content .chroma .ln { color: #666; }
+  html[data-scheme="dark"] .article-content .chroma .lnt, html[data-scheme="dark"] .article-content .chroma .ln { color: #aaa; }
+  /* WCAG AA contrast for inline code in both color schemes. */
+  .article-content :not(pre) > code { color: #424242; background-color: #e0e0e0; }
+  html[data-scheme="dark"] .article-content :not(pre) > code { color: #f5f5f5; background-color: #333333; }
+
+
   /* Skip-to-content link (see layouts/baseof.html) — visually hidden
      off-screen until it receives keyboard focus, standard pattern so
      mouse/touch users never see it but Tab users get it first. */
@@ -79,13 +90,12 @@
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b7c31836-3907-42b0-aef0-eed57eadef78"></script>
 {{ end }}
 
-{{/* Busuanzi visit counters (site total + per-page) — see sidebar/left.html
-     (below the social icons) and article/components/footer.html (below the
-     tags) for where the numbers get injected.
-     ponytail: free third-party counter, no auth/backend needed; if it goes
-     down the counters just silently stay hidden (busuanzi does that itself). */}}
-{{ if hugo.IsProduction }}
-<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+{{ if .IsHome }}
+<meta property="og:image" content="{{ "img/logo/icono-192.png" | absURL }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{ "img/logo/icono-192.png" | absURL }}">
 {{ end }}
 
 {{ if .IsHome }}

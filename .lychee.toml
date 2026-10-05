@@ -1,0 +1,5 @@
+# Explicit legacy exception requested for post 030. Do not suppress whole domains.
+exclude = ['^http://sdos\.es/wp-content/uploads/2017/08/Jenkins\.jpg$']
+max_concurrency = 4
+max_retries = 1
+timeout = 20
