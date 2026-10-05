@@ -78,3 +78,11 @@
 {{ if hugo.IsProduction }}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="b7c31836-3907-42b0-aef0-eed57eadef78"></script>
 {{ end }}
+
+
+
+{{ if .IsHome }}
+<meta property="og:image" content="{{ "img/logo/icono-192.png" | absURL }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="{{ "img/logo/icono-192.png" | absURL }}">
+{{ end }}
