@@ -4,12 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    # Scheduled posts always use 09:30 Madrid time. Two entries cover
-    # both DST states (CEST = UTC+2 in summer, CET = UTC+1 in winter)
-    # so it hits 09:30 local year-round with no manual changes needed.
-    - cron: "30 7 * * *"  # 09:30 CEST (summer)
-    - cron: "30 8 * * *"  # 09:30 CET (winter)
+  # Daily 09:30 Madrid trigger comes from an external cron (cron-job.org)
+  # hitting the repository_dispatch API. GH's own `schedule` was dropped:
+  # it ran 5-7h late every day, so posts never went out at 09:30.
+  repository_dispatch:
+    types: [publish]
 
 permissions:
   contents: read
@@ -33,36 +32,17 @@ jobs:
       - name: Check for posts publishing today
         id: check
         run: |
-          # On push/manual dispatch always deploy. On the daily cron, only
-          # deploy if a post's date matches today (Madrid) — otherwise the
-          # cron would rebuild/deploy every day for nothing new.
-          # ponytail: matches exact today only, doesn't catch a missed run
-          # from a prior failed cron; re-run manually (workflow_dispatch) if that happens.
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          # Both cron entries fire every day; only the one matching the
-          # current DST state is the "real" one for today. Match on which
-          # cron expression actually triggered this run (github.event.schedule)
-          # rather than the wall-clock hour — GH Actions can delay a
-          # scheduled run by 30-60+ min, which pushed the local hour past
-          # 09 and made every cron run skip, silently, until now.
-          madrid_offset="$(TZ=Europe/Madrid date +%z)"
-          if [ "$madrid_offset" = "+0200" ]; then
-            expected_schedule="30 7 * * *"
-          else
-            expected_schedule="30 8 * * *"
-          fi
-          if [ "${{ github.event.schedule }}" != "$expected_schedule" ]; then
-            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
+          # On push/manual dispatch always deploy. On the daily external
+          # trigger, only deploy if a post's date matches today (Madrid).
+          # ponytail: matches exact today only, doesn't catch a missed day;
+          # re-run manually (workflow_dispatch) if that happens.
           today=$(TZ=Europe/Madrid date +%F)
           post_file=$(grep -rlP "^date: '?${today}" content/posts/ | head -1)
           if [ -n "$post_file" ]; then
-            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
             echo "post_url=$(grep -oP '^url: \K.*' "$post_file")" >> "$GITHUB_OUTPUT"
+          fi
+          if [ -n "$post_file" ] || [ "${{ github.event_name }}" != "repository_dispatch" ]; then
+            echo "should_deploy=true" >> "$GITHUB_OUTPUT"
           else
             echo "should_deploy=false" >> "$GITHUB_OUTPUT"
           fi
