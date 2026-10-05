@@ -1,0 +1,17 @@
+name: Blog quality
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          submodules: recursive
+      - run: bash scripts/install_hugo.sh
+      - run: python3 -m pip install -r requirements-dev.txt
+      - run: python3 scripts/validate_frontmatter.py
+      - run: python3 scripts/build_strict.py
