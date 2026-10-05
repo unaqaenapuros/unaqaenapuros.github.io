@@ -28,23 +28,27 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          submodules: recursive
 
-      - name: Check for posts publishing today
+      - name: Install Hugo
+        if: github.event_name == 'repository_dispatch'
+        run: bash scripts/install_hugo.sh
+
+      - name: Find eligible posts missing from the live sitemap
         id: check
+        env:
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          # On push/manual dispatch always deploy. On the daily external
-          # trigger, only deploy if a post's date matches today (Madrid).
-          # ponytail: matches exact today only, doesn't catch a missed day;
-          # re-run manually (workflow_dispatch) if that happens.
-          today=$(TZ=Europe/Madrid date +%F)
-          post_file=$(grep -rlP "^date: '?${today}" content/posts/ | head -1)
-          if [ -n "$post_file" ]; then
-            echo "post_url=$(grep -oP '^url: \K.*' "$post_file")" >> "$GITHUB_OUTPUT"
-          fi
-          if [ -n "$post_file" ] || [ "${{ github.event_name }}" != "repository_dispatch" ]; then
+          if [ "$EVENT_NAME" != "repository_dispatch" ]; then
             echo "should_deploy=true" >> "$GITHUB_OUTPUT"
           else
-            echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            python3 scripts/pending_posts.py --output "$GITHUB_OUTPUT" > pending.json
+            if [ "$(cat pending.json)" != '[]' ]; then
+              echo "should_deploy=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "should_deploy=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
   build:
@@ -114,14 +118,16 @@ jobs:
           from: Una QA en Apuros — blog
           to: ${{ secrets.GMAIL_ADDRESS }}
           subject: >-
-            ${{ needs.check.outputs.should_deploy != 'true' && '🔍 Blog control check - all OK'
+            ${{ needs.check.result != 'success' && '❌ Blog publication check failed'
+              || needs.check.outputs.should_deploy != 'true' && '🔍 Blog control check - all OK'
               || needs.deploy.result != 'success' && '❌ Blog deploy failed'
               || needs.check.outputs.post_url != '' && '✅ Post published'
               || '✅ Changes made to the site - build OK' }}
           body: |
-            ${{ needs.check.outputs.should_deploy != 'true' && 'Control check: no posts to publish today. All OK.'
+            ${{ needs.check.result != 'success' && 'Publication check failed. Inspect the run before retrying.'
+              || needs.check.outputs.should_deploy != 'true' && 'No eligible posts missing from the sitemap.'
               || needs.deploy.result != 'success' && 'Deploy failed.'
-              || needs.check.outputs.post_url != '' && format('Post published :) — https://unaqaenapuros.com{0}', needs.check.outputs.post_url)
+              || needs.check.outputs.post_url != '' && format('Post published: {0}', needs.check.outputs.post_url)
               || 'Changes made to the site — build OK.' }}
 
             Build: ${{ needs.build.result }}
