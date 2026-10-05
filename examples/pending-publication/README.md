@@ -14,3 +14,5 @@ clock change. Invalid dates fail loudly.
 This is an example, not a replacement for the deploy script. The production
 proposal uses Hugo's normalized publishDate and also filters expiry dates.
 Do not wire this example into deployment without extending that behavior.
+
+Tests use fixed reference times; they do not depend on the current day.
