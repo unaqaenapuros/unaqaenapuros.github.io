@@ -25,7 +25,6 @@ x_text: |
 
   #Playwright #APITesting #QA
 description: "Métodos HTTP, códigos de estado y pruebas de API con la fixture request de Playwright."
-  calidad y automatización de pruebas.'
 ---
 ¡Hola a todos!
 
