@@ -2,9 +2,9 @@
 title: '{{ replace .File.ContentBaseName "-" " " | title }}'
 date: '{{ .Date }}'
 draft: true
-description: '' # Resumen breve (sin saltos de línea), revisar antes de publicar.
-url: '' # Ruta estable del post, empezando por /.
-image: '' # Imagen de portada.
+description: '' # Short summary (no line breaks); review before publishing.
+url: '' # Stable post path, starting with /.
+image: '' # Cover image.
 categories: []
 tags: []
 author: estefafdez
