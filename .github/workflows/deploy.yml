@@ -91,16 +91,27 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Purge Cloudflare cache
+  purge:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: github-pages
+          path: /tmp/pages-artifact
+      - name: Extract deployed artifact
         run: |
-          curl -sS --fail -X POST \
-            "https://api.cloudflare.com/client/v4/zones/${{ secrets.CLOUDFLARE_ZONE_ID }}/purge_cache" \
-            -H "Authorization: Bearer ${{ secrets.CLOUDFLARE_API_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            --data '{"purge_everything":true}'
+          mkdir public
+          tar -xf /tmp/pages-artifact/artifact.tar -C public
+      - name: Purge generated URLs
+        env:
+          CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python3 scripts/purge_cache.py
 
   notify:
-    needs: [check, build, deploy]
+    needs: [check, build, deploy, purge]
     if: always()
     runs-on: ubuntu-latest
     steps:
@@ -116,15 +127,18 @@ jobs:
           subject: >-
             ${{ needs.check.outputs.should_deploy != 'true' && '🔍 Blog control check - all OK'
               || needs.deploy.result != 'success' && '❌ Blog deploy failed'
+              || needs.purge.result != 'success' && '⚠️ Site deployed; cache purge failed'
               || needs.check.outputs.post_url != '' && '✅ Post published'
               || '✅ Changes made to the site - build OK' }}
           body: |
             ${{ needs.check.outputs.should_deploy != 'true' && 'Control check: no posts to publish today. All OK.'
               || needs.deploy.result != 'success' && 'Deploy failed.'
+              || needs.purge.result != 'success' && 'Site published, but Cloudflare cache purge failed.'
               || needs.check.outputs.post_url != '' && format('Post published :) — https://unaqaenapuros.com{0}', needs.check.outputs.post_url)
               || 'Changes made to the site — build OK.' }}
 
             Build: ${{ needs.build.result }}
+            Cache purge: ${{ needs.purge.result }}
             Deploy: ${{ needs.deploy.result }}
 
             Site: https://unaqaenapuros.com/
