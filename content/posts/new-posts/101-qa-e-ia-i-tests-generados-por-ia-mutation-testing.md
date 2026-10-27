@@ -13,13 +13,13 @@ tags:
 - testing
 author: estefafdez
 social_text: |
-  Le pedimos tests a una IA, pasan, la cobertura marca 100%... y aun así la mitad de los errores que introducimos a propósito en el código pasan desapercibidos. En la primera entrega de la serie QA e IA hacemos el experimento completo con mutation testing y vemos cómo auditar los tests que escribe un modelo.
+  Le pedimos tests a una IA, pasan, la cobertura marca 100%... y aun así un tercio de los errores que introducimos a propósito en el código pasan desapercibidos. En la primera entrega de la serie QA e IA hacemos el experimento completo con mutation testing y vemos cómo auditar los tests que escribe un modelo.
 
   https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
 
   #QA #TestAutomation #AI #MutationTesting #UnaQAEnApuros
 x_text: |
-  Tests generados por IA con 100% de cobertura... que dejan pasar la mitad de los errores. Empezamos la serie QA e IA con mutation testing.
+  Tests generados por IA con 100% de cobertura... que dejan pasar un tercio de los errores. Empezamos la serie QA e IA con mutation testing.
 
   https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
 
@@ -110,10 +110,10 @@ Cobertura perfecta: 100% en todo. Si nos fiáramos solo de esta métrica, la sui
 
 ```
 | % Mutation score | # killed | # survived |
-|            45.16 |       14 |         17 |
+|            64.52 |       20 |         11 |
 ```
 
-**17 de los 31 mutantes sobrevivieron.** Es decir: podríamos romper la mitad de las condiciones de la función y los tests seguirían en verde. Algunos de los mutantes supervivientes:
+**11 de los 31 mutantes sobrevivieron.** Es decir: podríamos romper un tercio de las condiciones de la función y los tests seguirían en verde. Algunos de los mutantes supervivientes:
 
 - `if (total < 50)` → `if (false)`: nadie comprobaba el importe exacto del envío.
 - `total += 5` → `total -= 5`: nadie comprobaba cuánto se sumaba.
@@ -148,6 +148,7 @@ Si quieres seguir profundizando en el mutation testing y en Stryker, te dejo est
 
 * * *
 
-Por ir resumiendo: un test que pasa solo demuestra que el código se ejecutó, un test útil **falla cuando el código se rompe**. La cobertura mide qué líneas se ejecutan y el mutation score mide si tus aserciones detectan errores de verdad. Ya lo hemos visto en el experimento: la suite floja, con un 100% de cobertura, eliminó solo el 45% de los mutantes, mientras que la suite cuidada llegó al 93%. Así que si usas la IA para generar tests, úsala como punto de partida y audita lo que te devuelve: cada mutante que sobrevive es un caso de prueba que te están regalando.
+Por ir resumiendo: un test que pasa solo demuestra que el código se ejecutó, un test útil **falla cuando el código se rompe**. La cobertura mide qué líneas se ejecutan y el mutation score mide si tus aserciones detectan errores de verdad. Ya lo hemos visto en el experimento: la suite floja, con un 100% de cobertura, eliminó solo el 64% de los mutantes, mientras que la suite cuidada llegó al 93%. Así que si usas la IA para generar tests, úsala como punto de partida y audita lo que te devuelve: cada mutante que sobrevive es un caso de prueba que te están regalando.
 
 Y hasta aquí la primera entrega de la serie QA e IA. En la siguiente cambiaremos de lado: en lugar de usar la IA para probar software, veremos cómo probar software que usa IA, con la pregunta incómoda de cómo testear un chatbot cuando no existe una única respuesta correcta. ¡Nos leemos en la siguiente entrada!
+
