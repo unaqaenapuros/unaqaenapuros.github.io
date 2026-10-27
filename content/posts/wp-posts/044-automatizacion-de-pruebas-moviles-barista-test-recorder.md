@@ -24,7 +24,7 @@ Barista es una aplicación Android disponible en el Google Play Store que nos pe
 
 ### ¿Dónde podemos encontrar Barista?
 
-Puedes descargarla desde Google Play (la app ya no está disponible en la tienda y mantenemos la referencia por contexto histórico).
+Barista estuvo disponible en Google Play. La app ya no está disponible en la tienda, pero mantenemos la referencia por su contexto histórico.
 
 \* **Nota**: Sólo está disponible para dispositivos Android.
 
