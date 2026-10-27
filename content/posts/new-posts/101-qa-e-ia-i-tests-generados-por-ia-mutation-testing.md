@@ -83,7 +83,9 @@ function calculateTotal(lines, discountCode) {
 module.exports = { calculateTotal };
 ```
 
-Sobre esta función escribimos **dos suites de tests con Mocha**, un framework de tests para JavaScript:
+Las suites originales de este experimento no se han recuperado. Para poder repetirlo, las hemos reconstruido a partir de esta función y del ejemplo de test. Las cifras que veis a continuación corresponden a esta nueva ejecución, con Stryker 10.1.1, Mocha 11.8.0, c8 12.0.0 y Node 22.23.4.
+
+Sobre esta función tenemos **dos suites de tests con Mocha**, un framework de tests para JavaScript:
 
 1. Una **suite floja**, imitando lo que suele devolver un LLM cuando le pides tests sin más contexto: recorre todo el código, pero con aserciones débiles. Por ejemplo:
 
@@ -151,4 +153,3 @@ Si quieres seguir profundizando en el mutation testing y en Stryker, te dejo est
 Por ir resumiendo: un test que pasa solo demuestra que el código se ejecutó, un test útil **falla cuando el código se rompe**. La cobertura mide qué líneas se ejecutan y el mutation score mide si tus aserciones detectan errores de verdad. Ya lo hemos visto en el experimento: la suite floja, con un 100% de cobertura, eliminó solo el 64% de los mutantes, mientras que la suite cuidada llegó al 93%. Así que si usas la IA para generar tests, úsala como punto de partida y audita lo que te devuelve: cada mutante que sobrevive es un caso de prueba que te están regalando.
 
 Y hasta aquí la primera entrega de la serie QA e IA. En la siguiente cambiaremos de lado: en lugar de usar la IA para probar software, veremos cómo probar software que usa IA, con la pregunta incómoda de cómo testear un chatbot cuando no existe una única respuesta correcta. ¡Nos leemos en la siguiente entrada!
-
