@@ -94,7 +94,7 @@ it('applies some discount with SUMMER10', () => {
 });
 ```
 
-2. Una **suite cuidada**, con valores exactos y casos límite: el VIP20 justo en 99 y en 100, el envío justo por debajo y justo en 50, etc.
+2. Una **suite cuidada**, con valores exactos y casos límite: el envío justo por debajo y justo en 50, etc.
 
 Primero medimos la **cobertura** de la suite floja con c8, una herramienta que cuenta qué líneas y ramas ejecutan tus tests:
 
@@ -126,7 +126,7 @@ Y con la **suite cuidada**, mismo código y misma herramienta:
 |            93.55 |       29 |          2 |
 ```
 
-Los dos mutantes que sobrevivieron también son una lección: eran justo el caso `subtotal` exactamente igual a 100. Ni siquiera la suite buena lo cubría del todo, y ahí está el valor de la técnica: te enseña los huecos que no ves.
+Los dos mutantes que sobrevivieron también son una lección: los dos vivían en la comparación `subtotal >= 100`. Uno la cambiaba por `subtotal > 100` y el otro la dejaba siempre verdadera. Es decir, el valor límite del VIP20 no estaba probado del todo: faltaban justo el 99 y el 100. Ni siquiera la suite buena lo cubría del todo, y ahí está el valor de la técnica: te enseña los huecos que no ves.
 
 ### Qué nos dice esto sobre los tests que escribe una IA.
 
