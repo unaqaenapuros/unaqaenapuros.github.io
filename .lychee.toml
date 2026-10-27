@@ -1,5 +1,25 @@
 # Explicit legacy exception requested for post 030. Do not suppress whole domains.
-exclude = ['^http://sdos\.es/wp-content/uploads/2017/08/Jenkins\.jpg$']
+exclude = [
+  '^http://sdos\.es/wp-content/uploads/2017/08/Jenkins\.jpg$',
+  # Local servers used as runnable examples inside posts and never resolve in CI.
+  '^http://localhost:\d+/?$',
+  # The automated check returned 999/403 for these exact URLs. The target content is not independently verified.
+  # Only www.sdos.es (redirects to ALTEN) and www.i-funbox.com (Cloudflare challenge) were opened in a real browser on 2026-10-27.
+  '^https://www\.linkedin\.com/in/estefafdez/$',
+  '^https://www\.linkedin\.com/in/francisco-fern%C3%A1ndez-gonz%C3%A1lez-71b178115/$',
+  '^https://medium\.com/qawolf/techniques-for-testing-generative-ai-applications-344ef53bb13a$',
+  '^http://downloads\.sonarsource\.com/eclipse/eclipse/$',
+  '^https?://(www\.)?sdos\.es/?$',
+  '^http://www\.i-funbox\.com/$',
+  # Retired or unreachable services the author chose to ignore on 2026-10-27 (exact URLs only).
+  '^http://sdos\.es/como-compilar-aplicaciones-android-con-jenkins/$',
+  '^https://evernote\.com/intl/es/products/skitch$',
+  '^https://appworld\.blackberry\.com/webstore/\?lang=es$',
+  # Unreachable since at least 2026-10-27 and no verified replacement. The author chose to ignore it on 2026-10-27 (exact URL only).
+  '^https://www\.qacommunity\.es/$',
+]
+# Resolve root-relative links (/img/..., /2018/...) against the live site.
+base_url = "https://unaqaenapuros.com"
 max_concurrency = 4
 max_retries = 1
 timeout = 20
