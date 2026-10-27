@@ -21,7 +21,7 @@ En esta entrada hablaremos de cómo hacer capturas de pantalla de un emulador An
 
 ## Requisitos.
 
-Para seguir estos pasos debemos tener creado previamente un emulador y conocer los comandos para ello. Todo eso puedes volver a leerlo en la entrada [anterior](/2019/03/13/051-como-crear-e…roid-por-consola/).
+Para seguir estos pasos debemos tener creado previamente un emulador y conocer los comandos para ello. Todo eso puedes volver a leerlo en la entrada [anterior](/2019/04/10/051-como-crear-ejecutar-y-eliminar-emuladores-de-android-por-consola/).
 
 ## ¿Cómo hacemos una captura de pantalla?
 
