@@ -26,7 +26,7 @@ Barista es una aplicación Android disponible en el Google Play Store que nos pe
 
 Puedes descargarla desde el siguiente enlace:
 
-[https://play.google.com/store/apps/details?id=com.moquality.barista](https://play.google.com/store/apps/details?id=com.moquality.baristahttps://play.google.com/store/apps/details?id=com.moquality.barista)
+[https://play.google.com/store/apps/details?id=com.moquality.barista](https://play.google.com/store/apps/details?id=com.moquality.barista)
 
 \* **Nota**: Sólo está disponible para dispositivos Android.
 
