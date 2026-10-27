@@ -11,6 +11,10 @@ exclude = [
   '^http://downloads\.sonarsource\.com/eclipse/eclipse/$',
   '^https?://(www\.)?sdos\.es/?$',
   '^http://www\.i-funbox\.com/$',
+  # Retired or unreachable services the author chose to ignore on 2026-10-27 (exact URLs only).
+  '^http://sdos\.es/como-compilar-aplicaciones-android-con-jenkins/$',
+  '^https://evernote\.com/intl/es/products/skitch$',
+  '^https://appworld\.blackberry\.com/webstore/\?lang=es$',
 ]
 # Resolve root-relative links (/img/..., /2018/...) against the live site.
 base_url = "https://unaqaenapuros.com"
