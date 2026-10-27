@@ -20,7 +20,7 @@ Para seguir con los post relacionados con Android y la consola, vamos a ver los 
 
 ## Preparando la consola.
 
-Primero tenemos que cerrar Android Studio completamente y abrir una consola. Estos comandos los podemos hacer uno a uno desde consola o hacernos un script de bash como hicimos en [esta entrada](/2019/03/06/050-script-ejecutar-emuladores-en-android/) para abrir el emulador.
+Primero tenemos que cerrar Android Studio completamente y abrir una consola. Estos comandos los podemos hacer uno a uno desde consola o hacernos un script de bash como hicimos en [esta entrada](/2019/03/27/050-script-ejecutar-emuladores-en-android/) para abrir el emulador.
 
 Los comandos que tenemos que seguir son los siguientes:
 

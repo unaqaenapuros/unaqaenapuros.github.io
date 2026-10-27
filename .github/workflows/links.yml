@@ -11,9 +11,21 @@ jobs:
     continue-on-error: true
     steps:
       - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Skip posts scheduled for the future
+        id: scheduled
+        run: |
+          args=""
+          today=$(date +%F)
+          for f in content/posts/new-posts/*.md; do
+            d=$(grep -m1 '^date:' "$f" | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}' | head -n1)
+            if [ -n "$d" ] && [[ "$d" > "$today" ]]; then
+              args="$args --exclude-path $f"
+            fi
+          done
+          echo "args=$args" >> "$GITHUB_OUTPUT"
       - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2
         with:
-          args: --config .lychee.toml --scheme http --scheme https 'content/**/*.md'
+          args: --config .lychee.toml --scheme http --scheme https ${{ steps.scheduled.outputs.args }} 'content/**/*.md'
           fail: true
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         if: always()

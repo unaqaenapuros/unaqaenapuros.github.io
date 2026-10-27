@@ -24,7 +24,7 @@ En esta entrada os voy a hablar del último meetup que organizamos desde Sevilla
 
 En Sevilla QA queremos crear una comunidad de QAs empezando en Sevilla y, por qué no, seguir creciendo! La idea es compartir metodología, herramientas, etc así como contribuir a la comunidad con nuestra verdadera pasión: cualquier cosa relacionada con el mundo QA!.
 
-[https://www.meetup.com/en-AU/SevillaQA/](https://www.meetup.com/en-AU/SevillaQA/https://www.meetup.com/en-AU/SevillaQA/)
+[https://www.meetup.com/en-AU/SevillaQA/](https://www.meetup.com/en-AU/SevillaQA/)
 
 ## El ponente: Victor Gomez Adán.
 

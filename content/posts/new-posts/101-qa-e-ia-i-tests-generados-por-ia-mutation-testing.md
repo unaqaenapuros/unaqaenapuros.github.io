@@ -153,3 +153,7 @@ Si quieres seguir profundizando en el mutation testing y en Stryker, te dejo est
 Por ir resumiendo: un test que pasa solo demuestra que el código se ejecutó, un test útil **falla cuando el código se rompe**. La cobertura mide qué líneas se ejecutan y el mutation score mide si tus aserciones detectan errores de verdad. Ya lo hemos visto en el experimento: la suite floja, con un 100% de cobertura, eliminó solo el 64% de los mutantes, mientras que la suite cuidada llegó al 93%. Así que si usas la IA para generar tests, úsala como punto de partida y audita lo que te devuelve: cada mutante que sobrevive es un caso de prueba que te están regalando.
 
 Y hasta aquí la primera entrega de la serie QA e IA. En la siguiente cambiaremos de lado: en lugar de usar la IA para probar software, veremos cómo probar software que usa IA, con la pregunta incómoda de cómo testear un chatbot cuando no existe una única respuesta correcta. ¡Nos leemos en la siguiente entrada!
+
+* * *
+
+Todo el material del experimento está disponible en este gist: la función, las tres suites de tests, la configuración de Stryker, los informes JSON y las salidas de consola de cada ejecución, con las instrucciones para repetirlo paso a paso: https://gist.github.com/estefafdez/51147f32eb0ce88fe2956a17736504e4
