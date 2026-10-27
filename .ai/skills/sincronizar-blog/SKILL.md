@@ -29,3 +29,4 @@ Lo que hay en este repo:
 - Solo se pasa una entrada del repo de escritura a este cuando la autora lo pide.
 - **Los commits, los push y los pull requests los hace la autora.** No hagas commit en ninguno de los dos repos salvo que te lo pida.
 - Este repo es **público**: no copies aquí la URL ni la estructura interna del repo de escritura, ni el contenido completo de su copia de esta skill.
+- El código de los experimentos de las entradas se publica en **gists públicos de la autora**, no en este repo: paquete completo y reproducible (código, tests, configuración, lockfile y README con versiones exactas, comandos y resultados reales; si es una reconstrucción, se indica). La entrada enlaza el gist solo cuando está publicado y revisado por la autora.
