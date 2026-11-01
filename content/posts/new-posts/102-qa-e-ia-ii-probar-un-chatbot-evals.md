@@ -28,7 +28,7 @@ description: "Cómo probar un chatbot con evals: dataset de casos, criterios det
 ---
 Hola de nuevo,
 
-En la entrada anterior usamos la IA para escribir tests y aprendimos a auditarlos. Hoy cruzamos al otro lado: el producto que probamos **lleva IA dentro**. Un chatbot de soporte, una herramienta para resumir documentos, un buscador que responde con lenguaje natural. ¿Cómo escribes un `assert` sobre algo que puede contestar bien de veinte formas distintas? ¡Empezamos!
+En la entrada anterior usamos la IA para escribir tests y aprendimos a auditarlos. Cruzamos al otro lado: el producto que probamos **lleva IA dentro**. Un chatbot de soporte, una herramienta para resumir documentos, un buscador que responde con lenguaje natural. ¿Cómo escribes un `assert` sobre algo que puede contestar bien de veinte formas distintas? ¡Empezamos!
 
 ### El problema: se acabó el "entrada X, salida Y".
 
@@ -162,3 +162,5 @@ Si quieres seguir profundizando en las evals, te dejo estos enlaces:
 * * *
 
 Y hasta aquí la segunda entrega de la serie. En la siguiente veremos qué pasa cuando el usuario no es inocente: prompt injection, el nuevo caso de prueba que todo QA debería conocer. ¡Nos leemos en la siguiente entrada!
+
+Todo el material del experimento está disponible en este gist: la eval completa (el chatbot de prueba, el dataset de casos y la función de evaluación) y la salida real de la ejecución: https://gist.github.com/estefafdez/3ca7671111042c06f7fe5baa778638f4
