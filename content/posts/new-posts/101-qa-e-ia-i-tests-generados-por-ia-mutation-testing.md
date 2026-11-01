@@ -121,6 +121,10 @@ Cobertura perfecta: 100% en todo. Si nos fiáramos solo de esta métrica, la sui
 - `total += 5` → `total -= 5`: nadie comprobaba cuánto se sumaba.
 - `subtotal >= 100` → `subtotal > 100`: el valor límite del descuento VIP20 no estaba probado.
 
+El informe HTML que genera Stryker enseña esto mismo sobre el código: cada mutante superviviente queda marcado en rojo en la línea exacta donde sobrevivió:
+
+![El informe de Stryker sobre cart.js con la suite débil: los 11 mutantes supervivientes marcados en rojo en sus líneas](/img/blog-images/new-posts/2027/01/101-stryker-weak-survivors.png "Los 11 mutantes supervivientes del test débil, marcados por Stryker sobre el código.")
+
 Y con la **suite cuidada**, mismo código y misma herramienta:
 
 ```
