@@ -28,7 +28,7 @@ description: "Prompt injection directa e indirecta convertida en casos de prueba
 ---
 Hola de nuevo,
 
-Seguimos con la serie QA e IA. Ya vimos cómo auditar los tests que escribe un modelo y cómo evaluar respuestas sin una única correcta. Hoy toca la pregunta incómoda: ¿qué pasa cuando el usuario (o el documento que procesa tu aplicación) **intenta saltarse las reglas**? Bienvenidos al _prompt injection_, el riesgo número uno del OWASP Top 10 para aplicaciones LLM. ¡Empezamos!
+Seguimos con la serie QA e IA. Ya vimos cómo auditar los tests que escribe un modelo y cómo evaluar respuestas sin una única correcta. Toca la pregunta incómoda: ¿qué pasa cuando el usuario (o el documento que procesa tu aplicación) **intenta saltarse las reglas**? Bienvenidos al _prompt injection_, el riesgo número uno del OWASP Top 10 para aplicaciones LLM. ¡Empezamos!
 
 ### ¿Qué es el prompt injection?
 
@@ -143,3 +143,5 @@ Si quieres seguir profundizando en el prompt injection, te dejo este enlace:
 * * *
 
 Y hasta aquí la tercera entrega. En la siguiente dejamos los ataques y volvemos a una tarea de cada día: generar datos de prueba con IA, cuándo compensa y qué validar antes de fiarnos de ellos. ¡Nos leemos en la siguiente entrada!
+
+Todo el material del experimento está disponible en este gist: los dos modelos de prueba, la batería de tests con el runner nativo de Node y la salida real de la ejecución: https://gist.github.com/estefafdez/70c5670c582d10a6c9d74bdb9afa4997
