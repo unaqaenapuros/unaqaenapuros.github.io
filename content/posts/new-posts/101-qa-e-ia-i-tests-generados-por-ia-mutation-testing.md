@@ -13,17 +13,17 @@ tags:
 - testing
 author: estefafdez
 social_text: |
-  Le pedimos tests a una IA, pasan, la cobertura marca 100%... y aun así un tercio de los errores que introducimos a propósito en el código pasan desapercibidos. En la primera entrega de la serie QA e IA hacemos el experimento completo con mutation testing y vemos cómo auditar los tests que escribe un modelo.
+ Le pedimos tests a una IA, pasan, la cobertura marca 100%... y aun así un tercio de los errores que introducimos a propósito en el código pasan desapercibidos. En la primera entrega de la serie QA e IA hacemos el experimento completo con mutation testing y vemos cómo auditar los tests que escribe un modelo.
 
-  https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
+ https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
 
-  #QA #TestAutomation #AI #MutationTesting #UnaQAEnApuros
+ #QA #TestAutomation #AI #MutationTesting #UnaQAEnApuros
 x_text: |
-  Tests generados por IA con 100% de cobertura... que dejan pasar un tercio de los errores. Empezamos la serie QA e IA con mutation testing.
+ Tests generados por IA con 100% de cobertura... que dejan pasar un tercio de los errores. Empezamos la serie QA e IA con mutation testing.
 
-  https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
+ https://unaqaenapuros.com/2027/01/04/101-qa-e-ia-i-tests-generados-por-ia-mutation-testing/
 
-  #QA #AI #MutationTesting
+ #QA #AI #MutationTesting
 description: "Tests generados por IA con 100% de cobertura que no detectan errores: cómo auditarlos con mutation testing y Stryker."
 ---
 ¡Hola a todos!
@@ -121,6 +121,10 @@ Cobertura perfecta: 100% en todo. Si nos fiáramos solo de esta métrica, la sui
 - `total += 5` → `total -= 5`: nadie comprobaba cuánto se sumaba.
 - `subtotal >= 100` → `subtotal > 100`: el valor límite del descuento VIP20 no estaba probado.
 
+El informe HTML que genera Stryker enseña esto mismo sobre el código: cada mutante superviviente queda marcado en rojo en la línea exacta donde sobrevivió:
+
+![El informe de Stryker sobre cart.js con la suite débil: los 11 mutantes supervivientes marcados en rojo en sus líneas](https://raw.githubusercontent.com/unaqaenapuros/unaqaenapuros.github.io/c1750835c1/static/img/blog-images/new-posts/2027/01/101-stryker-weak-survivors.png "Los 11 mutantes supervivientes del test débil, marcados por Stryker sobre el código.")
+
 Y con la **suite cuidada**, mismo código y misma herramienta:
 
 ```
@@ -136,10 +140,10 @@ El experimento confirma lo que varios equipos están reportando: **cobertura alt
 
 Esto no significa que no debas usar IA para generar tests. Significa que el trabajo del QA se desplaza: de escribir tests a **auditarlos**. Un flujo razonable:
 
-  1. Genera la suite con el modelo, pero pídele explícitamente **valores límite y casos de error**, no solo el happy path.
-  2. Revisa las aserciones: si ves `typeof`, `toBeTruthy()` o `> 0` donde debería haber un valor exacto, ese test no está probando lo que crees.
-  3. Ejecuta **Stryker** (o la herramienta de tu stack) sobre el código cubierto por la suite generada y mira qué mutantes sobreviven.
-  4. Convierte los supervivientes en tests nuevos: cada mutante que escapa es un caso de prueba que te están regalando.
+ 1. Genera la suite con el modelo, pero pídele explícitamente **valores límite y casos de error**, no solo el happy path.
+ 2. Revisa las aserciones: si ves `typeof`, `toBeTruthy()` o `> 0` donde debería haber un valor exacto, ese test no está probando lo que crees.
+ 3. Ejecuta **Stryker** (o la herramienta de tu stack) sobre el código cubierto por la suite generada y mira qué mutantes sobreviven.
+ 4. Convierte los supervivientes en tests nuevos: cada mutante que escapa es un caso de prueba que te están regalando.
 
 ### Para seguir leyendo.
 
