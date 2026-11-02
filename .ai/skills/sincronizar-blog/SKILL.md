@@ -28,5 +28,6 @@ Lo que hay en este repo:
 - Una entrada se considera **publicada** en cuanto está en este repo, tanto si ya ha salido en la web como si está programada con fecha futura: está terminada y lista.
 - Solo se pasa una entrada del repo de escritura a este cuando la autora lo pide.
 - **Los commits, los push y los pull requests los hace la autora.** No hagas commit en ninguno de los dos repos salvo que te lo pida.
+- **Cuando te pida un pull request**, trabaja en una rama nueva desde `main` y ábrelo siempre **en draft y asignado a ella**: `gh pr create --draft --assignee estefafdez`. Ella lo revisa, lo pasa a listo y lo mergea.
 - Este repo es **público**: no copies aquí la URL ni la estructura interna del repo de escritura, ni el contenido completo de su copia de esta skill.
 - El código de los experimentos de las entradas se publica en **gists públicos de la autora**, no en este repo: paquete completo y reproducible (código, tests, configuración, lockfile y README con versiones exactas, comandos y resultados reales). El gist se presenta orientado al lector: es el ejemplo de su entrada y lleva la URL canónica de la entrada aunque esté programada y todavía no publicada, sin narrar ediciones, incidencias ni el proceso de elaboración. La entrada enlaza el gist solo cuando está publicado y revisado por la autora.
