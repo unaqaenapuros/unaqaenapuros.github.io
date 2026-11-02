@@ -41,7 +41,7 @@ Las herramientas automatizadas pueden verificar si el texto del enlace **existe*
 
 **Cómo corregirlo:** Escribe el texto del enlace de forma que tenga sentido fuera de contexto: _"Ver más sobre pruebas de accesibilidad"_ en lugar de _"Ver más"_. Cuando el diseño no permite textos largos visibles, usa `aria-label` para aportar el contexto completo:
 
-```
+```html
 <a href="/accesibilidad" aria-label="Ver más sobre pruebas de accesibilidad">Ver más</a>
 
 ```
@@ -56,7 +56,7 @@ Un enlace de saltar al contenido — un ancla oculta visualmente que es el prime
 
 **Cómo corregirlo:** Añade un enlace de saltar como primer elemento enfocable en todas las páginas:
 
-```
+```html
 <a href="#contenido-principal" class="sr-only focus:not-sr-only">
   Ir al contenido principal
 </a>
@@ -74,7 +74,7 @@ Tanto `aria-labelledby` como `aria-label` satisfacen los checks automatizados po
 
 Cuando ya existe un texto visible en la página que puede servir de etiqueta, `aria-labelledby` es casi siempre la opción correcta: reutiliza el texto visible, por lo que ambas representaciones se mantienen sincronizadas automáticamente.
 
-```
+```html
 <!-- Incorrecto: hay un título visible, usar aria-labelledby -->
 <section aria-label="Artículos recientes">
   <h2 id="titulo-articulos">Artículos recientes</h2>
@@ -104,7 +104,7 @@ Las herramientas automatizadas comprueban la **presencia** y el **formato**, no 
 
 **Cómo corregirlo:** Vincula `aria-label` dinámicamente al estado actual del control:
 
-```
+```html
 <!-- En Vue -->
 <button :aria-label="notificationsActive ? 'Desactivar notificaciones' : 'Activar notificaciones'">
   <svg aria-hidden="true">...</svg>
@@ -112,7 +112,7 @@ Las herramientas automatizadas comprueban la **presencia** y el **formato**, no 
 
 ```
 
-```
+```jsx
 // En React
 <button aria-label={isDarkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}>
   <svg aria-hidden="true" />
@@ -128,7 +128,7 @@ axe-core valida la presencia y el formato. No valida la calidad.
 
 Lo mismo aplica al texto alternativo de imágenes. El texto correcto depende del contexto y la función de la imagen, algo que ninguna herramienta puede evaluar:
 
-```
+```html
 <!-- Logo como imagen independiente — identificar la marca -->
 <img src="logo.svg" alt="Empresa XYZ" />
 
@@ -161,7 +161,7 @@ En ambos casos, el estado original era más accesible que el estado "corregido".
 
 **Cómo corregirlo:** Documenta las decisiones intencionales en el código para que el equipo no las revierta:
 
-```
+```html
 <!-- alt="" intencional: separador decorativo, los lectores de pantalla deben ignorarlo -->
 <img src="wave-separator.svg" alt="" />
 
@@ -184,7 +184,7 @@ Lighthouse y axe detectan problemas de contraste en texto estático sobre fondo 
 
 Para gradientes, una aproximación manual es comprobar el contraste contra cada extremo del gradiente. Por ejemplo, para este CSS:
 
-```
+```css
 .card-header {
   background: linear-gradient(to bottom, #1a1a2e, #ffffff);
   color: #6b7280;
@@ -204,7 +204,7 @@ Las herramientas automatizadas evalúan contra un contexto HTML5 idealizado. No 
 
 **Cómo corregirlo:** En contextos pre-HTML5, usa roles ARIA landmark sobre elementos `<div>`:
 
-```
+```html
 <div role="main">...</div>
 <div role="navigation" aria-label="Navegación principal">...</div>
 <div role="banner">...</div>
