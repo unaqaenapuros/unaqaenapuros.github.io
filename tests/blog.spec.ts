@@ -5,6 +5,8 @@ for (const scheme of ['light', 'dark']) {
 for (const path of ['/', '/2026/10/05/094-playwright-api-testing-i-fundamentos-y-metodos-http/', '/404.html']) {
   test(`navigation and accessibility: ${scheme} ${path}`, async ({ page }) => {
     await page.goto(path);
+    // Without this, axe can sample colours halfway through the theme's background transition.
+    await page.addStyleTag({ content: '*, *::before, *::after { transition: none !important; }' });
     await page.evaluate(s => document.documentElement.dataset.scheme = s, scheme);
     await expect(page.locator('main')).toBeVisible();
     await page.keyboard.press('Tab');
