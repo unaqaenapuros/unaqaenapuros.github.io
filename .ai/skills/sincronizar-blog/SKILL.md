@@ -14,7 +14,7 @@ Los dos clones están siempre en la misma carpeta, uno al lado del otro, así qu
 
 ## Cómo trabajar
 
-Las instrucciones completas están en la copia de esta skill del repo de escritura: `../UnaQAEnApuros/.ai/skills/sincronizar-blog/SKILL.md`. **Léela antes de hacer nada** y síguela. Si no encuentras el repo de escritura en `../`, pregunta a la autora antes de seguir.
+Las instrucciones completas están en la versión privada de esta skill, entre las skills de la autora. **Léela antes de hacer nada** y síguela. Si no está cargada, pregunta a la autora antes de seguir.
 
 Lo que hay en este repo:
 
