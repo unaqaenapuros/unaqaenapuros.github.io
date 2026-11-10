@@ -101,10 +101,6 @@ $(cat failure.txt)" \
 
 La respuesta JSON trae el texto generado en el campo `response`, junto a métricas de la generación.
 
-![Llamada real a la API local de Ollama con el análisis de un fallo de test real](/img/blog-images/new-posts/2027/02/106-ollama-analisis-fallo.png)
-
-*Ejecución real del flujo de arriba en una máquina con poca RAM, por eso con un modelo pequeño (`qwen2.5:0.5b`) en lugar del 7B del ejemplo (la salida se muestra con `jq -r .response` y `fold` para que quepa en pantalla). El log analizado es un fallo de test real. Fíjate en la respuesta: detecta que algo va con mayúsculas y minúsculas, pero enreda la dirección del fallo («ana» frente a «ANA») y se inventa una causa sobre la versión de TAP. Es justo el nivel de fiabilidad que esta entrada advierte: útil como primer filtro, nunca como veredicto.*
-
 A partir de ahí, el patrón es el de siempre: un script que recoge los fallos del pipeline, los manda al modelo local y deja el resumen como comentario o artefacto del build.
 
 ### Requisitos y expectativas realistas.

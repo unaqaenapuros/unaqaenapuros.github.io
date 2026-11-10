@@ -99,7 +99,7 @@ interface Rule {
 const rules: Rule[] = [
   { name: 'no duplicate records',
     check: (ds) => new Set(ds.map((d) => d.email)).size === ds.length },
-  { name: 'no test email domains (test.com, example.org...)',
+  { name: 'no test email domains (test.com)',
     check: (ds) => ds.every((d) => !d.email.endsWith('@test.com')) },
   { name: 'age between 18 and 99',
     check: (ds) => ds.every((d) => d.age >= 18 && d.age <= 99) },
@@ -120,16 +120,12 @@ Al ejecutarlo (`node validar.ts`, con Node 22.18 o superior, que ya entiende Typ
 
 ```
 FAIL no duplicate records
-FAIL no test email domains (test.com, example.org...)
+FAIL no test email domains (test.com)
 FAIL age between 18 and 99
 FAIL 5-digit postal code
 
 4 rule(s) failed: the dataset is NOT ready to use
 ```
-
-![Las cuatro reglas fallan sobre el dataset generado por IA](/img/blog-images/new-posts/2027/01/104-validacion-dataset-fail.png)
-
-*Salida real de `node validar.ts` sobre el dataset del ejemplo.*
 
 El patrón es el de siempre en QA: **definir los criterios de aceptación antes de generar**. Si sabes qué debe cumplir el dato, validarlo es fácil con un código no muy complejo. Si no lo sabes, no hay generadores que te ayuden a saber si esos datos son o no correctos.
 
