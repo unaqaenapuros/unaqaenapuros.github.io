@@ -160,4 +160,4 @@ Y hasta aquí la primera entrega de la serie QA e IA. En la siguiente cambiaremo
 
 * * *
 
-Todo el material del experimento está disponible en este gist: la función, las tres suites de tests, la configuración de Stryker, los informes JSON y las salidas de consola de cada ejecución, con las instrucciones para repetirlo paso a paso: https://gist.github.com/estefafdez/51147f32eb0ce88fe2956a17736504e4
+Todo el material del experimento está disponible en este gist: la función, las tres suites de tests, la configuración de Stryker, los informes JSON y las salidas de consola de cada ejecución, con las instrucciones para repetirlo paso a paso: https://gist.github.com/estefafdez/0a1b2071440db6b392f6cdc6ce865ce7
