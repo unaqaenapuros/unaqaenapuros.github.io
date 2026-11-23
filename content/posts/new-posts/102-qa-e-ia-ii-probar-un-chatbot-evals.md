@@ -163,4 +163,4 @@ Si quieres seguir profundizando en las evals, te dejo estos enlaces:
 
 Y hasta aquí la segunda entrega de la serie. En la siguiente veremos qué pasa cuando el usuario no es inocente: prompt injection, el nuevo caso de prueba que todo QA debería conocer. ¡Nos leemos en la siguiente entrada!
 
-Todo el material del experimento está disponible en este gist: la eval completa (el chatbot de prueba, el dataset de casos y la función de evaluación) y la salida real de la ejecución: https://gist.github.com/estefafdez/3ca7671111042c06f7fe5baa778638f4
+Todo el material del experimento está disponible en este gist: la eval completa (el chatbot de prueba, el dataset de casos y la función de evaluación) y la salida real de la ejecución: https://gist.github.com/estefafdez/a646fa43fcb38b0dffe27333445312ba

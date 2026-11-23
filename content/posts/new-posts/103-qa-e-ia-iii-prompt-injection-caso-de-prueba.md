@@ -144,4 +144,4 @@ Si quieres seguir profundizando en el prompt injection, te dejo este enlace:
 
 Y hasta aquí la tercera entrega. En la siguiente dejamos los ataques y volvemos a una tarea de cada día: generar datos de prueba con IA, cuándo compensa y qué validar antes de fiarnos de ellos. ¡Nos leemos en la siguiente entrada!
 
-Todo el material del experimento está disponible en este gist: los dos modelos de prueba, la batería de tests con el runner nativo de Node y la salida real de la ejecución: https://gist.github.com/estefafdez/70c5670c582d10a6c9d74bdb9afa4997
+Todo el material del experimento está disponible en este gist: los dos modelos de prueba, la batería de tests con el runner nativo de Node y la salida real de la ejecución: https://gist.github.com/estefafdez/73dc4f82dbb2e88d9939b2d24acd27a6
