@@ -83,7 +83,7 @@ function calculateTotal(lines, discountCode) {
 module.exports = { calculateTotal };
 ```
 
-Las suites originales de este experimento no se han recuperado. Para poder repetirlo, las hemos reconstruido a partir de esta función y del ejemplo de test. Las cifras que veis a continuación corresponden a esta nueva ejecución, con Stryker 10.1.1, Mocha 11.8.0, c8 12.0.0 y Node 22.23.4.
+Las suites originales de este experimento no se han recuperado. Para poder repetirlo, las hemos reconstruido a partir de esta función y del ejemplo de test. Las cifras que veis a continuación corresponden a esta nueva ejecución, con Stryker 10.1.1, Mocha 11.8.0 y c8 12.0.0.
 
 Sobre esta función tenemos **dos suites de tests con Mocha**, un framework de tests para JavaScript:
 
