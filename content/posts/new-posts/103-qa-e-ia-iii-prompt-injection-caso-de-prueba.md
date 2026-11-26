@@ -108,7 +108,7 @@ describe('indirect prompt injection', () => {
 });
 ```
 
-Al ejecutarlo (`node --test`, con Node 22.18 o superior, que ya entiende TypeScript directamente), los tres tests pasan:
+Al ejecutarlo (`node --test`), los tres tests pasan:
 
 ```
 ok 1 - indirect prompt injection

@@ -116,7 +116,7 @@ for (const rule of rules) {
 console.log(`\n${failures} rule(s) failed: the dataset is NOT ready to use`)
 ```
 
-Al ejecutarlo (`node validar.ts`, con Node 22.18 o superior, que ya entiende TypeScript directamente), el dataset que en teoría era bueno y generado correctamente empieza a dar fallos:
+Al ejecutarlo (`node validar.ts`), el dataset que en teoría era bueno y generado correctamente empieza a dar fallos:
 
 ```
 FAIL no duplicate records

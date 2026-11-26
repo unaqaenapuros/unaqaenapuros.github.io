@@ -130,7 +130,7 @@ function evaluate(chatbot: (question: string) => string, cases: TestCase[]): voi
 evaluate(chatbot, cases);
 ```
 
-Desde Node 22.18 no hace falta compilar nada: guardamos el fichero como `eval.ts` y lo ejecutamos tal cual con `node eval.ts`. Con este chatbot de prueba obtenemos:
+No hace falta compilar nada: guardamos el fichero como `eval.ts` y lo ejecutamos tal cual con `node eval.ts`. Con este chatbot de prueba obtenemos:
 
 ```
 PASS return-window
