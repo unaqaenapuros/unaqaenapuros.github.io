@@ -159,8 +159,8 @@ Si quieres seguir profundizando en las evals, te dejo estos enlaces:
 - _Evaluation best practices_, guía de OpenAI: https://developers.openai.com/api/docs/guides/evaluation-best-practices
 - _Techniques for Testing Generative AI Applications_, de QA Wolf: https://medium.com/qawolf/techniques-for-testing-generative-ai-applications-344ef53bb13a
 
+Todo el material del experimento está disponible en este gist: la eval completa (el chatbot de prueba, el dataset de casos y la función de evaluación) y la salida real de la ejecución: https://gist.github.com/estefafdez/a646fa43fcb38b0dffe27333445312ba
+
 * * *
 
 Y hasta aquí la segunda entrega de la serie. En la siguiente veremos qué pasa cuando el usuario no es inocente: prompt injection, el nuevo caso de prueba que todo QA debería conocer. ¡Nos leemos en la siguiente entrada!
-
-Todo el material del experimento está disponible en este gist: la eval completa (el chatbot de prueba, el dataset de casos y la función de evaluación) y la salida real de la ejecución: https://gist.github.com/estefafdez/a646fa43fcb38b0dffe27333445312ba

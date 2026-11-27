@@ -140,8 +140,8 @@ Si quieres seguir profundizando en el prompt injection, te dejo este enlace:
 
 - **OWASP LLM01: Prompt Injection**, con las dos variantes y las medidas de mitigación recomendadas: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
 
+Todo el material del experimento está disponible en este gist: los dos modelos de prueba, la batería de tests con el runner nativo de Node y la salida real de la ejecución: https://gist.github.com/estefafdez/73dc4f82dbb2e88d9939b2d24acd27a6
+
 * * *
 
 Y hasta aquí la tercera entrega. En la siguiente dejamos los ataques y volvemos a una tarea de cada día: generar datos de prueba con IA, cuándo compensa y qué validar antes de fiarnos de ellos. ¡Nos leemos en la siguiente entrada!
-
-Todo el material del experimento está disponible en este gist: los dos modelos de prueba, la batería de tests con el runner nativo de Node y la salida real de la ejecución: https://gist.github.com/estefafdez/73dc4f82dbb2e88d9939b2d24acd27a6
