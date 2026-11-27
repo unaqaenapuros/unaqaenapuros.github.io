@@ -130,7 +130,7 @@ function evaluate(chatbot: (question: string) => string, cases: TestCase[]): voi
 evaluate(chatbot, cases);
 ```
 
-No hace falta compilar nada: guardamos el fichero como `eval.ts` y lo ejecutamos tal cual con `node eval.ts`. Con este chatbot de prueba obtenemos:
+Node ya ejecuta TypeScript directamente, así que no hace falta compilar nada: guardamos el fichero como `eval.ts` y lo ejecutamos tal cual con `node eval.ts`. Con este chatbot de prueba obtenemos:
 
 ```
 PASS return-window
